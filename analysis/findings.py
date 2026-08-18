@@ -100,6 +100,16 @@ def report(con) -> str:
     """)
     tight = slack.iloc[0]
     loose = slack.iloc[-1]
+    comp = table(con, """
+        SELECT least(floor(turn_slack_minutes/15),6)*15 AS slack_floor,
+               100.0*count(*) FILTER (WHERE carrier='WN')/count(*) AS wn_pct,
+               100.0*avg((cascade_position>0)::INT) AS cascade_pct
+        FROM fct_rotation_leg
+        WHERE is_continuation AND prev_arr_delay BETWEEN 30 AND 60
+        GROUP BY 1 ORDER BY 1
+    """).set_index("slack_floor")
+    wn_bump, wn_dip = comp.loc[60, "wn_pct"], comp.loc[45, "wn_pct"]
+    casc_bump, casc_dip = comp.loc[60, "cascade_pct"], comp.loc[45, "cascade_pct"]
     w(dedent(f"""
 
     ## Finding 2 — the propagation mechanism is slack, and the model checks out
@@ -114,11 +124,19 @@ def report(con) -> str:
     reported {rep:.1f}. Correlation between the two, computed independently:
     **{corr:.3f}**.
 
-    The dose-response is monotonic. Among turns receiving an aircraft 30-60
-    minutes late, those with under 15 minutes of slack passed on
-    {tight.avg_inherited:.1f} minutes and departed late {tight.pct_late:.0f}% of the
-    time; those with 90+ minutes passed on {loose.avg_inherited:.1f} minutes and
-    departed late {loose.pct_late:.0f}% of the time.
+    The dose-response is strong but **not monotonic**, and the exception is worth
+    stating. Among turns receiving an aircraft 30-60 minutes late, those with under
+    15 minutes of slack passed on {tight.avg_inherited:.1f} minutes and departed
+    late {tight.pct_late:.0f}% of the time; those with 90+ minutes passed on
+    {loose.avg_inherited:.1f} minutes and departed late {loose.pct_late:.0f}%.
+
+    But the 60-89 minute buckets sit above the 45-59 bucket rather than below it.
+    That is a composition effect, not a break in the mechanism: turns scheduled
+    100-120 minutes are disproportionately Southwest ({wn_bump:.0f}% of the 60-74
+    bucket against {wn_dip:.0f}% of the 45-59 bucket) and disproportionately already
+    mid-cascade ({casc_bump:.0f}% against {casc_dip:.0f}%). Restricting to turns not
+    already deep in a cascade narrows the bump but does not remove it, so it is
+    reported rather than controlled away.
     """).strip() + "\n")
 
     # ------------------------------------------- finding 3: morning multiplier

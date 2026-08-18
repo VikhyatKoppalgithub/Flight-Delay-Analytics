@@ -38,7 +38,8 @@ carrier-controllable delay in the morning bank, which is worth roughly **$459M a
 year** in direct operating cost at a 20% reduction — [with a pilot design and
 sizing to test it first](docs/04-recommendations.md).
 
-Full write-up: **[docs/03-findings.md](docs/03-findings.md)**
+Full write-up: **[docs/03-findings.md](docs/03-findings.md)** · Interactive
+dashboard: **[dashboards/index.html](dashboards/index.html)**
 
 ---
 
@@ -59,9 +60,13 @@ Across 5.4M turns receiving an aircraft 15+ minutes late, the model predicts a m
 of **23.3** minutes passed on. The airlines reported **21.2**. Correlation:
 **0.784**.
 
-The dose-response is monotonic — among turns receiving an aircraft 30–60 minutes
+The dose-response is strong — among turns receiving an aircraft 30–60 minutes
 late, those with under 15 minutes of slack departed late 96% of the time; those
-with 90+ minutes, 15%.
+with 90+ minutes, 15%. It is not strictly monotonic: the 60–89 minute buckets sit
+above the 45–59 bucket, a composition effect from those turns being
+disproportionately Southwest and disproportionately already mid-cascade.
+Controlling for cascade position narrows it without removing it, so it is
+[reported rather than controlled away](docs/03-findings.md).
 
 ---
 
@@ -93,7 +98,12 @@ python -m pipeline.build_warehouse   # 15 SQL models -> DuckDB star schema, ~4 m
 python -m pytest                     # 28 data quality tests
 python -m analysis.findings --write  # regenerate docs/03-findings.md
 python -m analysis.export_bi         # CSV extracts for Power BI / Tableau
+python -m analysis.build_dashboard_data && python -m analysis.build_dashboard
 ```
+
+The dashboard builds to a single self-contained `dashboards/index.html` — no server,
+no network, no build step. Open the file, or serve it with
+`python3 -m http.server 8137 --directory dashboards`.
 
 Nothing is committed that can be rebuilt: `data/` is gitignored and every figure
 in `docs/` is regenerated from the warehouse by `analysis/findings.py`, so no
@@ -113,7 +123,7 @@ sql/
 tests/        28 data quality tests, run against the built warehouse
 analysis/     findings generator, BI export, data dictionary generator
 docs/         business case, KPI definitions, findings, recommendations
-dashboards/   CSV extracts sized for Power BI and Tableau
+dashboards/   the interactive dashboard, plus CSV extracts sized for Power BI and Tableau
 ```
 
 **Data:** [BTS Reporting Carrier On-Time Performance](https://www.transtats.bts.gov/Fields.asp?gnoyr_VQ=FGJ),

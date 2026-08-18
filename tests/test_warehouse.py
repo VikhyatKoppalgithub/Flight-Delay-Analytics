@@ -198,8 +198,10 @@ def test_propagation_model_tracks_reported_attribution(scalar):
 
 
 def test_slack_reduces_inherited_delay(scalar):
-    """The core mechanism, stated as a monotonicity check: among turns receiving
-    a comparably late aircraft, more slack must mean less delay passed on."""
+    """The core mechanism as an endpoint comparison: among turns receiving a
+    comparably late aircraft, the least-slack bucket must pass on materially more
+    delay than the most-slack bucket. Deliberately NOT a monotonicity check --
+    the middle buckets are not monotonic, for reasons documented in Finding 2."""
     tight, loose = scalar("""
         SELECT [
             avg(inherited_delay_minutes) FILTER (WHERE turn_slack_minutes < 15),

@@ -37,11 +37,19 @@ predicts a mean of 23.3 minutes passed on. The airlines themselves
 reported 21.2. Correlation between the two, computed independently:
 **0.784**.
 
-The dose-response is monotonic. Among turns receiving an aircraft 30-60
-minutes late, those with under 15 minutes of slack passed on
-27.3 minutes and departed late 96% of the
-time; those with 90+ minutes passed on 1.1 minutes and
-departed late 15% of the time.
+The dose-response is strong but **not monotonic**, and the exception is worth
+stating. Among turns receiving an aircraft 30-60 minutes late, those with under
+15 minutes of slack passed on 27.3 minutes and departed
+late 96% of the time; those with 90+ minutes passed on
+1.1 minutes and departed late 15%.
+
+But the 60-89 minute buckets sit above the 45-59 bucket rather than below it.
+That is a composition effect, not a break in the mechanism: turns scheduled
+100-120 minutes are disproportionately Southwest (25% of the 60-74
+bucket against 14% of the 45-59 bucket) and disproportionately already
+mid-cascade (58% against 32%). Restricting to turns not
+already deep in a cascade narrows the bump but does not remove it, so it is
+reported rather than controlled away.
 
 ## Finding 3 — the same delay costs 13x more in the morning
 

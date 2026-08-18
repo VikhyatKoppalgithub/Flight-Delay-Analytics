@@ -1,0 +1,747 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delay Propagation</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:           #f9f9f7;
+    --surface:        #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --muted:          #898781;
+    --grid:           #e1e0d9;
+    --axis:           #c3c2b7;
+    --border:         rgba(11, 11, 11, 0.10);
+    --root:           #2a78d6;   /* categorical slot 1 — delay that originated here */
+    --inherited:      #eb6834;   /* categorical slot 2 — delay that arrived from upstream */
+    --root-wash:      rgba(42, 120, 214, 0.10);
+    --inherited-wash: rgba(235, 104, 52, 0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page:           #0d0d0d;
+      --surface:        #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --muted:          #898781;
+      --grid:           #2c2c2a;
+      --axis:           #383835;
+      --border:         rgba(255, 255, 255, 0.10);
+      --root:           #3987e5;
+      --inherited:      #d95926;
+      --root-wash:      rgba(57, 135, 229, 0.14);
+      --inherited-wash: rgba(217, 89, 38, 0.14);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page:           #0d0d0d;
+    --surface:        #1a1a19;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted:          #898781;
+    --grid:           #2c2c2a;
+    --axis:           #383835;
+    --border:         rgba(255, 255, 255, 0.10);
+    --root:           #3987e5;
+    --inherited:      #d95926;
+    --root-wash:      rgba(57, 135, 229, 0.14);
+    --inherited-wash: rgba(217, 89, 38, 0.14);
+  }
+
+  :root {
+    --mono: ui-monospace, SFMono-Regular, Menlo, "Cascadia Mono", "Roboto Mono", monospace;
+  }
+
+  body {
+    background: var(--page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.55;
+    margin: 0;
+    padding: 0 20px 80px;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--border); }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11.5px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 16px;
+  }
+  h1 { font-size: clamp(30px, 4.6vw, 46px); line-height: 1.14; margin: 0 0 18px; font-weight: 650; letter-spacing: -0.02em; }
+  h1 em { font-style: normal; color: var(--inherited); }
+  .lede { font-size: 17px; color: var(--text-secondary); max-width: 68ch; margin: 0; }
+
+  section { padding: 44px 0 8px; }
+  h2 { font-size: 22px; font-weight: 640; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .section-note { color: var(--text-secondary); max-width: 74ch; margin: 0 0 24px; font-size: 15px; }
+  .finding-tag {
+    display: inline-block; font-family: var(--mono);
+    font-size: 11px; font-weight: 500; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 7px;
+  }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 28px 0 8px; }
+  .tile { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .tile .value { font-size: 32px; font-weight: 640; letter-spacing: -0.02em; line-height: 1.1; }
+  .tile .label { font-size: 13px; color: var(--text-secondary); margin-top: 5px; }
+  .tile .sub { font-family: var(--mono); font-size: 11.5px; color: var(--muted); margin-top: 4px; letter-spacing: -0.01em; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 22px 24px 18px; margin-bottom: 18px; }
+  .card-title { font-size: 15px; font-weight: 620; margin: 0 0 2px; }
+  .card-sub { font-size: 13px; color: var(--text-secondary); margin: 0 0 16px; }
+  .card-note {
+    font-size: 13px; color: var(--text-secondary); margin: 14px 0 0; max-width: 76ch;
+    padding-left: 14px; border-left: 1px solid var(--border);
+  }
+  .chart-scroll { overflow-x: auto; }
+  svg { display: block; max-width: 100%; height: auto; }
+  svg text { font-family: inherit; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 18px; margin: 2px 0 14px; font-size: 13px; color: var(--text-secondary); }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .swatch { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+
+  details { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 10px; }
+  summary { cursor: pointer; font-size: 12.5px; color: var(--text-secondary); font-weight: 550; }
+  summary:hover { color: var(--text-primary); }
+  summary:focus-visible, a:focus-visible {
+    outline: 2px solid var(--root); outline-offset: 3px; border-radius: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tooltip { transition: none; }
+  }
+  table { border-collapse: collapse; width: 100%; margin-top: 12px; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: right; padding: 6px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .table-wrap { overflow-x: auto; }
+
+  .tooltip {
+    position: fixed; pointer-events: none; opacity: 0; transition: opacity .09s;
+    background: var(--surface); color: var(--text-primary); border: 1px solid var(--border);
+    border-radius: 8px; padding: 9px 12px; font-size: 12.5px; line-height: 1.5;
+    box-shadow: 0 6px 22px rgba(0,0,0,.14); z-index: 50; max-width: 260px;
+  }
+  .tooltip b { font-weight: 620; }
+  .tooltip .tt-row { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+
+  .callout {
+    margin: 24px 0 4px; padding: 16px 0 0; max-width: 78ch;
+    border-top: 2px solid var(--inherited);
+    font-size: 15px; color: var(--text-primary);
+  }
+  .callout.blue { border-top-color: var(--root); }
+  .callout::before {
+    content: attr(data-label); display: block; font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 8px;
+  }
+
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+  footer a { color: var(--text-secondary); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">US Domestic Flights · 2021–2025 · Bureau of Transportation Statistics</div>
+  <h1>38.8% of flight delay is not caused by<br>the flight that reports it. It's <em>inherited</em>.</h1>
+  <p class="lede">
+    Chaining 33.7 million flights into the rotations each aircraft actually flew separates delay
+    that <b>originated</b> with a flight from delay that merely <b>arrived</b> on it — and the
+    distinction changes where it's worth intervening.
+  </p>
+</header>
+
+<section>
+  <div class="tiles" id="tiles"></div>
+</section>
+
+<section>
+  <div class="finding-tag">Finding 1</div>
+  <h2>Where the delay minutes actually come from</h2>
+  <p class="section-note">
+    Of 470.7 million delay minutes in five years, more than a third arrived on an aircraft that
+    was already late. Inherited delay has no cause of its own — it was created somewhere else and
+    carried here by an airframe, which means it cannot be fixed at the flight that reports it.
+  </p>
+  <div class="card">
+    <p class="card-title">Delay minutes by origin of the delay</p>
+    <p class="card-sub">Millions of minutes, 2021–2025</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--root)"></i> Originated with this flight</span>
+      <span><i class="swatch" style="background:var(--inherited)"></i> Inherited from an earlier leg</span>
+    </div>
+    <div id="split"></div>
+    <details><summary>Table view</summary><div class="table-wrap" id="split-table"></div></details>
+  </div>
+</section>
+
+<section>
+  <div class="finding-tag">Finding 2</div>
+  <h2>The mechanism is slack — and the model can be checked</h2>
+  <p class="section-note">
+    Delay passes through a turn only to the extent the ground time can't absorb it:
+    <code>predicted = max(0, inbound_delay − slack)</code>. BTS separately requires airlines to
+    report late-aircraft minutes, so the feed already holds the answer, arrived at a different way.
+  </p>
+  <div class="card">
+    <p class="card-title">Turns receiving an aircraft 30–60 minutes late</p>
+    <p class="card-sub">More scheduled slack, less delay handed onward. The 60–89 minute bars break the pattern — see the note below.</p>
+    <div id="slack"></div>
+    <p class="card-note">
+      The relationship is strong but <b>not monotonic</b>. The 60–89 minute buckets sit above the
+      45–59 bucket, because turns scheduled 100–120 minutes are disproportionately Southwest (25%
+      of that bucket against 14% of the one below) and disproportionately already mid-cascade (58%
+      against 32%). Restricting to turns not already deep in a cascade narrows the bump without
+      removing it, so it is reported rather than controlled away.
+    </p>
+    <details><summary>Table view</summary><div class="table-wrap" id="slack-table"></div></details>
+  </div>
+  <div class="callout blue" id="validation" data-label="Model validation"></div>
+</section>
+
+<section>
+  <div class="finding-tag">Findings 3 &amp; 4</div>
+  <h2>A morning delay costs 13× more — but buffering the morning doesn't work</h2>
+  <p class="section-note">
+    These two charts share an x-axis and disagree completely, which is the whole finding. Damage
+    from a root delay peaks in the morning. The value of adding schedule buffer peaks in the
+    evening. They are not the same lever, and the hours where it would help most are the hours
+    where it does least.
+  </p>
+  <div class="card">
+    <p class="card-title">Damage: further flights delayed by one root delay</p>
+    <p class="card-sub">Average downstream legs broken, by the root delay's scheduled departure hour</p>
+    <div id="damage"></div>
+    <p class="card-title" style="margin-top:26px">Repair: delay minutes saved per buffer minute spent</p>
+    <p class="card-sub">Simulating +10 minutes of slack on every turn, then re-running the propagation model</p>
+    <div id="buffer"></div>
+    <details><summary>Table view</summary><div class="table-wrap" id="hour-table"></div></details>
+  </div>
+  <div class="callout" id="counterpoint" data-label="Why the obvious fix fails"></div>
+</section>
+
+<section>
+  <h2>How far a single delay travels</h2>
+  <p class="section-note">
+    Most cascades stop after one leg. The tail is what costs money: a chain that reaches four legs
+    carries roughly four times the downstream minutes of one that stops at the first.
+  </p>
+  <div class="card">
+    <p class="card-title">Cascades by length</p>
+    <p class="card-sub">Consecutive legs on the same airframe, each inheriting delay from the last</p>
+    <div id="cascade"></div>
+    <details><summary>Table view</summary><div class="table-wrap" id="cascade-table"></div></details>
+  </div>
+</section>
+
+<section>
+  <div class="finding-tag">Finding 6</div>
+  <h2>The carrier table, and what sits underneath it</h2>
+  <p class="section-note">
+    Inherited share explains the ranking better than the ranking describes itself. It is not a
+    quality gap — it's a business model. High aircraft utilisation is how the low-cost fare exists;
+    the cascade is what it costs.
+  </p>
+  <div class="card">
+    <p class="card-title">On-time arrival vs. share of delay inherited</p>
+    <p class="card-sub">Carriers with 200,000+ flights. Cancelled and diverted flights are in the denominator.</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--root)"></i> On-time arrival (A14)</span>
+      <span><i class="swatch" style="background:var(--inherited)"></i> Delay inherited from earlier legs</span>
+    </div>
+    <div id="carriers"></div>
+    <details><summary>Table view</summary><div class="table-wrap" id="carriers-table"></div></details>
+  </div>
+</section>
+
+<section>
+  <div class="finding-tag">Finding 7</div>
+  <h2>December 2022, with a control group</h2>
+  <p class="section-note">
+    A winter storm hit on 21–23 December. Every carrier flew into the same weather, which makes
+    what followed a natural experiment — the storm is the treatment and the other carriers are
+    the control.
+  </p>
+  <div class="card">
+    <p class="card-title">Share of scheduled flights cancelled</p>
+    <p class="card-sub">Daily, 18–31 December 2022</p>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--inherited)"></i> Southwest</span>
+      <span><i class="swatch" style="background:var(--root)"></i> All other carriers</span>
+    </div>
+    <div id="dec"></div>
+    <details><summary>Table view</summary><div class="table-wrap" id="dec-table"></div></details>
+  </div>
+  <div class="callout" id="dec-note" data-label="What the control group shows"></div>
+</section>
+
+<section>
+  <h2>Where to intervene first</h2>
+  <p class="section-note">
+    The propagation model ranked 1,241 carrier–station combinations by the delay a targeted
+    buffer would absorb. Read rank 5 against rank 1: Delta at Atlanta runs more than twice
+    Southwest's Denver turn volume and would save a third as many minutes, because it already
+    schedules 40 minutes of median slack against Southwest's 13. Atlanta doesn't have a turn
+    problem. Denver does.
+  </p>
+  <div class="card">
+    <p class="card-title">Top 10 stations by delay minutes a +10 minute turn buffer would absorb</p>
+    <p class="card-sub">Five-year totals</p>
+    <div id="stations"></div>
+    <details><summary>Table view</summary><div class="table-wrap" id="stations-table"></div></details>
+  </div>
+</section>
+
+<section>
+  <h2>The five-year trend</h2>
+  <div class="card">
+    <p class="card-title">On-time arrival rate by month</p>
+    <p class="card-sub">All reporting carriers, cancelled and diverted flights included in the denominator</p>
+    <div id="trend"></div>
+    <details><summary>Table view</summary><div class="table-wrap" id="trend-table"></div></details>
+  </div>
+</section>
+
+<footer>
+  <p>
+    Source: US DOT / Bureau of Transportation Statistics, Reporting Carrier On-Time Performance,
+    January 2021 – December 2025 (33,653,101 flights). Airport timezones and coordinates from
+    OpenFlights. Cost rate of $98.41 per aircraft block minute from
+    <a href="https://www.airlines.org/dataset/u-s-passenger-carrier-delay-costs/">Airlines for America</a>, 2025.
+  </p>
+  <p>
+    Every figure on this page is generated from the warehouse by
+    <code>analysis/build_dashboard_data.py</code> — none are typed by hand. Dollar figures cover
+    direct operating cost only and are a lower bound: BTS is a flight-level feed with no passengers
+    in it, so misconnects, rebooking and compensation are not counted.
+  </p>
+</footer>
+</div>
+
+<div class="tooltip" id="tt"></div>
+<script id="payload" type="application/json">{"meta":{"flights":33653101,"carriers":17,"airports":381,"airframes":7090,"from":"2021-01-01","to":"2025-12-31","a14":77.97,"completion":98.05,"cancel":1.7,"mean_delay":6.6,"p90_delay":41.0,"root_m":288.2,"inherited_m":182.5,"inherited_pct":38.8,"inherited_cost_bn":17.96,"corr":0.784,"model_pred":23.3,"model_reported":21.2,"model_turns":5375141,"block_minute_usd":98.41},"cascade_by_hour":[{"hour":5,"roots":62319,"legs":0.69,"minutes":36.9,"amplification":1.732},{"hour":6,"roots":208461,"legs":0.669,"minutes":36.4,"amplification":1.73},{"hour":7,"roots":237539,"legs":0.71,"minutes":38.2,"amplification":1.875},{"hour":8,"roots":250858,"legs":0.754,"minutes":39.4,"amplification":2.142},{"hour":9,"roots":185745,"legs":0.724,"minutes":37.3,"amplification":2.202},{"hour":10,"roots":217529,"legs":0.702,"minutes":36.7,"amplification":2.364},{"hour":11,"roots":197217,"legs":0.704,"minutes":36.8,"amplification":2.438},{"hour":12,"roots":205406,"legs":0.647,"minutes":34.1,"amplification":2.385},{"hour":13,"roots":210195,"legs":0.623,"minutes":33.2,"amplification":2.404},{"hour":14,"roots":235359,"legs":0.568,"minutes":31.0,"amplification":2.264},{"hour":15,"roots":228399,"legs":0.51,"minutes":28.1,"amplification":2.075},{"hour":16,"roots":260389,"legs":0.422,"minutes":23.2,"amplification":1.937},{"hour":17,"roots":256446,"legs":0.31,"minutes":17.2,"amplification":1.701},{"hour":18,"roots":279722,"legs":0.204,"minutes":11.2,"amplification":1.495},{"hour":19,"roots":212246,"legs":0.138,"minutes":7.9,"amplification":1.336},{"hour":20,"roots":212467,"legs":0.08,"minutes":5.2,"amplification":1.16},{"hour":21,"roots":145960,"legs":0.059,"minutes":4.9,"amplification":1.113},{"hour":22,"roots":100468,"legs":0.086,"minutes":7.3,"amplification":1.178}],"buffer_by_hour":[{"hour":5,"turns":696141,"efficiency":0.0047},{"hour":6,"turns":2074655,"efficiency":0.0045},{"hour":7,"turns":1839326,"efficiency":0.0142},{"hour":8,"turns":1761735,"efficiency":0.0314},{"hour":9,"turns":1370573,"efficiency":0.0553},{"hour":10,"turns":1839807,"efficiency":0.0759},{"hour":11,"turns":1709544,"efficiency":0.0884},{"hour":12,"turns":1756255,"efficiency":0.1016},{"hour":13,"turns":1655583,"efficiency":0.1093},{"hour":14,"turns":1737892,"efficiency":0.1169},{"hour":15,"turns":1572147,"efficiency":0.1292},{"hour":16,"turns":1740684,"efficiency":0.1412},{"hour":17,"turns":1624919,"efficiency":0.1577},{"hour":18,"turns":1840869,"efficiency":0.1608},{"hour":19,"turns":1419437,"efficiency":0.1851},{"hour":20,"turns":1414790,"efficiency":0.1739},{"hour":21,"turns":963260,"efficiency":0.1664},{"hour":22,"turns":722889,"efficiency":0.1591}],"slack_response":[{"slack_floor":0.0,"turns":514448,"avg_inherited":27.3,"pct_late":96.2},{"slack_floor":15.0,"turns":251461,"avg_inherited":18.8,"pct_late":90.3},{"slack_floor":30.0,"turns":119097,"avg_inherited":10.9,"pct_late":66.6},{"slack_floor":45.0,"turns":74091,"avg_inherited":8.4,"pct_late":48.7},{"slack_floor":60.0,"turns":103613,"avg_inherited":19.0,"pct_late":74.5},{"slack_floor":75.0,"turns":70082,"avg_inherited":13.2,"pct_late":68.4},{"slack_floor":90.0,"turns":622267,"avg_inherited":1.1,"pct_late":14.9}],"cascade_length":[{"length":0,"cascades":2612546,"avg_minutes":0.0},{"length":1,"cascades":721603,"avg_minutes":51.8},{"length":2,"cascades":273340,"avg_minutes":107.5},{"length":3,"cascades":102291,"avg_minutes":169.8},{"length":4,"cascades":36304,"avg_minutes":229.1},{"length":5,"cascades":11554,"avg_minutes":295.1},{"length":6,"cascades":2722,"avg_minutes":349.2},{"length":7,"cascades":718,"avg_minutes":425.0},{"length":8,"cascades":174,"avg_minutes":507.1}],"carriers":[{"name":"Endeavor Air","type":"Regional","flights":900257.0,"a14":84.77,"inherited_pct":34.5},{"name":"Horizon Air","type":"Regional","flights":200419.0,"a14":83.72,"inherited_pct":40.1},{"name":"Delta Air Lines","type":"Network","flights":4661662.0,"a14":82.49,"inherited_pct":28.4},{"name":"Hawaiian Airlines","type":"Network","flights":373988.0,"a14":80.94,"inherited_pct":36.1},{"name":"Republic Airways","type":"Regional","flights":1592363.0,"a14":80.88,"inherited_pct":34.5},{"name":"SkyWest Airlines","type":"Regional","flights":3746635.0,"a14":80.75,"inherited_pct":21.7},{"name":"Envoy Air","type":"Regional","flights":1310534.0,"a14":79.57,"inherited_pct":41.2},{"name":"United Airlines","type":"Network","flights":3361244.0,"a14":78.7,"inherited_pct":39.3},{"name":"Alaska Airlines","type":"Network","flights":1154090.0,"a14":77.83,"inherited_pct":37.3},{"name":"PSA Airlines","type":"Regional","flights":1107911.0,"a14":77.73,"inherited_pct":47.9},{"name":"Mesa Airlines","type":"Regional","flights":274588.0,"a14":77.26,"inherited_pct":35.7},{"name":"Southwest Airlines","type":"Low-cost","flights":6621558.0,"a14":76.6,"inherited_pct":50.4},{"name":"American Airlines","type":"Network","flights":4509034.0,"a14":75.04,"inherited_pct":45.2},{"name":"Spirit Airlines","type":"Ultra low-cost","flights":1143250.0,"a14":73.87,"inherited_pct":28.4},{"name":"Allegiant Air","type":"Ultra low-cost","flights":596406.0,"a14":71.33,"inherited_pct":40.7},{"name":"Frontier Airlines","type":"Ultra low-cost","flights":876855.0,"a14":69.77,"inherited_pct":48.6},{"name":"JetBlue Airways","type":"Low-cost","flights":1222307.0,"a14":69.57,"inherited_pct":38.0}],"stations":[{"carrier":"Southwest Airlines","station":"DEN","city":"Denver","turns":386648,"slack":13.0,"tight":59.3,"saved":663315.0,"cost_musd":65.3},{"carrier":"American Airlines","station":"DFW","city":"Dallas-Fort Worth","turns":614797,"slack":28.0,"tight":25.8,"saved":633898.0,"cost_musd":62.4},{"carrier":"Southwest Airlines","station":"LAS","city":"Las Vegas","turns":344892,"slack":11.0,"tight":55.5,"saved":581669.0,"cost_musd":57.2},{"carrier":"Southwest Airlines","station":"DAL","city":"Dallas","turns":282961,"slack":10.0,"tight":59.1,"saved":460450.0,"cost_musd":45.3},{"carrier":"Delta Air Lines","station":"ATL","city":"Atlanta","turns":929353,"slack":40.0,"tight":16.2,"saved":421534.0,"cost_musd":41.5},{"carrier":"Southwest Airlines","station":"MDW","city":"Chicago","turns":303274,"slack":14.0,"tight":55.2,"saved":416328.0,"cost_musd":41.0},{"carrier":"Southwest Airlines","station":"PHX","city":"Phoenix","turns":262702,"slack":10.0,"tight":52.6,"saved":392931.0,"cost_musd":38.7},{"carrier":"American Airlines","station":"CLT","city":"Charlotte","turns":478123,"slack":32.0,"tight":14.7,"saved":389110.0,"cost_musd":38.3},{"carrier":"Southwest Airlines","station":"BWI","city":"Baltimore","turns":290330,"slack":13.0,"tight":53.8,"saved":387835.0,"cost_musd":38.2},{"carrier":"Southwest Airlines","station":"BNA","city":"Nashville","turns":209991,"slack":12.0,"tight":57.0,"saved":307865.0,"cost_musd":30.3}],"dec2022":[{"date":"2022-12-18","southwest":0.1,"others":0.8},{"date":"2022-12-19","southwest":0.7,"others":1.0},{"date":"2022-12-20","southwest":0.3,"others":2.2},{"date":"2022-12-21","southwest":4.5,"others":2.4},{"date":"2022-12-22","southwest":26.2,"others":9.6},{"date":"2022-12-23","southwest":36.9,"others":25.2},{"date":"2022-12-24","southwest":43.7,"others":15.7},{"date":"2022-12-25","southwest":51.6,"others":11.4},{"date":"2022-12-26","southwest":77.5,"others":6.7},{"date":"2022-12-27","southwest":69.7,"others":2.9},{"date":"2022-12-28","southwest":64.4,"others":2.4},{"date":"2022-12-29","southwest":61.2,"others":0.8},{"date":"2022-12-30","southwest":1.1,"others":0.6},{"date":"2022-12-31","southwest":1.0,"others":1.4}],"monthly":[{"month":"2021-01-01","a14":89.16,"inherited_pct":23.2},{"month":"2021-02-01","a14":80.55,"inherited_pct":22.4},{"month":"2021-03-01","a14":88.49,"inherited_pct":28.2},{"month":"2021-04-01","a14":88.71,"inherited_pct":29.7},{"month":"2021-05-01","a14":86.05,"inherited_pct":33.1},{"month":"2021-06-01","a14":74.69,"inherited_pct":39.1},{"month":"2021-07-01","a14":73.51,"inherited_pct":39.9},{"month":"2021-08-01","a14":74.69,"inherited_pct":37.1},{"month":"2021-09-01","a14":84.94,"inherited_pct":34.0},{"month":"2021-10-01","a14":80.1,"inherited_pct":36.9},{"month":"2021-11-01","a14":84.33,"inherited_pct":36.2},{"month":"2021-12-01","a14":75.75,"inherited_pct":35.7},{"month":"2022-01-01","a14":75.57,"inherited_pct":33.4},{"month":"2022-02-01","a14":76.76,"inherited_pct":35.1},{"month":"2022-03-01","a14":76.99,"inherited_pct":38.6},{"month":"2022-04-01","a14":75.68,"inherited_pct":38.9},{"month":"2022-05-01","a14":77.13,"inherited_pct":36.5},{"month":"2022-06-01","a14":73.3,"inherited_pct":37.2},{"month":"2022-07-01","a14":74.7,"inherited_pct":40.0},{"month":"2022-08-01","a14":75.47,"inherited_pct":37.9},{"month":"2022-09-01","a14":81.95,"inherited_pct":36.9},{"month":"2022-10-01","a14":83.25,"inherited_pct":37.3},{"month":"2022-11-01","a14":79.96,"inherited_pct":37.3},{"month":"2022-12-01","a14":68.71,"inherited_pct":40.0},{"month":"2023-01-01","a14":76.18,"inherited_pct":37.1},{"month":"2023-02-01","a14":79.52,"inherited_pct":37.2},{"month":"2023-03-01","a14":75.04,"inherited_pct":39.5},{"month":"2023-04-01","a14":75.59,"inherited_pct":40.0},{"month":"2023-05-01","a14":81.26,"inherited_pct":40.6},{"month":"2023-06-01","a14":71.12,"inherited_pct":41.5},{"month":"2023-07-01","a14":69.45,"inherited_pct":42.6},{"month":"2023-08-01","a14":76.9,"inherited_pct":42.2},{"month":"2023-09-01","a14":80.13,"inherited_pct":38.3},{"month":"2023-10-01","a14":83.98,"inherited_pct":40.5},{"month":"2023-11-01","a14":86.22,"inherited_pct":37.3},{"month":"2023-12-01","a14":83.77,"inherited_pct":38.8},{"month":"2024-01-01","a14":72.9,"inherited_pct":39.0},{"month":"2024-02-01","a14":83.44,"inherited_pct":36.9},{"month":"2024-03-01","a14":78.3,"inherited_pct":42.1},{"month":"2024-04-01","a14":80.21,"inherited_pct":41.0},{"month":"2024-05-01","a14":72.32,"inherited_pct":43.0},{"month":"2024-06-01","a14":73.85,"inherited_pct":41.5},{"month":"2024-07-01","a14":68.08,"inherited_pct":42.7},{"month":"2024-08-01","a14":74.71,"inherited_pct":39.8},{"month":"2024-09-01","a14":83.86,"inherited_pct":38.4},{"month":"2024-10-01","a14":85.81,"inherited_pct":37.4},{"month":"2024-11-01","a14":84.81,"inherited_pct":35.6},{"month":"2024-12-01","a14":78.08,"inherited_pct":40.2},{"month":"2025-01-01","a14":78.58,"inherited_pct":34.7},{"month":"2025-02-01","a14":77.91,"inherited_pct":36.9},{"month":"2025-03-01","a14":79.26,"inherited_pct":39.2},{"month":"2025-04-01","a14":79.48,"inherited_pct":39.4},{"month":"2025-05-01","a14":75.38,"inherited_pct":37.8},{"month":"2025-06-01","a14":70.32,"inherited_pct":40.6},{"month":"2025-07-01","a14":69.02,"inherited_pct":40.8},{"month":"2025-08-01","a14":76.33,"inherited_pct":40.5},{"month":"2025-09-01","a14":82.76,"inherited_pct":37.4},{"month":"2025-10-01","a14":79.12,"inherited_pct":39.7},{"month":"2025-11-01","a14":77.31,"inherited_pct":38.3},{"month":"2025-12-01","a14":71.92,"inherited_pct":41.1}]}</script>
+<script>
+(function () {
+  "use strict";
+  const D = JSON.parse(document.getElementById("payload").textContent);
+  const tt = document.getElementById("tt");
+  const NS = "http://www.w3.org/2000/svg";
+
+  // Return the CSS variable reference, not its resolved value. SVG accepts
+  // var() in fill and stroke, so every mark follows the theme tokens live --
+  // a viewer toggling light/dark after load repaints the charts with the page
+  // instead of stranding them in the palette that happened to be active at
+  // render time.
+  const css = (n) => `var(${n})`;
+  const fmt = (n, d = 0) => n.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const hour = (h) => String(h).padStart(2, "0") + ":00";
+
+  function el(tag, attrs, parent) {
+    const n = document.createElementNS(NS, tag);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(n);
+    return n;
+  }
+
+  function svg(mount, w, h) {
+    mount.innerHTML = "";
+    const wrap = document.createElement("div");
+    wrap.className = "chart-scroll";
+    const s = el("svg", { viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: "img" });
+    s.style.minWidth = w < 620 ? w + "px" : "560px";
+    s.style.width = "100%";
+    wrap.appendChild(s);
+    mount.appendChild(wrap);
+    return s;
+  }
+
+  // Tooltips enhance; every value is also in the table view beneath each chart.
+  function bindTip(node, html) {
+    node.addEventListener("pointerenter", (e) => {
+      tt.innerHTML = html;
+      tt.style.opacity = 1;
+      move(e);
+    });
+    node.addEventListener("pointermove", move);
+    node.addEventListener("pointerleave", () => (tt.style.opacity = 0));
+    function move(e) {
+      const pad = 14;
+      const r = tt.getBoundingClientRect();
+      let x = e.clientX + pad, y = e.clientY + pad;
+      if (x + r.width > innerWidth - 8) x = e.clientX - r.width - pad;
+      if (y + r.height > innerHeight - 8) y = e.clientY - r.height - pad;
+      tt.style.left = x + "px";
+      tt.style.top = y + "px";
+    }
+  }
+
+  const dot = (c) => `<i class="swatch" style="background:${c}"></i>`;
+
+  function axes(s, box, yTicks, yFmt, opts = {}) {
+    const { x0, y0, x1, y1 } = box;
+    yTicks.forEach((t) => {
+      const y = t.pos;
+      el("line", { x1: x0, x2: x1, y1: y, y2: y, stroke: css("--grid"), "stroke-width": 1 }, s);
+      const lab = el("text", {
+        x: x0 - 10, y: y + 4, "text-anchor": "end", fill: css("--muted"), "font-size": 11.5,
+        "font-variant-numeric": "tabular-nums",
+      }, s);
+      lab.textContent = yFmt(t.value);
+    });
+    el("line", { x1: x0, x2: x1, y1: y1, y2: y1, stroke: css("--axis"), "stroke-width": 1 }, s);
+    if (opts.yLabel) {
+      const t = el("text", {
+        x: x0 - 46, y: (y0 + y1) / 2, fill: css("--muted"), "font-size": 11.5,
+        "text-anchor": "middle", transform: `rotate(-90 ${x0 - 46} ${(y0 + y1) / 2})`,
+      }, s);
+      t.textContent = opts.yLabel;
+    }
+  }
+
+  function ticksFor(max, count = 4) {
+    const step = max / count;
+    const out = [];
+    for (let i = 0; i <= count; i++) out.push(i * step);
+    return out;
+  }
+
+  // ---------------------------------------------------------------- stat tiles
+  const m = D.meta;
+  document.getElementById("tiles").innerHTML = [
+    [fmt(m.flights / 1e6, 1) + "M", "flights analysed", `${m.from} to ${m.to}`],
+    [m.inherited_pct + "%", "of delay was inherited", `${fmt(m.inherited_m, 1)}M of ${fmt(m.root_m + m.inherited_m, 1)}M minutes`],
+    ["$" + m.inherited_cost_bn + "B", "direct cost of inherited delay", "at $" + m.block_minute_usd + " per block minute"],
+    [m.corr.toFixed(3), "model vs. airline attribution", "correlation across " + fmt(m.model_turns / 1e6, 1) + "M turns"],
+  ].map(([v, l, s]) => `<div class="tile"><div class="value">${v}</div><div class="label">${l}</div><div class="sub">${s}</div></div>`).join("");
+
+  document.getElementById("validation").innerHTML =
+    `Across <b>${fmt(m.model_turns)}</b> turns receiving an aircraft more than 15 minutes late, the model
+     predicts a mean of <b>${m.model_pred} minutes</b> passed onward. The airlines themselves reported
+     <b>${m.model_reported}</b>. The two are computed from entirely separate inputs, and they agree at
+     <b>r = ${m.corr}</b>.`;
+
+  // ------------------------------------------------------- Finding 1: the split
+  (function () {
+    const w = 900, h = 132, x0 = 8, x1 = w - 8, barY = 34, barH = 44;
+    const s = svg(document.getElementById("split"), w, h);
+    const total = m.root_m + m.inherited_m;
+    const gap = 2;
+    const rootW = ((x1 - x0) * m.root_m) / total - gap;
+    const parts = [
+      { x: x0, w: rootW, c: css("--root"), label: "Originated with this flight", v: m.root_m, r: "left" },
+      { x: x0 + rootW + gap, w: (x1 - x0) * (m.inherited_m / total) - gap, c: css("--inherited"), label: "Inherited from an earlier leg", v: m.inherited_m, r: "right" },
+    ];
+    parts.forEach((p) => {
+      const path = el("path", {
+        d: p.r === "left"
+          ? `M${p.x + 4},${barY} h${p.w - 4} v${barH} h${-(p.w - 4)} a4,4 0 0 1 -4,-4 v${-(barH - 8)} a4,4 0 0 1 4,-4 z`
+          : `M${p.x},${barY} h${p.w - 4} a4,4 0 0 1 4,4 v${barH - 8} a4,4 0 0 1 -4,4 h${-(p.w - 4)} z`,
+        fill: p.c,
+      }, s);
+      bindTip(path, `<div class="tt-row">${dot(p.c)}<b>${p.label}</b></div>
+        ${fmt(p.v, 1)}M minutes · ${fmt((100 * p.v) / total, 1)}% of all delay<br>
+        $${fmt((p.v * m.block_minute_usd) / 1000, 2)}B direct cost`);
+      const t = el("text", { x: p.x + 14, y: barY + 28, fill: "#fff", "font-size": 15, "font-weight": 620 }, s);
+      t.textContent = fmt(p.v, 1) + "M min";
+      const pct = el("text", { x: p.x + 14, y: barY - 10, fill: css("--text-secondary"), "font-size": 12.5 }, s);
+      pct.textContent = fmt((100 * p.v) / total, 1) + "%";
+    });
+    const cap = el("text", { x: x0, y: h - 16, fill: css("--muted"), "font-size": 12 }, s);
+    cap.textContent = "470.7M delay minutes total, January 2021 – December 2025";
+  })();
+
+  table("split-table", ["Origin of delay", "Minutes (M)", "Share", "Direct cost"], [
+    ["Originated with this flight", fmt(m.root_m, 1), fmt((100 * m.root_m) / (m.root_m + m.inherited_m), 1) + "%", "$" + fmt((m.root_m * m.block_minute_usd) / 1000, 2) + "B"],
+    ["Inherited from an earlier leg", fmt(m.inherited_m, 1), m.inherited_pct + "%", "$" + m.inherited_cost_bn + "B"],
+  ]);
+
+  // -------------------------------------------- Finding 2: slack dose-response
+  vBars({
+    mount: "slack", data: D.slack_response, xKey: "slack_floor", yKey: "avg_inherited",
+    color: css("--inherited"), yFmt: (v) => fmt(v, 0), yLabel: "Minutes passed onward",
+    xFmt: (v) => (v >= 90 ? "90+" : v + "–" + (v + 14)),
+    xAxisTitle: "Scheduled turn slack (minutes)",
+    tip: (d) => `<div class="tt-row">${dot(css("--inherited"))}<b>${d.slack_floor >= 90 ? "90+" : d.slack_floor + "–" + (d.slack_floor + 14)} min of slack</b></div>
+      ${fmt(d.avg_inherited, 1)} min passed onward<br>${fmt(d.pct_late, 0)}% departed 15+ min late<br>
+      <span style="color:${css("--muted")}">${fmt(d.turns)} turns</span>`,
+    label: (d, i, arr) => (i === 0 || i === arr.length - 1 ? fmt(d.avg_inherited, 1) : null),
+  });
+  table("slack-table", ["Turn slack", "Turns", "Avg minutes passed on", "Departed 15+ min late"],
+    D.slack_response.map((d) => [
+      (d.slack_floor >= 90 ? "90+" : d.slack_floor + "–" + (d.slack_floor + 14)) + " min",
+      fmt(d.turns), fmt(d.avg_inherited, 1), fmt(d.pct_late, 1) + "%",
+    ]));
+
+  // ------------------------------------------ Findings 3 & 4: the two curves
+  const dmg = D.cascade_by_hour, buf = D.buffer_by_hour;
+  lineChart({
+    mount: "damage", data: dmg, xKey: "hour", yKey: "legs", color: css("--inherited"),
+    yFmt: (v) => v.toFixed(2), yLabel: "Downstream legs delayed", xFmt: hour,
+    xAxisTitle: "Scheduled departure hour of the root delay",
+    peak: "max",
+    tip: (d) => `<div class="tt-row">${dot(css("--inherited"))}<b>${hour(d.hour)} departure</b></div>
+      ${d.legs.toFixed(2)} further flights delayed<br>${fmt(d.minutes, 1)} downstream minutes<br>
+      ${d.amplification.toFixed(2)}× amplification<br>
+      <span style="color:${css("--muted")}">${fmt(d.roots)} root delays</span>`,
+  });
+  lineChart({
+    mount: "buffer", data: buf, xKey: "hour", yKey: "efficiency", color: css("--root"),
+    yFmt: (v) => v.toFixed(2), yLabel: "Minutes saved per buffer minute", xFmt: hour,
+    xAxisTitle: "Scheduled departure hour of the turn",
+    peak: "max", forceMax: 1,
+    threshold: { value: 1, label: "Break-even — buffer pays for itself" },
+    tip: (d) => `<div class="tt-row">${dot(css("--root"))}<b>${hour(d.hour)} turn</b></div>
+      ${d.efficiency.toFixed(3)} min saved per buffer min<br>
+      <span style="color:${css("--muted")}">${fmt(d.turns)} turns</span>`,
+  });
+
+  const peakDmg = dmg.reduce((a, b) => (b.legs > a.legs ? b : a));
+  const troughDmg = dmg.reduce((a, b) => (b.legs < a.legs ? b : a));
+  const peakBuf = buf.reduce((a, b) => (b.efficiency > a.efficiency ? b : a));
+  const early = buf.filter((d) => d.hour <= 8);
+  const earlyAvg = early.reduce((s2, d) => s2 + d.efficiency, 0) / early.length;
+  document.getElementById("counterpoint").innerHTML =
+    `A root delay at <b>${hour(peakDmg.hour)}</b> breaks <b>${peakDmg.legs.toFixed(2)}</b> further flights;
+     the same delay at <b>${hour(troughDmg.hour)}</b> breaks <b>${troughDmg.legs.toFixed(2)}</b>. But buffer
+     efficiency before 09:00 averages just <b>${earlyAvg.toFixed(3)}</b> against a peak of
+     <b>${peakBuf.efficiency.toFixed(3)}</b> at ${hour(peakBuf.hour)} — and <b>no hour reaches break-even</b>.
+     Aircraft turning at 06:00 slept at the station. They aren't late yet, so slack has nothing to absorb.
+     The lever that works before noon is preventing the delay, not padding for it.`;
+
+  table("hour-table", ["Hour", "Root delays", "Downstream legs", "Downstream minutes", "Amplification", "Buffer efficiency"],
+    dmg.map((d) => {
+      const b = buf.find((x) => x.hour === d.hour) || {};
+      return [hour(d.hour), fmt(d.roots), d.legs.toFixed(2), fmt(d.minutes, 1),
+              d.amplification.toFixed(2) + "×", (b.efficiency ?? 0).toFixed(3)];
+    }));
+
+  // ------------------------------------------------- cascade length histogram
+  vBars({
+    mount: "cascade", data: D.cascade_length.filter((d) => d.length > 0), xKey: "length", yKey: "cascades",
+    color: css("--inherited"), yFmt: (v) => (v >= 1000 ? fmt(v / 1000, 0) + "k" : fmt(v, 0)),
+    yLabel: "Number of cascades", xFmt: (v) => v, xAxisTitle: "Legs delayed downstream of the root",
+    tip: (d) => `<div class="tt-row">${dot(css("--inherited"))}<b>${d.length} downstream leg${d.length > 1 ? "s" : ""}</b></div>
+      ${fmt(d.cascades)} cascades<br>${fmt(d.avg_minutes, 1)} avg downstream minutes`,
+    label: (d, i) => (i === 0 ? fmt(d.cascades) : null),
+  });
+  table("cascade-table", ["Downstream legs", "Cascades", "Avg downstream minutes"],
+    D.cascade_length.map((d) => [d.length, fmt(d.cascades), fmt(d.avg_minutes, 1)]));
+
+  // ------------------------------------------------------- carrier comparison
+  (function () {
+    const data = D.carriers;
+    const rowH = 30, top = 34, w = 900, labelW = 168, x0 = labelW, x1 = w - 74;
+    const h = top + data.length * rowH + 16;
+    const s = svg(document.getElementById("carriers"), w, h);
+    const scale = (v) => x0 + ((x1 - x0) * v) / 100;
+    [0, 25, 50, 75, 100].forEach((t) => {
+      el("line", { x1: scale(t), x2: scale(t), y1: top - 12, y2: h - 16, stroke: css("--grid"), "stroke-width": 1 }, s);
+      const lab = el("text", { x: scale(t), y: top - 18, fill: css("--muted"), "font-size": 11.5, "text-anchor": "middle" }, s);
+      lab.textContent = t + "%";
+    });
+    data.forEach((d, i) => {
+      const y = top + i * rowH;
+      const name = el("text", { x: x0 - 12, y: y + 15, "text-anchor": "end", fill: css("--text-primary"), "font-size": 12.5 }, s);
+      name.textContent = d.name;
+      [["a14", css("--root"), 0], ["inherited_pct", css("--inherited"), 11]].forEach(([key, color, dy]) => {
+        const bw = Math.max(scale(d[key]) - x0, 5);
+        const bar = el("rect", { x: x0, y: y + dy, width: bw, height: 9, rx: 4, fill: color }, s);
+        const hit = el("rect", { x: x0, y: y + dy - 2, width: Math.max(bw, 24), height: 13, fill: "transparent" }, s);
+        bindTip(hit, `<div class="tt-row">${dot(color)}<b>${d.name}</b></div>
+          ${key === "a14" ? "On-time arrival: <b>" + d.a14 + "%</b>" : "Inherited share: <b>" + d.inherited_pct + "%</b>"}<br>
+          <span style="color:${css("--muted")}">${d.type} · ${fmt(d.flights)} flights</span>`);
+      });
+      const v = el("text", { x: x1 + 8, y: y + 15, fill: css("--text-secondary"), "font-size": 12, "font-variant-numeric": "tabular-nums" }, s);
+      v.textContent = d.a14.toFixed(1) + "%";
+    });
+  })();
+  table("carriers-table", ["Carrier", "Type", "Flights", "On-time (A14)", "Inherited share"],
+    D.carriers.map((d) => [d.name, d.type, fmt(d.flights), d.a14.toFixed(2) + "%", d.inherited_pct.toFixed(1) + "%"]));
+
+  // ------------------------------------------------------- December 2022
+  lineChart({
+    mount: "dec",
+    series: [
+      { key: "southwest", name: "Southwest", color: css("--inherited"), data: D.dec2022 },
+      { key: "others", name: "All other carriers", color: css("--root"), data: D.dec2022 },
+    ],
+    xKey: "date", yFmt: (v) => fmt(v, 0) + "%", yLabel: "Flights cancelled",
+    xFmt: (d) => "Dec " + Number(String(d).slice(-2)), xAxisTitle: "December 2022",
+    multi: true,
+    tip: (d) => `<b>${d.date}</b><br>
+      <div class="tt-row">${dot(css("--inherited"))}Southwest <b>${fmt(d.southwest, 1)}%</b> cancelled</div>
+      <div class="tt-row">${dot(css("--root"))}All others <b>${fmt(d.others, 1)}%</b> cancelled</div>`,
+  });
+  const peakWN = D.dec2022.reduce((a, b) => (b.southwest > a.southwest ? b : a));
+  document.getElementById("dec-note").innerHTML =
+    `Both groups break together on the 22nd. By <b>${peakWN.date}</b> the control group has recovered to
+     <b>${fmt(peakWN.others, 1)}%</b> while Southwest peaks at <b>${fmt(peakWN.southwest, 1)}%</b> — and stays
+     above 60% for three more days. The weather stopped and the cancellations did not. What continued was
+     the cascade.`;
+  table("dec-table", ["Date", "Southwest cancelled", "All other carriers"],
+    D.dec2022.map((d) => [d.date, fmt(d.southwest, 1) + "%", fmt(d.others, 1) + "%"]));
+
+  // ------------------------------------------------------------ station ranking
+  (function () {
+    const data = D.stations, rowH = 34, top = 16, w = 900, labelW = 232, x1 = w - 96;
+    const h = top + data.length * rowH + 10;
+    const s = svg(document.getElementById("stations"), w, h);
+    const max = Math.max(...data.map((d) => d.saved));
+    data.forEach((d, i) => {
+      const y = top + i * rowH;
+      const name = el("text", { x: labelW - 12, y: y + 16, "text-anchor": "end", fill: css("--text-primary"), "font-size": 12.5 }, s);
+      name.textContent = `${d.carrier} · ${d.station}`;
+      const bw = Math.max(((x1 - labelW) * d.saved) / max, 5);
+      el("rect", { x: labelW, y: y + 4, width: bw, height: 15, rx: 4, fill: css("--inherited") }, s);
+      const hit = el("rect", { x: labelW, y: y, width: Math.max(bw, 24), height: 24, fill: "transparent" }, s);
+      bindTip(hit, `<div class="tt-row">${dot(css("--inherited"))}<b>${d.carrier} at ${d.station}</b> — ${d.city}</div>
+        ${fmt(d.saved)} delay minutes absorbed<br>$${d.cost_musd}M direct cost avoided<br>
+        Median slack ${d.slack} min · ${fmt(d.tight, 1)}% of turns tight<br>
+        <span style="color:${css("--muted")}">${fmt(d.turns)} turns</span>`);
+      const v = el("text", { x: x1 + 8, y: y + 16, fill: css("--text-secondary"), "font-size": 12, "font-variant-numeric": "tabular-nums" }, s);
+      v.textContent = "$" + d.cost_musd + "M";
+    });
+  })();
+  table("stations-table", ["Carrier", "Station", "Turns", "Median slack", "Tight turns", "Minutes absorbed", "Cost avoided"],
+    D.stations.map((d) => [d.carrier, `${d.station} — ${d.city}`, fmt(d.turns), d.slack + " min",
+                           fmt(d.tight, 1) + "%", fmt(d.saved), "$" + d.cost_musd + "M"]));
+
+  // ----------------------------------------------------------------- trend
+  lineChart({
+    mount: "trend", data: D.monthly, xKey: "month", yKey: "a14", color: css("--root"),
+    yFmt: (v) => fmt(v, 0) + "%", yLabel: "On-time arrival", xAxisTitle: "",
+    xFmt: (d) => String(d).slice(0, 7), everyNth: 6, zeroFloor: false,
+    tip: (d) => `<div class="tt-row">${dot(css("--root"))}<b>${String(d.month).slice(0, 7)}</b></div>
+      On-time arrival <b>${d.a14}%</b><br>Inherited share ${d.inherited_pct}%`,
+  });
+  table("trend-table", ["Month", "On-time (A14)", "Inherited share"],
+    D.monthly.map((d) => [String(d.month).slice(0, 7), d.a14.toFixed(2) + "%", d.inherited_pct.toFixed(1) + "%"]));
+
+  // ============================================================ chart builders
+  function vBars(o) {
+    const w = 900, h = 300, x0 = 72, x1 = w - 16, y0 = 18, y1 = h - 48;
+    const s = svg(document.getElementById(o.mount), w, h);
+    const max = Math.max(...o.data.map((d) => d[o.yKey])) * 1.14;
+    const yPos = (v) => y1 - ((y1 - y0) * v) / max;
+    axes(s, { x0, y0, x1, y1 }, ticksFor(max).map((v) => ({ value: v, pos: yPos(v) })), o.yFmt, { yLabel: o.yLabel });
+    const band = (x1 - x0) / o.data.length, bw = Math.min(band - 10, 64);
+    o.data.forEach((d, i) => {
+      const cx = x0 + band * i + band / 2, v = d[o.yKey], top = yPos(v);
+      const hgt = Math.max(y1 - top, 3);
+      el("path", {
+        d: `M${cx - bw / 2},${y1} v${-(hgt - 4)} a4,4 0 0 1 4,-4 h${bw - 8} a4,4 0 0 1 4,4 v${hgt - 4} z`,
+        fill: o.color,
+      }, s);
+      const hit = el("rect", { x: cx - band / 2, y: y0, width: band, height: y1 - y0, fill: "transparent" }, s);
+      bindTip(hit, o.tip(d));
+      const xl = el("text", { x: cx, y: y1 + 18, "text-anchor": "middle", fill: css("--muted"), "font-size": 11.5 }, s);
+      xl.textContent = o.xFmt(d[o.xKey]);
+      const lab = o.label && o.label(d, i, o.data);
+      if (lab) {
+        const t = el("text", { x: cx, y: top - 8, "text-anchor": "middle", fill: css("--text-secondary"), "font-size": 12, "font-weight": 600 }, s);
+        t.textContent = lab;
+      }
+    });
+    if (o.xAxisTitle) {
+      const t = el("text", { x: (x0 + x1) / 2, y: h - 8, "text-anchor": "middle", fill: css("--muted"), "font-size": 11.5 }, s);
+      t.textContent = o.xAxisTitle;
+    }
+  }
+
+  function lineChart(o) {
+    const w = 900, h = o.multi ? 320 : 268, x0 = 74, x1 = w - 22, y0 = 18, y1 = h - (o.xAxisTitle ? 50 : 34);
+    const s = svg(document.getElementById(o.mount), w, h);
+    const series = o.multi ? o.series : [{ key: o.yKey, name: "", color: o.color, data: o.data }];
+    const rows = series[0].data;
+    const all = series.flatMap((se) => se.data.map((d) => d[se.key]));
+    let max = Math.max(...all), min = o.zeroFloor === false ? Math.min(...all) : 0;
+    if (o.forceMax) max = Math.max(max, o.forceMax);
+    const pad = (max - min) * 0.14;
+    max += pad;
+    if (o.zeroFloor === false) min = Math.max(0, min - pad);
+    const xPos = (i) => x0 + ((x1 - x0) * i) / (rows.length - 1);
+    const yPos = (v) => y1 - ((y1 - y0) * (v - min)) / (max - min);
+    const ticks = ticksFor(max - min).map((v) => ({ value: min + v, pos: yPos(min + v) }));
+    axes(s, { x0, y0, x1, y1 }, ticks, o.yFmt, { yLabel: o.yLabel });
+
+    if (o.threshold && o.threshold.value <= max) {
+      const y = yPos(o.threshold.value);
+      el("line", { x1: x0, x2: x1, y1: y, y2: y, stroke: css("--axis"), "stroke-width": 1.5 }, s);
+      const t = el("text", { x: x1, y: y - 8, "text-anchor": "end", fill: css("--muted"), "font-size": 11.5 }, s);
+      t.textContent = o.threshold.label;
+    }
+
+    // Direct labels go where the series are furthest apart, not at the last point:
+    // two lines that converge at the tail would stack both labels on one pixel.
+    let labelIdx = rows.length - 1;
+    if (o.multi && series.length === 2) {
+      const gap = rows.map((_, i) =>
+        Math.abs(series[0].data[i][series[0].key] - series[1].data[i][series[1].key]));
+      labelIdx = gap.indexOf(Math.max(...gap));
+    }
+
+    series.forEach((se, si) => {
+      const pts = se.data.map((d, i) => [xPos(i), yPos(d[se.key])]);
+      el("path", {
+        d: pts.map((p, i) => (i ? "L" : "M") + p[0] + "," + p[1]).join(" "),
+        fill: "none", stroke: se.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round",
+      }, s);
+      if (o.peak === "max") {
+        const idx = se.data.reduce((bi, d, i) => (d[se.key] > se.data[bi][se.key] ? i : bi), 0);
+        el("circle", { cx: pts[idx][0], cy: pts[idx][1], r: 5, fill: se.color, stroke: css("--surface"), "stroke-width": 2 }, s);
+        const t = el("text", {
+          x: Math.min(pts[idx][0] + 10, x1 - 4), y: pts[idx][1] - 12,
+          fill: css("--text-primary"), "font-size": 12.5, "font-weight": 620,
+          "text-anchor": pts[idx][0] > x1 - 90 ? "end" : "start",
+        }, s);
+        t.textContent = o.yFmt(se.data[idx][se.key]);
+      }
+      if (o.multi) {
+        const other = series[si === 0 ? 1 : 0];
+        const above = se.data[labelIdx][se.key] >= other.data[labelIdx][other.key];
+        const [lx, ly] = pts[labelIdx];
+        const anchor = lx > x1 - 110 ? "end" : lx < x0 + 60 ? "start" : "middle";
+        const t = el("text", {
+          x: lx, y: ly + (above ? -13 : 21), "text-anchor": anchor,
+          fill: se.color, "font-size": 12, "font-weight": 620,
+        }, s);
+        t.textContent = se.name;
+        el("circle", { cx: lx, cy: ly, r: 4.5, fill: se.color, stroke: css("--surface"), "stroke-width": 2 }, s);
+      }
+    });
+
+    // Crosshair band: one hit target per x position, wider than any mark.
+    const cross = el("line", { x1: 0, x2: 0, y1: y0, y2: y1, stroke: css("--axis"), "stroke-width": 1, opacity: 0 }, s);
+    rows.forEach((d, i) => {
+      const bw = (x1 - x0) / (rows.length - 1);
+      const hit = el("rect", { x: xPos(i) - bw / 2, y: y0, width: bw, height: y1 - y0, fill: "transparent" }, s);
+      bindTip(hit, o.tip(d));
+      hit.addEventListener("pointerenter", () => {
+        cross.setAttribute("x1", xPos(i)); cross.setAttribute("x2", xPos(i)); cross.setAttribute("opacity", 1);
+      });
+      hit.addEventListener("pointerleave", () => cross.setAttribute("opacity", 0));
+      const nth = o.everyNth || (rows.length > 20 ? 3 : rows.length > 14 ? 2 : 1);
+      if (i % nth === 0 || i === rows.length - 1) {
+        const t = el("text", { x: xPos(i), y: y1 + 18, "text-anchor": "middle", fill: css("--muted"), "font-size": 11.5 }, s);
+        t.textContent = o.xFmt(d[o.xKey]);
+      }
+    });
+    if (o.xAxisTitle) {
+      const t = el("text", { x: (x0 + x1) / 2, y: h - 8, "text-anchor": "middle", fill: css("--muted"), "font-size": 11.5 }, s);
+      t.textContent = o.xAxisTitle;
+    }
+  }
+
+  function table(id, headers, rows) {
+    const node = document.getElementById(id);
+    if (!node) return;
+    node.innerHTML = `<table><thead><tr>${headers.map((h) => `<th>${h}</th>`).join("")}</tr></thead>
+      <tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  }
+})();
+</script>
