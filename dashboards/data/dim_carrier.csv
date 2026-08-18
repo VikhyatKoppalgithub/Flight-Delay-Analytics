@@ -1,0 +1,18 @@
+carrier,carrier_name,carrier_type,operates_for,is_mapped,flights,first_seen,last_seen
+WN,Southwest Airlines,Low-cost,,true,6621558,2021-01-01,2025-12-31
+DL,Delta Air Lines,Network,,true,4661662,2021-01-01,2025-12-31
+AA,American Airlines,Network,,true,4509034,2021-01-01,2025-12-31
+OO,SkyWest Airlines,Regional,AA / DL / UA / AS,true,3746635,2021-01-01,2025-12-31
+UA,United Airlines,Network,,true,3361244,2021-01-01,2025-12-31
+YX,Republic Airways,Regional,AA / DL / UA,true,1592363,2021-01-01,2025-12-31
+MQ,Envoy Air,Regional,AA,true,1310534,2021-01-01,2025-12-31
+B6,JetBlue Airways,Low-cost,,true,1222307,2021-01-01,2025-12-31
+AS,Alaska Airlines,Network,,true,1154090,2021-01-01,2025-12-31
+NK,Spirit Airlines,Ultra low-cost,,true,1143250,2021-01-01,2025-12-31
+OH,PSA Airlines,Regional,AA,true,1107911,2021-01-01,2025-12-31
+9E,Endeavor Air,Regional,DL,true,900257,2021-01-01,2024-12-31
+F9,Frontier Airlines,Ultra low-cost,,true,876855,2021-01-01,2025-12-31
+G4,Allegiant Air,Ultra low-cost,,true,596406,2021-01-01,2025-12-31
+HA,Hawaiian Airlines,Network,,true,373988,2021-01-01,2025-12-31
+YV,Mesa Airlines,Regional,AA / UA,true,274588,2021-01-01,2022-12-31
+QX,Horizon Air,Regional,AS,true,200419,2021-01-01,2022-12-31

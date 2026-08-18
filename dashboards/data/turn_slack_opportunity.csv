@@ -1,0 +1,1242 @@
+carrier,carrier_name,airport_code,city,size_band,turns,median_sched_turn_minutes,min_feasible_turn_minutes,median_slack_minutes,tight_turn_pct,actual_inherited_minutes,minutes_saved_plus_5,minutes_saved_plus_10,minutes_saved_plus_15,efficiency_plus_10,delay_cost_avoided_usd_plus_10,benchmark_level
+WN,Southwest Airlines,DEN,Denver,Large,386648,55.0,42.0,13.0,59.3,2496787,368104.0,663315.0,903933.0,0.172,65276829.0,carrier_airport
+AA,American Airlines,DFW,Dallas-Fort Worth,Large,614797,74.0,46.0,28.0,25.8,3775270,347742.0,633898.0,873799.0,0.103,62381902.0,carrier_airport
+WN,Southwest Airlines,LAS,Las Vegas,Large,344892,50.0,39.0,11.0,55.5,2170917,322497.0,581669.0,793349.0,0.169,57242046.0,carrier_airport
+WN,Southwest Airlines,DAL,Dallas,Large,282961,50.0,40.0,10.0,59.1,1652299,256869.0,460450.0,624817.0,0.163,45312885.0,carrier_airport
+DL,Delta Air Lines,ATL,Atlanta,Large,929353,82.0,42.0,40.0,16.2,1880352,233502.0,421534.0,576074.0,0.045,41483161.0,carrier_airport
+WN,Southwest Airlines,MDW,Chicago,Large,303274,55.0,41.0,14.0,55.2,1470418,234376.0,416328.0,561442.0,0.137,40970838.0,carrier_airport
+WN,Southwest Airlines,PHX,Phoenix,Large,262702,50.0,40.0,10.0,52.6,1295028,220636.0,392931.0,529790.0,0.15,38668340.0,carrier_airport
+AA,American Airlines,CLT,Charlotte,Large,478123,69.0,37.0,32.0,14.7,2423396,213036.0,389110.0,537177.0,0.081,38292315.0,carrier_airport
+WN,Southwest Airlines,BWI,Baltimore,Large,290330,55.0,42.0,13.0,53.8,1467898,218191.0,387835.0,522653.0,0.134,38166842.0,carrier_airport
+WN,Southwest Airlines,BNA,Nashville,Large,209991,50.0,38.0,12.0,57.0,1134689,171084.0,307865.0,419163.0,0.147,30296995.0,carrier_airport
+UA,United Airlines,DEN,Denver,Large,380506,77.0,42.0,35.0,11.2,1621083,159151.0,292306.0,405890.0,0.077,28765833.0,carrier_airport
+WN,Southwest Airlines,HOU,Houston,Medium,206519,55.0,40.0,15.0,43.4,952928,148603.0,266006.0,360228.0,0.129,26177650.0,carrier_airport
+WN,Southwest Airlines,MCO,Orlando,Large,176744,55.0,41.0,14.0,57.4,1072695,147189.0,265141.0,361457.0,0.15,26092526.0,carrier_airport
+AS,Alaska Airlines,SEA,Seattle,Large,319767,88.0,51.0,37.0,32.2,807896,150492.0,261821.0,344518.0,0.082,25765805.0,carrier_airport
+WN,Southwest Airlines,SAN,San Diego,Large,143082,45.0,35.0,10.0,52.0,915494,140212.0,252745.0,344342.0,0.177,24872635.0,carrier_airport
+OO,SkyWest Airlines,DEN,Denver,Large,281321,70.0,32.0,38.0,16.7,894330,132316.0,245668.0,344404.0,0.087,24176188.0,carrier_airport
+WN,Southwest Airlines,AUS,Austin,Large,147434,45.0,37.0,8.0,61.8,885840,135251.0,242670.0,328887.0,0.165,23881155.0,carrier_airport
+UA,United Airlines,ORD,Chicago,Large,319915,82.0,43.0,39.0,12.8,1184308,123744.0,227078.0,314805.0,0.071,22346746.0,carrier_airport
+WN,Southwest Airlines,STL,St. Louis,Medium,158703,50.0,39.0,11.0,54.0,851418,124533.0,223578.0,303815.0,0.141,22002311.0,carrier_airport
+OO,SkyWest Airlines,ORD,Chicago,Large,221207,70.0,31.0,39.0,18.1,948583,117319.0,219800.0,310254.0,0.099,21630518.0,carrier_airport
+MQ,Envoy Air,DFW,Dallas-Fort Worth,Large,267198,65.0,36.0,29.0,26.6,797313,117190.0,210217.0,285749.0,0.079,20687455.0,carrier_airport
+OH,PSA Airlines,CLT,Charlotte,Large,248185,61.0,35.0,26.0,26.1,895636,109551.0,199057.0,274284.0,0.08,19589199.0,carrier_airport
+UA,United Airlines,EWR,Newark,Large,222077,94.0,47.0,47.0,17.3,1112367,105235.0,195529.0,273502.0,0.088,19242009.0,carrier_airport
+WN,Southwest Airlines,SMF,Sacramento,Medium,129622,45.0,35.0,10.0,55.6,605386,107281.0,191724.0,259198.0,0.148,18867559.0,carrier_airport
+WN,Southwest Airlines,OAK,Oakland,Medium,149777,50.0,38.0,12.0,51.9,632797,106937.0,190651.0,257202.0,0.127,18761965.0,carrier_airport
+WN,Southwest Airlines,ATL,Atlanta,Large,131653,50.0,40.0,10.0,54.0,686889,105463.0,188919.0,256184.0,0.143,18591519.0,carrier_airport
+AA,American Airlines,ORD,Chicago,Large,204130,73.0,42.0,31.0,16.3,975397,96390.0,177221.0,246240.0,0.087,17440319.0,carrier_airport
+WN,Southwest Airlines,LAX,Los Angeles,Large,112508,50.0,39.0,11.0,55.8,581206,97278.0,175090.0,238214.0,0.156,17230607.0,carrier_airport
+WN,Southwest Airlines,SJC,San Jose,Medium,126186,45.0,35.0,10.0,51.9,580233,96391.0,172959.0,234557.0,0.137,17020895.0,carrier_airport
+OH,PSA Airlines,DCA,Washington,Large,138858,59.0,33.0,26.0,33.0,916233,88341.0,163247.0,227384.0,0.118,16065137.0,carrier_airport
+B6,JetBlue Airways,BOS,Boston,Large,152260,93.0,41.0,52.0,25.1,713973,84742.0,157595.0,221232.0,0.104,15508924.0,carrier_airport
+YX,Republic Airways,LGA,New York,Large,173842,58.0,31.0,27.0,24.9,723397,84859.0,157563.0,220882.0,0.091,15505775.0,carrier_airport
+B6,JetBlue Airways,JFK,New York,Large,126623,95.0,42.0,53.0,25.5,805073,84794.0,157543.0,220387.0,0.124,15503807.0,carrier_airport
+OO,SkyWest Airlines,SFO,San Francisco,Large,148020,62.0,31.0,31.0,24.6,481331,83970.0,155044.0,216224.0,0.105,15257880.0,carrier_airport
+AA,American Airlines,MIA,Miami,Large,184323,110.0,49.0,61.0,21.5,988493,84063.0,152909.0,210017.0,0.083,15047775.0,carrier_airport
+AA,American Airlines,PHX,Phoenix,Large,210446,76.0,44.0,32.0,24.1,760797,83085.0,149538.0,203917.0,0.071,14716035.0,carrier_airport
+MQ,Envoy Air,ORD,Chicago,Large,159221,60.0,33.0,27.0,25.7,573396,80959.0,147420.0,202838.0,0.093,14507602.0,carrier_airport
+WN,Southwest Airlines,TPA,Tampa,Large,100846,50.0,39.0,11.0,54.5,572577,81790.0,147215.0,200552.0,0.146,14487428.0,carrier_airport
+UA,United Airlines,IAH,Houston,Large,226333,85.0,37.0,48.0,10.1,893027,74952.0,137121.0,189805.0,0.061,13494078.0,carrier_airport
+WN,Southwest Airlines,MCI,Kansas City,Medium,89232,45.0,35.0,10.0,50.0,458436,73926.0,131949.0,178410.0,0.148,12985101.0,carrier_airport
+OO,SkyWest Airlines,LAX,Los Angeles,Large,178001,58.0,33.0,25.0,27.0,356434,69195.0,125810.0,173294.0,0.071,12380962.0,carrier_airport
+WN,Southwest Airlines,MSY,New Orleans,Medium,75498,50.0,37.0,13.0,58.9,465976,68536.0,123166.0,167509.0,0.163,12120766.0,carrier_airport
+WN,Southwest Airlines,SNA,Santa Ana,Medium,67278,40.0,34.0,6.0,61.7,338623,68537.0,122249.0,164476.0,0.182,12030524.0,carrier_airport
+UA,United Airlines,SFO,San Francisco,Large,180514,91.0,44.0,47.0,11.6,523637,66397.0,122036.0,169055.0,0.068,12009563.0,carrier_airport
+NK,Spirit Airlines,MCO,Orlando,Large,97102,82.0,47.0,35.0,33.6,382058,65812.0,121222.0,168706.0,0.125,11929457.0,carrier_airport
+DL,Delta Air Lines,DTW,Detroit,Large,241370,81.0,44.0,37.0,16.4,552844,66213.0,119828.0,164489.0,0.05,11792273.0,carrier_airport
+DL,Delta Air Lines,MSP,Minneapolis,Large,258642,86.0,44.0,42.0,13.3,480908,66444.0,119547.0,163171.0,0.046,11764620.0,carrier_airport
+NK,Spirit Airlines,LAS,Las Vegas,Large,100443,74.0,45.0,29.0,31.3,270528,62202.0,113893.0,157680.0,0.113,11208210.0,carrier_airport
+AA,American Airlines,PHL,Philadelphia,Large,147879,84.0,42.0,42.0,15.9,625452,62096.0,113581.0,157035.0,0.077,11177506.0,carrier_airport
+WN,Southwest Airlines,BUR,Burbank,Medium,81305,40.0,30.0,10.0,59.0,403951,61292.0,110697.0,151233.0,0.136,10893692.0,carrier_airport
+DL,Delta Air Lines,SLC,Salt Lake City,Large,228173,79.0,46.0,33.0,15.9,467557,60742.0,109436.0,149407.0,0.048,10769597.0,carrier_airport
+F9,Frontier Airlines,DEN,Denver,Large,93960,78.0,45.0,33.0,30.8,484566,57955.0,106780.0,148484.0,0.114,10508220.0,carrier_airport
+OO,SkyWest Airlines,DFW,Dallas-Fort Worth,Large,114996,76.0,33.0,43.0,17.3,320690,57289.0,106757.0,150124.0,0.093,10505956.0,carrier_airport
+HA,Hawaiian Airlines,HNL,Honolulu,Medium,123269,60.0,31.0,29.0,34.0,307216,60620.0,104585.0,137329.0,0.085,10292210.0,carrier_airport
+AA,American Airlines,DCA,Washington,Large,108485,78.0,40.0,38.0,21.7,559625,54603.0,100352.0,139458.0,0.093,9875640.0,carrier_airport
+AA,American Airlines,MCO,Orlando,Large,74352,67.0,44.0,23.0,42.9,556763,53953.0,100007.0,139631.0,0.135,9841689.0,carrier_airport
+B6,JetBlue Airways,MCO,Orlando,Large,64531,79.0,46.0,33.0,34.2,574915,53462.0,99847.0,140533.0,0.155,9825943.0,carrier_airport
+DL,Delta Air Lines,LGA,New York,Large,111231,80.0,52.0,28.0,28.2,538378,53825.0,99713.0,139099.0,0.09,9812756.0,carrier_airport
+NK,Spirit Airlines,FLL,Fort Lauderdale,Large,93500,139.0,50.0,89.0,25.2,368911,52037.0,96034.0,133403.0,0.103,9450706.0,carrier_airport
+F9,Frontier Airlines,MCO,Orlando,Large,74098,91.0,44.0,47.0,24.6,497033,51175.0,95290.0,133657.0,0.129,9377489.0,carrier_airport
+WN,Southwest Airlines,DCA,Washington,Large,64575,50.0,39.0,11.0,53.6,348748,53178.0,95101.0,129007.0,0.147,9358889.0,carrier_airport
+YX,Republic Airways,DCA,Washington,Large,115968,58.0,31.0,27.0,26.8,384792,51231.0,93717.0,129658.0,0.081,9222690.0,carrier_airport
+OO,SkyWest Airlines,MSP,Minneapolis,Large,123893,73.0,36.0,37.0,26.2,12261,49022.0,90579.0,126690.0,0.073,8913879.0,carrier_airport
+WN,Southwest Airlines,FLL,Fort Lauderdale,Large,62718,55.0,41.0,14.0,52.2,374633,50017.0,90239.0,123233.0,0.144,8880420.0,carrier_airport
+B6,JetBlue Airways,FLL,Fort Lauderdale,Large,68778,110.0,47.0,63.0,27.4,523875,47923.0,89363.0,125357.0,0.13,8794213.0,carrier_airport
+YX,Republic Airways,BOS,Boston,Large,101102,57.0,30.0,27.0,17.2,334304,46849.0,86954.0,121967.0,0.086,8557143.0,carrier_airport
+OO,SkyWest Airlines,DTW,Detroit,Large,94994,71.0,36.0,35.0,26.4,18304,45381.0,84890.0,120088.0,0.089,8354025.0,carrier_airport
+WN,Southwest Airlines,SAT,San Antonio,Medium,63634,50.0,35.0,15.0,45.5,297986,47135.0,83893.0,113209.0,0.132,8255910.0,carrier_airport
+WN,Southwest Airlines,LGB,Long Beach,Small,58085,45.0,34.0,11.0,57.6,279064,46507.0,83115.0,112525.0,0.143,8179347.0,carrier_airport
+WN,Southwest Airlines,SLC,Salt Lake City,Large,48790,45.0,36.0,9.0,63.6,280296,46396.0,82710.0,111700.0,0.17,8139491.0,carrier_airport
+9E,Endeavor Air,LGA,New York,Large,93219,59.0,39.0,20.0,42.1,438144,44270.0,81918.0,114483.0,0.088,8061550.0,carrier_airport
+WN,Southwest Airlines,LGA,New York,Large,48231,50.0,41.0,9.0,57.2,308334,44808.0,81045.0,110768.0,0.168,7975638.0,carrier_airport
+AA,American Airlines,LGA,New York,Large,72120,68.0,39.0,29.0,17.5,466261,43334.0,80691.0,113206.0,0.112,7940801.0,carrier_airport
+AA,American Airlines,LAX,Los Angeles,Large,119033,99.0,50.0,49.0,21.4,380959,44269.0,80126.0,109699.0,0.067,7885200.0,carrier_airport
+YX,Republic Airways,EWR,Newark,Large,93647,68.0,33.0,35.0,21.2,366792,42217.0,78137.0,108954.0,0.083,7689462.0,carrier_airport
+F9,Frontier Airlines,LAS,Las Vegas,Large,58607,91.0,44.0,47.0,26.8,333977,40043.0,74198.0,103507.0,0.127,7301825.0,carrier_airport
+NK,Spirit Airlines,ATL,Atlanta,Large,46579,65.0,47.0,18.0,44.8,256950,40165.0,73910.0,102719.0,0.159,7273483.0,carrier_airport
+F9,Frontier Airlines,ATL,Atlanta,Large,43245,71.0,40.0,31.0,17.7,508651,39190.0,73693.0,103989.0,0.17,7252128.0,carrier_airport
+OO,SkyWest Airlines,SEA,Seattle,Large,110905,62.0,36.0,26.0,32.7,126072,40865.0,72989.0,98933.0,0.066,7182847.0,carrier_airport
+WN,Southwest Airlines,SFO,San Francisco,Large,34193,50.0,37.0,13.0,56.9,291570,39566.0,72514.0,100237.0,0.212,7136103.0,carrier_airport
+AA,American Airlines,BOS,Boston,Large,70178,78.0,42.0,36.0,35.0,350019,38673.0,71852.0,100559.0,0.102,7070955.0,carrier_airport
+OO,SkyWest Airlines,PHX,Phoenix,Large,96630,58.0,32.0,26.0,32.0,201876,39031.0,71132.0,98039.0,0.074,7000100.0,carrier_airport
+DL,Delta Air Lines,LAX,Los Angeles,Large,144472,80.0,36.0,44.0,8.6,426322,39099.0,71097.0,97850.0,0.049,6996656.0,carrier_airport
+UA,United Airlines,IAD,Washington,Medium,118505,89.0,43.0,46.0,10.0,338310,38168.0,69921.0,96782.0,0.059,6880926.0,carrier_airport
+DL,Delta Air Lines,BOS,Boston,Large,99023,81.0,44.0,37.0,13.7,409237,37818.0,69818.0,97382.0,0.071,6870789.0,carrier_airport
+HA,Hawaiian Airlines,OGG,Kahului,Medium,60239,37.0,25.0,12.0,53.4,252637,39924.0,68609.0,90180.0,0.114,6751812.0,carrier_airport
+YX,Republic Airways,ORD,Chicago,Large,93288,68.0,33.0,35.0,17.8,344418,37069.0,68589.0,95911.0,0.074,6749843.0,carrier_airport
+OO,SkyWest Airlines,SLC,Salt Lake City,Large,157759,75.0,36.0,39.0,25.2,57070,37951.0,67757.0,92315.0,0.043,6667966.0,carrier_airport
+WN,Southwest Airlines,ABQ,Albuquerque,Medium,43629,45.0,35.0,10.0,51.5,224490,37687.0,67206.0,90898.0,0.154,6613742.0,carrier_airport
+DL,Delta Air Lines,MCO,Orlando,Large,93645,80.0,33.0,47.0,7.8,558831,35990.0,66845.0,93644.0,0.071,6578216.0,carrier_airport
+WN,Southwest Airlines,CMH,Columbus,Medium,48344,50.0,35.0,15.0,46.7,241081,37220.0,66590.0,90350.0,0.138,6553122.0,carrier_airport
+DL,Delta Air Lines,SEA,Seattle,Large,135310,84.0,49.0,35.0,18.2,267798,36869.0,66080.0,89747.0,0.049,6502933.0,carrier_airport
+AA,American Airlines,LAS,Las Vegas,Large,56654,77.0,44.0,33.0,34.5,311603,35201.0,64768.0,89905.0,0.114,6373819.0,carrier_airport
+DL,Delta Air Lines,JFK,New York,Large,98673,99.0,51.0,48.0,15.2,323269,35104.0,64597.0,89466.0,0.065,6356991.0,carrier_airport
+WN,Southwest Airlines,ONT,Ontario,Medium,46905,45.0,34.0,11.0,51.6,219774,35320.0,63365.0,86186.0,0.135,6235750.0,carrier_airport
+B6,JetBlue Airways,SJU,San Juan,Medium,41208,91.0,44.0,47.0,26.8,422645,33769.0,62942.0,88581.0,0.153,6194122.0,carrier_airport
+AA,American Airlines,TPA,Tampa,Large,51447,65.0,41.0,24.0,42.5,338866,33604.0,62078.0,86714.0,0.121,6109096.0,carrier_airport
+WN,Southwest Airlines,SEA,Seattle,Large,36308,50.0,39.0,11.0,55.0,205747,34448.0,62028.0,84373.0,0.171,6104175.0,carrier_airport
+AA,American Airlines,AUS,Austin,Large,56212,92.0,42.0,50.0,34.9,348023,33187.0,61178.0,85290.0,0.109,6020527.0,carrier_airport
+B6,JetBlue Airways,LGA,New York,Large,41678,61.0,39.0,22.0,34.5,359586,32311.0,60731.0,86115.0,0.146,5976538.0,carrier_airport
+YX,Republic Airways,JFK,New York,Large,69229,60.0,30.0,30.0,20.4,267480,32268.0,59774.0,83556.0,0.086,5882359.0,carrier_airport
+WN,Southwest Airlines,ORD,Chicago,Large,32246,45.0,39.0,6.0,53.0,240657,32609.0,59149.0,80994.0,0.183,5820853.0,carrier_airport
+WN,Southwest Airlines,IND,Indianapolis,Medium,44854,50.0,37.0,13.0,50.7,219038,32957.0,58925.0,79817.0,0.131,5798809.0,carrier_airport
+NK,Spirit Airlines,EWR,Newark,Large,38626,65.0,45.0,20.0,33.4,168040,31427.0,58924.0,83135.0,0.153,5798711.0,carrier_airport
+B6,JetBlue Airways,PBI,West Palm Beach,Medium,33291,64.0,41.0,23.0,36.9,326990,31340.0,58792.0,83011.0,0.177,5785721.0,carrier_airport
+WN,Southwest Airlines,PDX,Portland,Medium,38192,50.0,36.0,14.0,57.8,190936,32375.0,58115.0,78637.0,0.152,5719097.0,carrier_airport
+OO,SkyWest Airlines,SAN,San Diego,Large,50386,52.0,32.0,20.0,43.8,210195,31502.0,57099.0,78311.0,0.113,5619113.0,carrier_airport
+WN,Southwest Airlines,RSW,Fort Myers,Medium,34713,50.0,36.0,14.0,58.0,227937,30445.0,55042.0,75119.0,0.159,5416683.0,carrier_airport
+WN,Southwest Airlines,PIT,Pittsburgh,Medium,39820,50.0,36.0,14.0,54.3,184958,30016.0,53650.0,72689.0,0.135,5279697.0,carrier_airport
+OO,SkyWest Airlines,IAH,Houston,Large,61697,75.0,32.0,43.0,14.6,231473,28208.0,52575.0,73880.0,0.085,5173906.0,carrier_airport
+OH,PSA Airlines,PHL,Philadelphia,Large,60170,71.0,35.0,36.0,20.5,306230,27825.0,52053.0,73345.0,0.087,5122536.0,carrier_airport
+NK,Spirit Airlines,LAX,Los Angeles,Large,44690,69.0,45.0,24.0,33.1,181065,28300.0,51991.0,71910.0,0.116,5116434.0,carrier_airport
+DL,Delta Air Lines,FLL,Fort Lauderdale,Large,55688,75.0,47.0,28.0,12.5,340825,27642.69999999914,51259.34999999846,71568.24999999796,0.092,5044433.0,carrier_airport
+F9,Frontier Airlines,PHL,Philadelphia,Large,37856,87.0,43.0,44.0,25.9,311014,27230.0,51055.0,72022.0,0.135,5024323.0,carrier_airport
+WN,Southwest Airlines,RDU,Raleigh-durham,Medium,33909,50.0,38.0,12.0,54.3,168130,28388.0,50747.0,68790.0,0.15,4994012.0,carrier_airport
+WN,Southwest Airlines,OMA,Omaha,Medium,32003,45.0,35.0,10.0,52.1,165136,28381.0,50643.0,68247.0,0.158,4983778.0,carrier_airport
+WN,Southwest Airlines,RNO,Reno,Medium,34995,45.0,34.0,11.0,50.2,188112,28030.0,50587.0,69132.0,0.145,4978267.0,carrier_airport
+OO,SkyWest Airlines,ASE,Aspen,Small,24471,46.0,25.0,21.0,30.9,187398,26549.0,50172.0,71405.0,0.205,4937427.0,carrier_airport
+UA,United Airlines,MCO,Orlando,Large,53628,75.0,48.0,27.0,18.1,282773,26727.0,49736.0,69858.0,0.093,4894520.0,carrier_airport
+B6,JetBlue Airways,DCA,Washington,Large,34816,55.0,37.0,18.0,44.6,259729,26520.0,49622.0,69817.0,0.143,4883301.0,carrier_airport
+DL,Delta Air Lines,MIA,Miami,Large,46122,72.0,49.0,23.0,19.0,300529,26854.0,49519.0,68880.0,0.107,4873165.0,carrier_airport
+WN,Southwest Airlines,ELP,El Paso,Small,34491,45.0,33.0,12.0,53.8,171300,27467.0,49110.0,66468.0,0.142,4832915.0,carrier_airport
+WN,Southwest Airlines,MIA,Miami,Large,27406,50.0,39.0,11.0,57.6,201188,27088.0,48856.0,66594.0,0.178,4807919.0,carrier_airport
+UA,United Airlines,LAX,Los Angeles,Large,95118,96.0,49.0,47.0,10.6,218221,26985.0,48830.0,67026.0,0.051,4805360.0,carrier_airport
+AA,American Airlines,RDU,Raleigh-durham,Medium,41794,82.0,42.0,40.0,42.1,268765,26313.0,48789.0,68142.0,0.117,4801325.0,carrier_airport
+WN,Southwest Airlines,MKE,Milwaukee,Medium,38689,50.0,36.0,14.0,51.6,161460,26944.0,48015.0,64835.0,0.124,4725156.0,carrier_airport
+WN,Southwest Airlines,BOS,Boston,Large,26725,50.0,40.0,10.0,52.1,189381,26349.0,47949.0,65983.0,0.179,4718661.0,carrier_airport
+DL,Delta Air Lines,DFW,Dallas-Fort Worth,Large,50710,79.0,44.0,35.0,23.3,243552,25635.0,47593.0,66486.0,0.094,4683627.0,carrier_airport
+F9,Frontier Airlines,DFW,Dallas-Fort Worth,Large,27698,65.0,42.0,23.0,34.1,304390,25260.0,47210.0,66455.0,0.17,4645936.0,carrier_airport
+9E,Endeavor Air,ATL,Atlanta,Large,112524,75.0,39.0,36.0,23.9,180004,26154.0,47199.0,64483.0,0.042,4644854.0,carrier_airport
+AA,American Airlines,DEN,Denver,Large,37959,74.0,45.0,29.0,43.4,245748,25476.0,47051.0,65554.0,0.124,4630289.0,carrier_airport
+YV,Mesa Airlines,DFW,Dallas-Fort Worth,Large,37421,66.0,37.0,29.0,26.3,285707,25280.0,46966.0,66085.0,0.126,4621924.0,carrier_airport
+DL,Delta Air Lines,ORD,Chicago,Large,46396,71.0,43.0,28.0,22.9,273660,25266.0,46883.0,65711.0,0.101,4613756.0,carrier_airport
+DL,Delta Air Lines,SFO,San Francisco,Large,53472,85.0,44.0,41.0,16.2,255835,25025.0,46401.0,64822.0,0.087,4566322.0,carrier_airport
+UA,United Airlines,LAS,Las Vegas,Large,57567,79.0,39.0,40.0,9.6,253087,24888.0,46358.0,65141.0,0.081,4562091.0,carrier_airport
+NK,Spirit Airlines,ORD,Chicago,Large,32120,66.0,44.0,22.0,29.2,138523,24328.0,45074.0,63062.0,0.14,4435732.0,carrier_airport
+NK,Spirit Airlines,DFW,Dallas-Fort Worth,Large,34494,80.0,45.0,35.0,30.9,131502,23416.0,43300.0,60179.0,0.126,4261153.0,carrier_airport
+AS,Alaska Airlines,SFO,San Francisco,Large,42723,110.0,48.0,62.0,30.7,157012,23741.0,43220.0,59362.0,0.101,4253280.0,carrier_airport
+AS,Alaska Airlines,PDX,Portland,Medium,73266,118.0,49.0,69.0,25.4,135377,24395.0,42966.0,57532.0,0.059,4228284.0,carrier_airport
+MQ,Envoy Air,MIA,Miami,Large,58109,81.0,36.0,45.0,23.9,192369,23559.0,42810.0,58663.0,0.074,4212932.0,carrier_airport
+WN,Southwest Airlines,OKC,Oklahoma City,Medium,29121,45.0,34.0,11.0,50.3,141864,24081.0,42743.0,57574.0,0.147,4206339.0,carrier_airport
+AA,American Airlines,SFO,San Francisco,Large,41002,110.0,48.0,62.0,34.0,188372,23148.0,42355.0,58551.0,0.103,4168156.0,carrier_airport
+AA,American Airlines,EWR,Newark,Large,29417,110.0,47.0,63.0,39.3,195942,22927.0,42087.0,58477.0,0.143,4141782.0,carrier_airport
+9E,Endeavor Air,JFK,New York,Large,57575,71.0,41.0,30.0,31.8,227858,22790.0,41975.0,58273.0,0.073,4130760.0,carrier_airport
+AA,American Airlines,ATL,Atlanta,Large,33581,73.0,41.0,32.0,41.2,229841,22451.0,41910.0,59025.0,0.125,4124363.0,carrier_airport
+HA,Hawaiian Airlines,LIH,Lihue,Small,34100,32.0,22.0,10.0,63.5,144554,24253.0,41330.0,53985.0,0.121,4067285.0,carrier_airport
+AA,American Airlines,BNA,Nashville,Large,33390,101.0,41.0,60.0,39.4,228556,21725.0,40421.0,56617.0,0.121,3977831.0,carrier_airport
+WN,Southwest Airlines,MSP,Minneapolis,Large,27427,50.0,37.0,13.0,54.3,131081,22393.0,40263.0,54645.0,0.147,3962282.0,carrier_airport
+DL,Delta Air Lines,LAS,Las Vegas,Large,70083,77.0,23.0,54.0,9.3,271207,21565.0,39565.0,54812.0,0.056,3893592.0,carrier_airport
+AS,Alaska Airlines,ANC,Anchorage,Medium,58357,108.0,44.0,64.0,13.8,124395,21720.0,38913.0,52426.0,0.067,3829428.0,carrier_airport
+NK,Spirit Airlines,DTW,Detroit,Large,42702,89.0,47.0,42.0,33.5,116701,21364.0,38891.0,53589.0,0.091,3827263.0,carrier_airport
+AA,American Airlines,IAH,Houston,Large,29432,106.0,40.0,66.0,41.0,214217,20880.0,38772.0,54301.0,0.132,3815553.0,carrier_airport
+OH,PSA Airlines,DFW,Dallas-Fort Worth,Large,29704,65.0,35.0,30.0,25.6,254207,20617.0,38676.0,54784.0,0.13,3806105.0,carrier_airport
+AA,American Airlines,FLL,Fort Lauderdale,Large,27684,58.0,44.0,14.0,51.4,186536,20907.0,38399.0,53287.0,0.139,3778846.0,carrier_airport
+B6,JetBlue Airways,LAX,Los Angeles,Large,42312,82.0,42.0,40.0,14.9,218699,20342.0,37827.0,53081.0,0.089,3722555.0,carrier_airport
+B6,JetBlue Airways,EWR,Newark,Large,25729,110.0,45.0,65.0,28.0,198628,20114.0,37743.0,53236.0,0.147,3714289.0,carrier_airport
+AA,American Airlines,MSY,New Orleans,Medium,27500,57.0,39.0,18.0,45.3,215799,20241.0,37573.0,52429.0,0.137,3697559.0,carrier_airport
+AA,American Airlines,SAN,San Diego,Large,34302,79.0,45.0,34.0,35.4,161686,20449.0,37232.0,51275.0,0.109,3664001.0,carrier_airport
+NK,Spirit Airlines,IAH,Houston,Large,32356,83.0,45.0,38.0,30.7,126636,20093.0,37029.0,51435.0,0.114,3644024.0,carrier_airport
+B6,JetBlue Airways,TPA,Tampa,Large,22067,61.0,43.0,18.0,43.9,212105,19817.0,36921.0,51809.0,0.167,3633396.0,carrier_airport
+WN,Southwest Airlines,HNL,Honolulu,Medium,56565,75.0,41.0,34.0,29.7,130247,20163.0,35992.0,48529.0,0.064,3541973.0,carrier_airport
+QX,Horizon Air,SEA,Seattle,Large,54364,76.0,37.0,39.0,28.6,117863,20538.0,35938.0,47837.0,0.066,3536659.0,carrier_airport
+UA,United Airlines,BOS,Boston,Large,49552,78.0,29.0,49.0,8.4,231884,19137.0,35923.0,50787.0,0.072,3535182.0,carrier_airport
+DL,Delta Air Lines,TPA,Tampa,Large,59270,76.0,27.0,49.0,7.5,310951,19238.0,35776.0,50238.0,0.06,3520716.0,carrier_airport
+AA,American Airlines,SAT,San Antonio,Medium,31440,97.0,40.0,57.0,39.7,194742,19199.0,35712.0,50091.0,0.114,3514418.0,carrier_airport
+HA,Hawaiian Airlines,KOA,Kona,Small,31209,34.0,23.0,11.0,62.1,123983,20388.0,35222.0,46368.0,0.113,3466197.0,carrier_airport
+DL,Delta Air Lines,PBI,West Palm Beach,Medium,29378,70.0,48.0,22.0,21.0,197775,18586.0,34405.0,48065.0,0.117,3385796.0,carrier_airport
+F9,Frontier Airlines,PHX,Phoenix,Large,29456,70.0,41.0,29.0,30.1,192131,18393.0,34184.0,48026.0,0.116,3364047.0,carrier_airport
+F9,Frontier Airlines,TPA,Tampa,Large,24779,75.0,44.0,31.0,28.5,197783,18188.0,34180.0,48314.0,0.138,3363654.0,carrier_airport
+DL,Delta Air Lines,AUS,Austin,Large,48487,81.0,38.0,43.0,8.3,198305,18581.0,34035.0,47209.0,0.07,3349384.0,carrier_airport
+AA,American Airlines,PBI,West Palm Beach,Medium,21978,55.0,41.0,14.0,51.7,174809,18301.0,33870.0,47262.0,0.154,3333147.0,carrier_airport
+NK,Spirit Airlines,BOS,Boston,Large,20143,60.0,46.0,14.0,50.3,86326,17920.0,33559.0,47373.0,0.167,3302541.0,carrier_airport
+OO,SkyWest Airlines,PDX,Portland,Medium,42541,52.0,33.0,19.0,40.4,101700,18407.0,33161.0,45449.0,0.078,3263374.0,carrier_airport
+AA,American Airlines,JFK,New York,Large,47058,93.0,48.0,45.0,32.7,136726,18336.0,33053.0,45003.0,0.07,3252746.0,carrier_airport
+NK,Spirit Airlines,SJU,San Juan,Medium,20806,65.0,45.0,20.0,33.8,122861,17553.0,32759.0,45966.0,0.157,3223813.0,carrier_airport
+WN,Southwest Airlines,PHL,Philadelphia,Large,20136,50.0,42.0,8.0,54.6,99552,18281.0,32374.0,43539.0,0.161,3185925.0,carrier_airport
+B6,JetBlue Airways,RSW,Fort Myers,Medium,18090,55.0,38.0,17.0,42.1,203465,17267.0,32280.0,45572.0,0.178,3176675.0,carrier_airport
+UA,United Airlines,DFW,Dallas-Fort Worth,Large,32120,68.0,40.0,28.0,12.2,183180,17178.0,32223.0,45466.0,0.1,3171065.0,carrier_airport
+F9,Frontier Airlines,SFO,San Francisco,Large,14195,56.0,39.0,17.0,44.4,213759,17100.0,32165.0,45643.0,0.227,3165358.0,carrier_airport
+DL,Delta Air Lines,PHX,Phoenix,Large,47534,76.0,45.0,31.0,10.7,160849,17404.0,31825.0,44118.0,0.067,3131898.0,carrier_airport
+AA,American Airlines,RSW,Fort Myers,Medium,22542,55.0,39.0,16.0,47.2,168271,16912.0,31179.0,43454.0,0.138,3068325.0,carrier_airport
+AA,American Airlines,SNA,Santa Ana,Medium,26437,59.0,43.0,16.0,48.0,149120,17132.0,31069.0,42728.0,0.118,3057500.0,carrier_airport
+F9,Frontier Airlines,SJU,San Juan,Medium,18460,82.0,46.0,36.0,32.2,199633,16508.0,31015.0,43706.0,0.168,3052186.0,carrier_airport
+NK,Spirit Airlines,LGA,New York,Large,25998,111.0,48.0,63.0,37.6,115117,16580.0,30954.0,43581.0,0.119,3046183.0,carrier_airport
+F9,Frontier Airlines,CLE,Cleveland,Medium,20579,65.0,43.0,22.0,33.0,192195,16525.0,30821.0,43320.0,0.15,3033095.0,carrier_airport
+WN,Southwest Airlines,CLE,Cleveland,Medium,21606,50.0,36.0,14.0,53.8,93260,17153.0,30645.0,41374.0,0.142,3015774.0,carrier_airport
+DL,Delta Air Lines,SAN,San Diego,Large,40123,75.0,49.0,26.0,18.8,132896,16885.0,30590.0,41997.0,0.076,3010362.0,carrier_airport
+AA,American Airlines,JAX,Jacksonville,Medium,24947,87.0,38.0,49.0,37.7,180378,16343.0,30582.0,43157.0,0.123,3009575.0,carrier_airport
+NK,Spirit Airlines,TPA,Tampa,Large,25911,65.0,43.0,22.0,37.4,116858,16443.0,30557.0,42789.0,0.118,3007114.0,carrier_airport
+MQ,Envoy Air,AUS,Austin,Large,20094,40.0,28.0,12.0,54.6,112833,17055.0,30522.0,41395.0,0.152,3003670.0,carrier_airport
+NK,Spirit Airlines,MIA,Miami,Large,22726,66.0,43.0,23.0,36.6,113252,16322.0,30445.0,42915.0,0.134,2996092.0,carrier_airport
+DL,Delta Air Lines,DEN,Denver,Large,52800,76.0,25.0,51.0,8.5,218212,16250.0,29719.0,41105.0,0.056,2924647.0,carrier_airport
+WN,Southwest Airlines,BUF,Buffalo,Medium,20756,50.0,37.0,13.0,54.3,106145,16650.0,29708.0,40132.0,0.143,2923564.0,carrier_airport
+OO,SkyWest Airlines,ATL,Atlanta,Large,28541,85.0,36.0,49.0,23.7,3115,15738.0,29607.0,41996.0,0.104,2913625.0,carrier_airport
+NK,Spirit Airlines,BWI,Baltimore,Large,25732,82.0,48.0,34.0,35.3,112670,16056.0,29602.0,41125.0,0.115,2913133.0,carrier_airport
+UA,United Airlines,TPA,Tampa,Large,33173,73.0,47.0,26.0,19.2,147731,15892.0,29476.0,41252.0,0.089,2900733.0,carrier_airport
+DL,Delta Air Lines,IAH,Houston,Large,32817,76.0,44.0,32.0,24.0,149202,16041.0,29413.0,40815.0,0.09,2894533.0,carrier_airport
+UA,United Airlines,PHX,Phoenix,Large,39689,79.0,44.0,35.0,15.1,146935,15775.0,29234.0,40974.0,0.074,2876918.0,carrier_airport
+AA,American Airlines,SEA,Seattle,Large,24725,98.0,48.0,50.0,38.0,123924,15977.0,29086.0,39988.0,0.118,2862353.0,carrier_airport
+UA,United Airlines,MIA,Miami,Large,25890,72.0,45.0,27.0,17.0,153030,15282.0,28370.0,39666.0,0.11,2791892.0,carrier_airport
+UA,United Airlines,SAN,San Diego,Large,42471,76.0,40.0,36.0,9.9,143387,15196.0,28231.0,39471.0,0.066,2778213.0,carrier_airport
+UA,United Airlines,FLL,Fort Lauderdale,Large,34729,72.0,39.0,33.0,9.3,167873,15179.0,28205.0,39561.0,0.081,2775654.0,carrier_airport
+WN,Southwest Airlines,COS,Colorado Springs,Small,20388,50.0,33.0,17.0,47.5,103707,15658.0,28201.0,38394.0,0.138,2775260.0,carrier_airport
+WN,Southwest Airlines,JAX,Jacksonville,Medium,19118,50.0,37.0,13.0,56.4,90771,15666.0,27924.0,37581.0,0.146,2748001.0,carrier_airport
+UA,United Airlines,AUS,Austin,Large,38852,79.0,38.0,41.0,12.0,147610,15070.0,27831.0,38856.0,0.072,2738849.0,carrier_airport
+WN,Southwest Airlines,SRQ,Sarasota,Small,18525,50.0,35.0,15.0,47.9,110781,15400.0,27830.0,38103.0,0.15,2738750.0,carrier_airport
+UA,United Airlines,LGA,New York,Large,28928,77.0,45.0,32.0,18.3,140305,14863.0,27780.0,39190.0,0.096,2733830.0,carrier_airport
+WN,Southwest Airlines,SDF,Louisville,Medium,19695,50.0,35.0,15.0,47.4,91234,15394.0,27436.0,37055.0,0.139,2699977.0,carrier_airport
+AS,Alaska Airlines,SAN,San Diego,Large,36061,116.0,47.0,69.0,26.2,108472,15309.0,27428.0,37136.0,0.076,2699189.0,carrier_airport
+WN,Southwest Airlines,PVD,Providence,Small,19401,50.0,36.0,14.0,56.3,97607,15234.0,27398.0,37262.0,0.141,2696237.0,carrier_airport
+DL,Delta Air Lines,EWR,Newark,Large,25867,74.0,41.0,33.0,21.7,182999,14737.0,27378.0,38495.0,0.106,2694269.0,carrier_airport
+WN,Southwest Airlines,BHM,Birmingham,Small,16887,45.0,35.0,10.0,50.6,101019,15187.0,27250.0,37014.0,0.161,2681673.0,carrier_airport
+HA,Hawaiian Airlines,ITO,Hilo,Small,20157,31.0,24.0,7.0,71.4,85081,15898.0,27245.0,35648.0,0.135,2681180.0,carrier_airport
+UA,United Airlines,SEA,Seattle,Large,35878,99.0,45.0,54.0,17.5,114280,14853.0,27238.0,37844.0,0.076,2680492.0,carrier_airport
+OO,SkyWest Airlines,SMF,Sacramento,Medium,35272,51.0,29.0,22.0,33.8,67236,14951.0,27181.0,37538.0,0.077,2674882.0,carrier_airport
+DL,Delta Air Lines,RDU,Raleigh-durham,Medium,48348,75.0,34.0,41.0,7.0,181726,14701.0,27121.0,37867.0,0.056,2668978.0,carrier_airport
+AS,Alaska Airlines,LAS,Las Vegas,Large,22328,61.0,44.0,17.0,45.8,115520,14899.0,26962.0,36968.0,0.121,2653330.0,carrier_airport
+WN,Southwest Airlines,BOI,Boise,Medium,20290,45.0,34.0,11.0,50.5,84858,14985.0,26604.0,35806.0,0.131,2618100.0,carrier_airport
+AA,American Airlines,IND,Indianapolis,Medium,23734,105.0,40.0,65.0,36.6,146939,14343.0,26570.0,37156.0,0.112,2614754.0,carrier_airport
+WN,Southwest Airlines,TUL,Tulsa,Small,22322,50.0,32.0,18.0,48.0,89500,14778.0,26469.0,35840.0,0.119,2604814.0,carrier_airport
+WN,Southwest Airlines,IAH,Houston,Large,17800,45.0,33.0,12.0,54.9,104324,14571.0,26446.0,36298.0,0.149,2602551.0,carrier_airport
+AA,American Airlines,SJU,San Juan,Medium,19419,75.0,50.0,25.0,46.7,125018,14356.0,26063.0,35669.0,0.134,2564860.0,carrier_airport
+OO,SkyWest Airlines,SJC,San Jose,Medium,37740,48.0,29.0,19.0,36.6,64670,14251.0,25966.0,35805.0,0.069,2555314.0,carrier_airport
+9E,Endeavor Air,DTW,Detroit,Large,66347,90.0,43.0,47.0,25.9,100668,14329.0,25844.0,35362.0,0.039,2543308.0,carrier_airport
+DL,Delta Air Lines,DCA,Washington,Large,37942,73.0,30.0,43.0,8.1,174328,13960.0,25742.0,35761.0,0.068,2533270.0,carrier_airport
+WN,Southwest Airlines,CHS,Charleston,Medium,15278,50.0,35.0,15.0,48.8,85061,14223.0,25432.0,34326.0,0.166,2502763.0,carrier_airport
+UA,United Airlines,ATL,Atlanta,Large,26459,69.0,41.0,28.0,13.4,135800,13526.0,25092.0,35220.0,0.095,2469304.0,carrier_airport
+AA,American Airlines,STL,St. Louis,Medium,25956,267.0,41.0,226.0,32.8,131894,13550.0,25003.0,34961.0,0.096,2460545.0,carrier_airport
+YX,Republic Airways,PHL,Philadelphia,Large,42141,69.0,32.0,37.0,17.8,103645,13465.0,24796.0,34472.0,0.059,2440174.0,carrier_airport
+OO,SkyWest Airlines,BOI,Boise,Medium,41924,100.0,32.0,68.0,31.9,60702,13855.0,24711.0,33525.0,0.059,2431810.0,carrier_airport
+F9,Frontier Airlines,RDU,Raleigh-durham,Medium,15201,55.0,37.0,18.0,40.8,165143,13138.0,24620.0,34801.0,0.162,2422854.0,carrier_airport
+WN,Southwest Airlines,TUS,Tucson,Medium,17017,50.0,35.0,15.0,44.0,82058,13668.0,24481.0,32999.0,0.144,2409175.0,carrier_airport
+WN,Southwest Airlines,SJU,San Juan,Medium,17610,55.0,45.0,10.0,51.4,83036,13646.0,24374.0,32964.0,0.138,2398645.0,carrier_airport
+NK,Spirit Airlines,MSY,New Orleans,Medium,20401,65.0,43.0,22.0,36.8,97648,13160.0,24366.0,34001.0,0.119,2397858.0,carrier_airport
+MQ,Envoy Air,CLT,Charlotte,Large,20062,57.0,36.0,21.0,36.8,99606,13285.0,23956.0,32768.0,0.119,2357510.0,carrier_airport
+YX,Republic Airways,RDU,Raleigh-durham,Medium,28238,52.0,27.0,25.0,37.9,96425,13094.0,23940.0,33159.0,0.085,2355935.0,carrier_airport
+WN,Southwest Airlines,BDL,Windsor Locks,Medium,16769,50.0,38.0,12.0,55.1,78898,13350.0,23682.0,31797.0,0.141,2330546.0,carrier_airport
+YV,Mesa Airlines,IAH,Houston,Large,39602,85.0,38.0,47.0,16.4,41863,12806.0,23655.0,32877.0,0.06,2327889.0,carrier_airport
+WN,Southwest Airlines,DTW,Detroit,Large,17234,55.0,39.0,16.0,47.5,70789,13300.0,23486.0,31499.0,0.136,2311257.0,carrier_airport
+YX,Republic Airways,BNA,Nashville,Large,24954,51.0,27.0,24.0,35.4,87537,12886.0,23457.0,32373.0,0.094,2308403.0,carrier_airport
+WN,Southwest Airlines,CLT,Charlotte,Large,13198,50.0,40.0,10.0,52.4,79375,13098.0,23424.0,31581.0,0.177,2305156.0,carrier_airport
+B6,JetBlue Airways,MIA,Miami,Large,11989,61.0,44.0,17.0,45.3,144437,12431.0,23268.0,32825.0,0.194,2289804.0,carrier_airport
+WN,Southwest Airlines,MEM,Memphis,Medium,15090,50.0,37.0,13.0,53.8,86495,12892.0,23234.0,31646.0,0.154,2286458.0,carrier_airport
+AA,American Airlines,MCI,Kansas City,Medium,22015,112.0,41.0,71.0,35.0,133247,12456.0,23211.0,32714.0,0.105,2284195.0,carrier_airport
+AA,American Airlines,CHS,Charleston,Medium,17867,57.0,35.0,22.0,32.9,138049,12405.0,23073.0,32337.0,0.129,2270614.0,carrier_airport
+YX,Republic Airways,IND,Indianapolis,Medium,41795,91.0,30.0,61.0,30.7,74434,12710.0,22842.0,31245.0,0.055,2247881.0,carrier_airport
+NK,Spirit Airlines,PHL,Philadelphia,Large,20650,84.0,44.0,40.0,26.6,80893,12217.0,22487.0,31328.0,0.109,2212946.0,carrier_airport
+F9,Frontier Airlines,IAH,Houston,Large,10068,58.0,41.0,17.0,48.5,151008,11948.0,22420.0,31592.0,0.223,2206352.0,carrier_airport
+AA,American Airlines,SLC,Salt Lake City,Large,16050,69.0,44.0,25.0,43.3,111019,11883.0,21755.0,30189.0,0.136,2140910.0,carrier_airport
+B6,JetBlue Airways,LAS,Las Vegas,Large,14896,72.0,38.0,34.0,17.9,161498,11505.0,21743.0,30858.0,0.146,2139729.0,carrier_airport
+B6,JetBlue Airways,BDL,Windsor Locks,Medium,14754,105.0,44.0,61.0,36.2,116231,11689.0,21742.0,30477.0,0.147,2139630.0,carrier_airport
+WN,Southwest Airlines,ORF,Norfolk,Medium,12816,45.0,36.0,9.0,62.2,70503,11934.0,21336.0,28870.0,0.166,2099676.0,carrier_airport
+F9,Frontier Airlines,MIA,Miami,Large,15450,111.0,47.0,64.0,27.0,129805,11310.0,21280.0,30089.0,0.138,2094165.0,carrier_airport
+NK,Spirit Airlines,MYR,Myrtle Beach,Small,20975,61.0,40.0,21.0,28.2,93182,11424.0,21239.0,29770.0,0.101,2090130.0,carrier_airport
+AA,American Airlines,PIT,Pittsburgh,Medium,21888,112.0,41.0,71.0,32.8,123424,11434.0,21189.0,29740.0,0.097,2085209.0,carrier_airport
+NK,Spirit Airlines,CLT,Charlotte,Large,13479,60.0,42.0,18.0,38.6,92807,11382.0,21136.0,29680.0,0.157,2079994.0,carrier_airport
+F9,Frontier Airlines,CVG,Cincinnati,Medium,14573,65.0,41.0,24.0,38.3,122781,11206.0,20941.0,29465.0,0.144,2060804.0,carrier_airport
+DL,Delta Air Lines,RSW,Fort Myers,Medium,33760,77.0,34.0,43.0,7.5,159864,11261.0,20923.0,29307.0,0.062,2059032.0,carrier_airport
+B6,JetBlue Airways,HPN,White Plains,Small,20528,105.0,44.0,61.0,30.7,119763,11205.0,20846.0,29294.0,0.102,2051455.0,carrier_airport
+B6,JetBlue Airways,ATL,Atlanta,Large,11647,56.0,42.0,14.0,51.9,115872,11026.0,20644.0,29084.0,0.177,2031576.0,carrier_airport
+DL,Delta Air Lines,CLT,Charlotte,Large,25498,70.0,44.0,26.0,42.6,81907,11227.0,20599.0,28429.0,0.081,2027148.0,carrier_airport
+UA,United Airlines,PDX,Portland,Medium,26350,84.0,46.0,38.0,21.3,94380,11159.0,20581.0,28679.0,0.078,2025376.0,carrier_airport
+YX,Republic Airways,CMH,Columbus,Medium,39772,90.0,30.0,60.0,26.1,66439,11362.0,20450.0,27942.0,0.051,2012485.0,carrier_airport
+OO,SkyWest Airlines,AUS,Austin,Large,16121,52.0,31.0,21.0,40.4,38928,11030.0,20337.0,28330.0,0.126,2001364.0,carrier_airport
+B6,JetBlue Airways,RDU,Raleigh-durham,Medium,13255,60.0,38.0,22.0,37.5,120434,10805.0,20328.0,28763.0,0.153,2000478.0,carrier_airport
+WN,Southwest Airlines,ECP,Panama City,Small,13285,45.0,32.0,13.0,56.0,75393,11123.0,20090.0,27398.0,0.151,1977057.0,carrier_airport
+MQ,Envoy Air,XNA,Bentonville,Small,20379,82.0,29.0,53.0,46.3,64329,11042.0,19903.0,27145.0,0.098,1958654.0,carrier_airport
+WN,Southwest Airlines,GEG,Spokane,Medium,15760,50.0,36.0,14.0,51.6,51694,11294.0,19774.0,26430.0,0.125,1945959.0,carrier_airport
+WN,Southwest Airlines,ALB,Albany,Small,14509,50.0,37.0,13.0,54.0,65978,11034.0,19612.0,26404.0,0.135,1930017.0,carrier_airport
+F9,Frontier Airlines,MDW,Chicago,Large,10987,55.0,42.0,13.0,52.7,112178,10621.0,19608.0,27361.0,0.178,1929623.0,carrier_airport
+UA,United Airlines,RSW,Fort Myers,Medium,24094,72.0,40.0,32.0,11.7,115211,10412.0,19418.0,27304.0,0.081,1910925.0,carrier_airport
+WN,Southwest Airlines,SAV,Savannah,Medium,10791,45.0,35.0,10.0,58.3,65298,10665.0,19271.0,26133.0,0.179,1896459.0,carrier_airport
+YX,Republic Airways,CLT,Charlotte,Large,29040,63.0,32.0,31.0,23.2,80173,10492.0,19173.0,26566.0,0.066,1886815.0,carrier_airport
+AS,Alaska Airlines,LAX,Los Angeles,Large,29567,120.0,47.0,73.0,20.3,79216,10698.0,19122.0,25798.0,0.065,1881796.0,carrier_airport
+NK,Spirit Airlines,BNA,Nashville,Large,13059,60.0,42.0,18.0,41.3,76690,10296.0,19119.0,26756.0,0.146,1881501.0,carrier_airport
+AA,American Airlines,MSP,Minneapolis,Large,18528,117.0,46.0,71.0,36.3,94234,10353.0,19013.0,26454.0,0.103,1871069.0,carrier_airport
+OO,SkyWest Airlines,SNA,Santa Ana,Medium,16667,44.0,29.0,15.0,48.4,66652,10344.0,19002.0,26378.0,0.114,1869987.0,carrier_airport
+OO,SkyWest Airlines,TUS,Tucson,Medium,29148,65.0,29.0,36.0,30.6,39737,10437.0,18896.0,26111.0,0.065,1859555.0,carrier_airport
+F9,Frontier Airlines,SAN,San Diego,Large,10887,55.0,37.0,18.0,43.0,130055,10030.0,18721.0,26316.0,0.172,1842334.0,carrier_airport
+F9,Frontier Airlines,RSW,Fort Myers,Medium,10397,55.0,40.0,15.0,41.1,114241,9976.0,18667.0,26367.0,0.18,1837019.0,carrier_airport
+AA,American Airlines,DTW,Detroit,Large,20039,113.0,41.0,72.0,32.1,102208,10031.0,18642.0,26134.0,0.093,1834559.0,carrier_airport
+AS,Alaska Airlines,EWR,Newark,Large,14857,65.0,37.0,28.0,8.1,140304,10012.0,18639.0,26183.0,0.125,1834264.0,carrier_airport
+B6,JetBlue Airways,SFO,San Francisco,Large,21283,85.0,42.0,43.0,11.4,102964,9943.0,18612.0,26251.0,0.087,1831607.0,carrier_airport
+MQ,Envoy Air,DCA,Washington,Large,16920,58.0,34.0,24.0,37.0,86431,10237.0,18592.0,25546.0,0.11,1829639.0,carrier_airport
+F9,Frontier Airlines,CLT,Charlotte,Large,9551,60.0,39.0,21.0,38.4,134373,9893.0,18567.0,26137.0,0.194,1827178.0,carrier_airport
+YX,Republic Airways,IAD,Washington,Medium,29574,68.0,31.0,37.0,10.5,92795,9978.0,18542.0,26020.0,0.063,1824718.0,carrier_airport
+AA,American Airlines,RIC,Richmond,Medium,14970,100.0,41.0,59.0,44.4,93547,9930.0,18527.0,26040.0,0.124,1823242.0,carrier_airport
+B6,JetBlue Airways,BUF,Buffalo,Medium,13119,65.0,34.0,31.0,35.4,108183,9776.0,18385.0,26030.0,0.14,1809268.0,carrier_airport
+UA,United Airlines,SNA,Santa Ana,Medium,24972,69.0,42.0,27.0,16.7,81021,9979.0,18361.0,25561.0,0.074,1806906.0,carrier_airport
+F9,Frontier Airlines,LGA,New York,Large,7571,61.0,45.0,16.0,43.6,135894,9757.0,18332.0,25970.0,0.242,1804052.0,carrier_airport
+WN,Southwest Airlines,PSP,Palm Springs,Small,12054,45.0,33.0,12.0,54.3,61205,10212.0,18314.0,24828.0,0.152,1802281.0,carrier_airport
+DL,Delta Air Lines,SNA,Santa Ana,Medium,20713,70.0,43.0,27.0,25.1,93767,9973.0,18246.0,25263.0,0.088,1795589.0,carrier_airport
+MQ,Envoy Air,SGF,Springfield,Small,16953,66.0,29.0,37.0,48.1,56396,10300.0,18240.0,24493.0,0.108,1794998.0,carrier_airport
+UA,United Airlines,MSP,Minneapolis,Large,20213,71.0,39.0,32.0,12.2,96193,9812.0,18137.0,25416.0,0.09,1784862.0,carrier_airport
+UA,United Airlines,BNA,Nashville,Large,21795,68.0,32.0,36.0,9.7,113077,9756.0,18113.0,25399.0,0.083,1782500.0,carrier_airport
+MQ,Envoy Air,LIT,Little Rock,Small,14659,44.0,29.0,15.0,50.0,55230,10122.0,18105.0,24585.0,0.124,1781713.0,carrier_airport
+DL,Delta Air Lines,PDX,Portland,Medium,31527,82.0,47.0,35.0,18.4,95769,9849.0,18009.0,24913.0,0.057,1772266.0,carrier_airport
+AA,American Airlines,TUS,Tucson,Medium,14093,52.0,41.0,11.0,57.1,84192,9771.0,17976.0,24970.0,0.128,1769018.0,carrier_airport
+WN,Southwest Airlines,MAF,Midland,Small,15439,45.0,29.0,16.0,45.7,68430,9889.0,17967.0,24600.0,0.116,1768132.0,carrier_airport
+UA,United Airlines,DCA,Washington,Large,21555,86.0,46.0,40.0,19.4,94030,9624.0,17850.0,24983.0,0.083,1756619.0,carrier_airport
+DL,Delta Air Lines,PHL,Philadelphia,Large,24982,74.0,46.0,28.0,22.4,89547,9692.0,17848.0,24877.0,0.071,1756422.0,carrier_airport
+F9,Frontier Airlines,BWI,Baltimore,Large,9188,60.0,41.0,19.0,45.3,115660,9462.0,17736.0,24982.0,0.193,1745400.0,carrier_airport
+B6,JetBlue Airways,JAX,Jacksonville,Medium,9978,55.0,36.0,19.0,41.7,113427,9427.0,17715.0,25090.0,0.178,1743333.0,carrier_airport
+WN,Southwest Airlines,OGG,Kahului,Medium,26587,75.0,36.0,39.0,29.4,70603,9856.0,17682.0,23958.0,0.067,1740086.0,carrier_airport
+YX,Republic Airways,PIT,Pittsburgh,Medium,37863,101.0,30.0,71.0,25.0,58208,9726.0,17606.0,24179.0,0.046,1732606.0,carrier_airport
+OO,SkyWest Airlines,GEG,Spokane,Medium,24494,48.0,31.0,17.0,43.5,24029,9692.0,17556.0,24084.0,0.072,1727686.0,carrier_airport
+WN,Southwest Airlines,MYR,Myrtle Beach,Small,10446,45.0,33.0,12.0,55.9,61244,9680.0,17328.0,23503.0,0.166,1705248.0,carrier_airport
+OH,PSA Airlines,BHM,Birmingham,Small,14093,45.0,26.0,19.0,48.1,87136,9291.0,17197.0,23946.0,0.122,1692357.0,carrier_airport
+WN,Southwest Airlines,PBI,West Palm Beach,Medium,9765,50.0,38.0,12.0,55.6,66870,9374.0,16969.0,23266.0,0.174,1669919.0,carrier_airport
+AA,American Airlines,BDL,Windsor Locks,Medium,15828,311.0,44.0,267.0,34.4,83949,9175.0,16867.0,23433.0,0.107,1659881.0,carrier_airport
+AA,American Airlines,BWI,Baltimore,Large,15803,160.0,43.0,117.0,37.1,76258,9052.0,16673.0,23331.0,0.106,1640790.0,carrier_airport
+OO,SkyWest Airlines,MKE,Milwaukee,Medium,18859,109.0,29.0,80.0,20.9,52599,8899.0,16650.0,23511.0,0.088,1638527.0,carrier_airport
+DL,Delta Air Lines,BNA,Nashville,Large,36340,74.0,22.0,52.0,7.9,114418,9149.0,16640.0,22992.0,0.046,1637542.0,carrier_airport
+UA,United Airlines,PBI,West Palm Beach,Medium,14354,66.0,41.0,25.0,13.6,101912,8880.0,16639.0,23451.0,0.116,1637444.0,carrier_airport
+DL,Delta Air Lines,MSY,New Orleans,Medium,30902,71.0,19.0,52.0,8.9,135030,8999.0,16613.0,23195.0,0.054,1634885.0,carrier_airport
+DL,Delta Air Lines,CVG,Cincinnati,Medium,30874,120.0,45.0,75.0,12.9,91194,9148.0,16598.0,22821.0,0.054,1633409.0,carrier_airport
+AA,American Airlines,MEM,Memphis,Medium,16597,327.0,41.0,286.0,33.0,95926,8972.0,16571.0,23124.0,0.1,1630752.0,carrier_airport
+F9,Frontier Airlines,ONT,Ontario,Medium,10817,60.0,39.0,21.0,40.1,98745,8863.0,16556.0,23310.0,0.153,1629276.0,carrier_airport
+OH,PSA Airlines,HPN,White Plains,Small,10652,34.0,25.0,9.0,64.6,82010,8923.0,16429.0,22873.0,0.154,1616778.0,carrier_airport
+OO,SkyWest Airlines,LAS,Las Vegas,Large,12187,48.0,31.0,17.0,46.7,43481,8825.0,16178.0,22521.0,0.133,1592077.0,carrier_airport
+AA,American Airlines,EYW,Key West,Small,7587,44.0,38.0,6.0,63.8,84702,8756.0,16143.0,22483.0,0.213,1588633.0,carrier_airport
+YV,Mesa Airlines,PHX,Phoenix,Large,16377,56.0,36.0,20.0,40.0,104428,8743.0,16094.0,22487.0,0.098,1583811.0,carrier_airport
+F9,Frontier Airlines,FLL,Fort Lauderdale,Large,6660,60.0,44.0,16.0,49.3,97698,8556.0,16084.0,22765.0,0.242,1582826.0,carrier_airport
+OO,SkyWest Airlines,FAT,Fresno,Small,25837,105.0,31.0,74.0,30.2,40723,8915.0,16069.0,22051.0,0.062,1581350.0,carrier_airport
+OO,SkyWest Airlines,OMA,Omaha,Medium,19177,56.0,30.0,26.0,24.8,19743,8681.0,15976.0,22242.0,0.083,1572198.0,carrier_airport
+YX,Republic Airways,DTW,Detroit,Large,28074,63.0,32.0,31.0,22.2,51462,8686.0,15887.0,22116.0,0.057,1563440.0,carrier_airport
+OH,PSA Airlines,BNA,Nashville,Large,8849,34.0,26.0,8.0,64.4,73743,8668.0,15873.0,21984.0,0.179,1562062.0,carrier_airport
+WN,Southwest Airlines,CVG,Cincinnati,Medium,10506,50.0,36.0,14.0,54.9,50957,8942.0,15769.0,21206.0,0.15,1551827.0,carrier_airport
+OO,SkyWest Airlines,OKC,Oklahoma City,Medium,25851,132.0,30.0,102.0,21.3,53290,8567.0,15762.0,21960.0,0.061,1551138.0,carrier_airport
+YX,Republic Airways,ATL,Atlanta,Large,20782,62.0,30.0,32.0,26.4,56584,8565.0,15754.0,21903.0,0.076,1550351.0,carrier_airport
+B6,JetBlue Airways,CHS,Charleston,Medium,9212,55.0,36.0,19.0,47.9,96106,8367.0,15695.0,22116.0,0.17,1544545.0,carrier_airport
+OO,SkyWest Airlines,BUR,Burbank,Medium,15745,46.0,29.0,17.0,38.0,39532,8575.0,15668.0,21645.0,0.1,1541888.0,carrier_airport
+OO,SkyWest Airlines,RNO,Reno,Medium,20467,54.0,31.0,23.0,36.3,43379,8586.0,15659.0,21589.0,0.077,1541002.0,carrier_airport
+AA,American Airlines,CLE,Cleveland,Medium,16864,307.0,43.0,264.0,29.3,86685,8400.0,15540.0,21724.0,0.092,1529291.0,carrier_airport
+UA,United Airlines,MSY,New Orleans,Medium,25741,93.0,28.0,65.0,8.1,103828,8285.0,15535.0,21961.0,0.06,1528799.0,carrier_airport
+WN,Southwest Airlines,ISP,Islip,Small,12229,50.0,37.0,13.0,51.9,57480,8739.0,15522.0,20896.0,0.127,1527520.0,carrier_airport
+9E,Endeavor Air,MSP,Minneapolis,Large,35414,84.0,39.0,45.0,23.4,59840,8519.0,15473.0,21309.0,0.044,1522698.0,carrier_airport
+OO,SkyWest Airlines,STS,Santa Rosa,Small,11928,42.0,30.0,12.0,56.1,60008,8482.0,15312.0,20933.0,0.128,1506854.0,carrier_airport
+UA,United Airlines,CLE,Cleveland,Medium,29907,111.0,43.0,68.0,14.0,74291,8265.0,15286.0,21413.0,0.051,1504295.0,carrier_airport
+UA,United Airlines,SAT,San Antonio,Medium,22072,98.0,42.0,56.0,19.6,77076,8260.0,15229.0,21244.0,0.069,1498686.0,carrier_airport
+AS,Alaska Airlines,JNU,Juneau,Small,19179,55.0,34.0,21.0,9.9,76792,8313.0,15128.0,20825.0,0.079,1488746.0,carrier_airport
+WN,Southwest Airlines,PNS,Pensacola,Small,9929,45.0,32.0,13.0,59.3,54739,8318.0,15070.0,20494.0,0.152,1483039.0,carrier_airport
+OH,PSA Airlines,SAV,Savannah,Medium,12826,39.0,26.0,13.0,51.1,61097,8230.0,15040.0,20756.0,0.117,1480086.0,carrier_airport
+B6,JetBlue Airways,SLC,Salt Lake City,Large,7289,58.0,43.0,15.0,48.6,92133,8044.0,15020.0,21170.0,0.206,1478118.0,carrier_airport
+WN,Southwest Airlines,MHT,Manchester NH,Small,11710,50.0,34.0,16.0,47.8,52400,8298.0,14898.0,20347.0,0.127,1466112.0,carrier_airport
+AA,American Airlines,ORF,Norfolk,Medium,11559,57.0,38.0,19.0,43.1,89239,7994.0,14866.0,20904.0,0.129,1462963.0,carrier_airport
+MQ,Envoy Air,BNA,Nashville,Large,9278,38.0,29.0,9.0,56.7,53607,8213.0,14774.0,20121.0,0.159,1453909.0,carrier_airport
+NK,Spirit Airlines,RSW,Fort Myers,Medium,11513,60.0,41.0,19.0,41.9,59415,7907.0,14759.0,20725.0,0.128,1452433.0,carrier_airport
+OO,SkyWest Airlines,RDM,Redmond-Bend,Small,19487,59.0,32.0,27.0,41.0,36455,8249.0,14758.0,20113.0,0.076,1452335.0,carrier_airport
+AA,American Airlines,PDX,Portland,Medium,14692,118.0,47.0,71.0,31.2,83369,8003.0,14755.0,20512.0,0.1,1452040.0,carrier_airport
+AS,Alaska Airlines,PHX,Phoenix,Large,20851,63.0,32.0,31.0,8.9,75415,8126.0,14611.0,19880.0,0.07,1437869.0,carrier_airport
+NK,Spirit Airlines,PIT,Pittsburgh,Medium,11637,77.0,44.0,33.0,33.1,55468,7770.199999999939,14460.799999999886,20243.599999999846,0.124,1423087.0,carrier_airport
+OO,SkyWest Airlines,SBP,San Luis Obispo,Small,15724,58.0,29.0,29.0,34.8,51550,7804.0,14386.0,19948.0,0.091,1415726.0,carrier_airport
+OO,SkyWest Airlines,PSP,Palm Springs,Small,22197,100.0,31.0,69.0,31.7,40464,7897.0,14337.0,19771.0,0.065,1410904.0,carrier_airport
+OH,PSA Airlines,GSP,Greenville,Small,13046,40.0,27.0,13.0,50.8,60760,7965.0,14316.0,19609.0,0.11,1408838.0,carrier_airport
+AS,Alaska Airlines,JFK,New York,Large,14715,101.0,51.0,50.0,33.1,59672,7796.0,14275.0,19718.0,0.097,1404803.0,carrier_airport
+AA,American Airlines,SMF,Sacramento,Medium,14174,105.0,41.0,64.0,32.5,84599,7786.0,14238.0,19763.0,0.1,1401162.0,carrier_airport
+AS,Alaska Airlines,SNA,Santa Ana,Medium,15863,55.0,41.0,14.0,51.2,44772,7945.0,14187.0,19123.0,0.089,1396143.0,carrier_airport
+OH,PSA Airlines,ATL,Atlanta,Large,8202,33.0,26.0,7.0,62.4,68899,7653.0,14120.0,19622.0,0.172,1389549.0,carrier_airport
+AA,American Airlines,ABQ,Albuquerque,Medium,11609,68.0,38.0,30.0,35.4,84529,7542.500000000073,14118.80000000012,19929.40000000016,0.122,1389431.0,carrier_airport
+OO,SkyWest Airlines,SBN,South Bend,Small,14258,415.0,28.0,387.0,34.6,41150,7619.0,14065.0,19652.0,0.099,1384137.0,carrier_airport
+F9,Frontier Airlines,DTW,Detroit,Large,8008,60.0,40.0,20.0,35.5,88088,7545.0,14056.0,19708.0,0.176,1383251.0,carrier_airport
+AA,American Airlines,CVG,Cincinnati,Medium,10650,76.0,40.0,36.0,43.0,69990,7526.0,13903.0,19439.0,0.131,1368194.0,carrier_airport
+AA,American Airlines,CMH,Columbus,Medium,13710,112.0,39.0,73.0,34.3,79459,7531.0,13875.0,19340.0,0.101,1365439.0,carrier_airport
+WN,Southwest Airlines,LIT,Little Rock,Small,10505,45.0,35.0,10.0,50.2,48494,7706.0,13820.0,18779.0,0.132,1360026.0,carrier_airport
+OH,PSA Airlines,TYS,Knoxville,Small,13413,91.0,26.0,65.0,41.2,59144,7484.0,13700.0,18872.0,0.102,1348217.0,carrier_airport
+MQ,Envoy Air,PHX,Phoenix,Large,20426,61.0,35.0,26.0,31.1,52412,7664.0,13654.0,18568.0,0.067,1343690.0,carrier_airport
+AA,American Airlines,SRQ,Sarasota,Small,9098,52.0,36.0,16.0,46.5,79982,7407.0,13649.0,19046.0,0.15,1343198.0,carrier_airport
+DL,Delta Air Lines,STL,St. Louis,Medium,22435,73.0,39.0,34.0,13.6,69207,7394.0,13589.0,18884.0,0.061,1337293.0,carrier_airport
+DL,Delta Air Lines,MCI,Kansas City,Medium,29533,87.0,25.0,62.0,7.6,92501,7369.0,13532.0,18846.0,0.046,1331684.0,carrier_airport
+DL,Delta Air Lines,SAT,San Antonio,Medium,26086,90.0,26.0,64.0,7.8,86301,7385.0,13531.0,18703.0,0.052,1331586.0,carrier_airport
+AA,American Airlines,MKE,Milwaukee,Medium,9738,85.0,40.0,45.0,44.3,68102,7353.0,13530.0,18824.0,0.139,1331487.0,carrier_airport
+YX,Republic Airways,EYW,Key West,Small,8174,42.0,26.0,16.0,45.4,49693,7457.0,13496.0,18427.0,0.165,1328141.0,carrier_airport
+F9,Frontier Airlines,SLC,Salt Lake City,Large,9600,56.0,38.0,18.0,41.0,81571,7213.0,13451.0,18891.0,0.14,1323713.0,carrier_airport
+YX,Republic Airways,CLE,Cleveland,Medium,18876,55.0,26.0,29.0,28.6,54861,7374.0,13431.0,18560.0,0.071,1321745.0,carrier_airport
+F9,Frontier Airlines,LAX,Los Angeles,Large,7613,59.0,41.0,18.0,46.4,86815,7200.0,13384.0,18837.0,0.176,1317119.0,carrier_airport
+AA,American Airlines,ONT,Ontario,Medium,12885,111.0,44.0,67.0,32.1,72659,7188.0,13377.0,18661.0,0.104,1316431.0,carrier_airport
+AA,American Airlines,ELP,El Paso,Small,10029,109.0,38.0,71.0,34.7,79511,7009.0,13276.0,18794.0,0.132,1306491.0,carrier_airport
+OO,SkyWest Airlines,IAD,Washington,Medium,13826,87.0,33.0,54.0,24.8,25518,7012.0,13179.0,18765.0,0.095,1296945.0,carrier_airport
+WN,Southwest Airlines,GRR,Grand Rapids,Medium,8549,45.0,35.0,10.0,51.0,43625,7262.0,13023.0,17579.0,0.152,1281593.0,carrier_airport
+WN,Southwest Airlines,LBB,Lubbock,Small,10799,45.0,31.0,14.0,56.5,47819,7105.0,12929.0,17662.0,0.12,1272343.0,carrier_airport
+OO,SkyWest Airlines,DRO,Durango,Small,13314,46.0,26.0,20.0,41.6,43321,7036.0,12867.0,17817.0,0.097,1266241.0,carrier_airport
+AA,American Airlines,OKC,Oklahoma City,Medium,11104,101.0,38.0,63.0,43.2,72108,6832.0,12811.0,18091.0,0.115,1260731.0,carrier_airport
+OO,SkyWest Airlines,PSC,Pasco,Small,18795,55.0,31.0,24.0,39.0,23166,6924.0,12588.0,17316.0,0.067,1238785.0,carrier_airport
+WN,Southwest Airlines,BZN,Bozeman,Small,8018,45.0,34.0,11.0,54.0,41464,6976.0,12555.0,17092.0,0.157,1235538.0,carrier_airport
+UA,United Airlines,HNL,Honolulu,Medium,20094,161.0,77.0,84.0,14.5,55160,6873.0,12511.0,17218.0,0.062,1231208.0,carrier_airport
+9E,Endeavor Air,RDU,Raleigh-durham,Medium,17452,94.0,39.0,55.0,36.0,58635,6770.0,12500.0,17410.0,0.072,1230125.0,carrier_airport
+9E,Endeavor Air,CVG,Cincinnati,Medium,20781,85.0,37.0,48.0,35.4,47039,6776.0,12368.0,17098.0,0.06,1217135.0,carrier_airport
+OH,PSA Airlines,ORF,Norfolk,Medium,12122,90.0,26.0,64.0,40.3,59702,6770.0,12368.0,17140.0,0.102,1217135.0,carrier_airport
+DL,Delta Air Lines,JAX,Jacksonville,Medium,22678,71.0,25.0,46.0,7.5,96953,6712.0,12356.0,17195.0,0.054,1215954.0,carrier_airport
+OH,PSA Airlines,MYR,Myrtle Beach,Small,9326,32.0,23.0,9.0,66.9,55120,6765.0,12349.0,16951.0,0.132,1215265.0,carrier_airport
+B6,JetBlue Airways,BNA,Nashville,Large,6910,51.0,35.0,16.0,47.4,77993,6575.0,12341.0,17398.0,0.179,1214478.0,carrier_airport
+F9,Frontier Airlines,ISP,Islip,Small,7519,56.0,39.0,17.0,46.0,72987,6616.0,12320.0,17362.0,0.164,1212411.0,carrier_airport
+B6,JetBlue Airways,DEN,Denver,Large,6393,60.0,41.0,19.0,39.5,87558,6561.0,12315.0,17463.0,0.193,1211919.0,carrier_airport
+UA,United Airlines,RDU,Raleigh-durham,Medium,21887,90.0,32.0,58.0,7.9,72451,6697.0,12299.0,17114.0,0.056,1210345.0,carrier_airport
+NK,Spirit Airlines,ACY,Atlantic City,Non-hub,12967,74.0,43.0,31.0,36.1,42826,6719.0,12286.0,17003.0,0.095,1209065.0,carrier_airport
+OH,PSA Airlines,DAY,Dayton,Small,13153,93.0,26.0,67.0,39.3,70934,6633.0,12184.0,16907.0,0.093,1199027.0,carrier_airport
+AS,Alaska Airlines,HNL,Honolulu,Medium,15959,60.0,15.0,45.0,12.2,86888,6625.0,12183.0,16769.0,0.076,1198929.0,carrier_airport
+AA,American Airlines,SAV,Savannah,Medium,7877,53.0,35.0,18.0,37.7,73945,6508.0,12165.0,17178.0,0.154,1197158.0,carrier_airport
+AA,American Airlines,PNS,Pensacola,Small,6420,51.0,37.0,14.0,51.7,81665,6494.0,12112.0,17065.0,0.189,1191942.0,carrier_airport
+UA,United Airlines,SJU,San Juan,Medium,12569,79.0,11.0,68.0,16.4,84560,6437.0,12105.0,16995.0,0.096,1191253.0,carrier_airport
+OH,PSA Airlines,HSV,Huntsville,Small,9771,44.0,29.0,15.0,49.4,57020,6610.0,12103.0,16768.0,0.124,1191056.0,carrier_airport
+DL,Delta Air Lines,BWI,Baltimore,Large,24046,76.0,22.0,54.0,7.9,84410,6685.0,12084.0,16608.0,0.05,1189186.0,carrier_airport
+YX,Republic Airways,CVG,Cincinnati,Medium,17065,49.0,26.0,23.0,28.3,51414,6522.0,11968.0,16591.0,0.07,1177771.0,carrier_airport
+AS,Alaska Airlines,KTN,Ketchikan,Non-hub,10293,48.0,30.0,18.0,1.9,64428,6533.0,11965.0,16537.0,0.116,1177476.0,carrier_airport
+F9,Frontier Airlines,TTN,Trenton,Non-hub,7663,50.0,36.0,14.0,50.3,70326,6360.0,11953.0,16936.0,0.156,1176295.0,carrier_airport
+OO,SkyWest Airlines,FAR,Fargo,Small,11965,61.0,29.0,32.0,29.0,33285,6427.0,11929.0,16687.0,0.1,1173933.0,carrier_airport
+NK,Spirit Airlines,SAN,San Diego,Large,7612,57.0,43.0,14.0,52.7,35210,6483.0,11913.0,16463.0,0.157,1172358.0,carrier_airport
+WN,Southwest Airlines,SBA,Santa Barbara,Small,8209,45.0,32.0,13.0,58.5,40416,6592.0,11902.0,16288.0,0.145,1171276.0,carrier_airport
+OO,SkyWest Airlines,ICT,Wichita,Small,11642,72.0,26.0,46.0,26.8,41923,6420.0,11864.0,16596.0,0.102,1167536.0,carrier_airport
+AA,American Airlines,STT,St. Thomas,Small,9096,50.0,35.0,15.0,42.6,58750,6469.0,11813.0,16330.0,0.13,1162517.0,carrier_airport
+OO,SkyWest Airlines,ABQ,Albuquerque,Medium,18937,81.0,29.0,52.0,23.5,24450,6449.0,11768.0,16297.0,0.062,1158089.0,carrier_airport
+OO,SkyWest Airlines,TUL,Tulsa,Small,15487,73.0,27.0,46.0,30.4,48046,6395.0,11763.0,16401.0,0.076,1157597.0,carrier_airport
+AA,American Airlines,VPS,Valparaiso,Small,7767,59.0,39.0,20.0,45.6,69096,6323.0,11717.0,16378.0,0.151,1153070.0,carrier_airport
+OO,SkyWest Airlines,BNA,Nashville,Large,14828,416.0,34.0,382.0,23.6,16394,6364.0,11712.0,16319.0,0.079,1152578.0,carrier_airport
+WN,Southwest Airlines,HRL,Harlingen,Small,9024,45.0,33.0,12.0,53.9,41287,6472.0,11704.0,15856.0,0.13,1151791.0,carrier_airport
+MQ,Envoy Air,EYW,Key West,Small,7108,37.0,27.0,10.0,61.1,46787,6366.0,11663.0,16067.0,0.164,1147756.0,carrier_airport
+NK,Spirit Airlines,OAK,Oakland,Medium,9621,57.0,43.0,14.0,50.6,36404,6318.0,11621.0,16224.0,0.121,1143623.0,carrier_airport
+UA,United Airlines,SLC,Salt Lake City,Large,13989,66.0,16.0,50.0,13.5,67634,6219.0,11594.0,16299.0,0.083,1140966.0,carrier_airport
+DL,Delta Air Lines,CHS,Charleston,Medium,17029,72.0,43.0,29.0,16.9,59357,6324.0,11593.0,16082.0,0.068,1140867.0,carrier_airport
+OO,SkyWest Airlines,FSD,Sioux Falls,Small,11017,51.0,27.0,24.0,29.3,28636,6263.0,11544.0,16080.0,0.105,1136045.0,carrier_airport
+UA,United Airlines,SMF,Sacramento,Medium,16007,126.0,45.0,81.0,14.0,52746,6182.0,11542.0,16185.0,0.072,1135848.0,carrier_airport
+OO,SkyWest Airlines,GRR,Grand Rapids,Medium,8513,47.0,29.0,18.0,34.5,22420,6057.0,11476.0,16261.0,0.135,1129353.0,carrier_airport
+MQ,Envoy Air,CRP,Corpus Christi,Small,9545,31.0,24.0,7.0,65.4,39546,6327.0,11412.0,15551.0,0.12,1123055.0,carrier_airport
+AA,American Airlines,OMA,Omaha,Medium,10985,111.0,40.0,71.0,35.2,66977,6123.0,11344.0,15928.0,0.103,1116363.0,carrier_airport
+B6,JetBlue Airways,MSY,New Orleans,Medium,5994,55.0,42.0,13.0,53.2,62520,6067.200000000048,11310.700000000084,15842.150000000118,0.189,1113086.0,carrier_airport
+WN,Southwest Airlines,ROC,Rochester,Small,7837,50.0,39.0,11.0,51.9,36816,6360.0,11306.0,15156.0,0.144,1112623.0,carrier_airport
+NK,Spirit Airlines,CLE,Cleveland,Medium,9911,78.0,43.0,35.0,31.6,53274,6160.0,11306.0,15764.0,0.114,1112623.0,carrier_airport
+OO,SkyWest Airlines,CLE,Cleveland,Medium,8744,48.0,30.0,18.0,25.6,19233,6054.0,11288.0,15936.0,0.129,1110852.0,carrier_airport
+MQ,Envoy Air,CVG,Cincinnati,Medium,12925,382.0,31.0,351.0,33.4,37671,6288.0,11284.0,15372.0,0.087,1110458.0,carrier_airport
+AS,Alaska Airlines,ORD,Chicago,Large,13923,65.0,27.0,38.0,9.6,72020,6190.0,11281.0,15520.0,0.081,1110163.0,carrier_airport
+DL,Delta Air Lines,SAV,Savannah,Medium,13866,70.0,45.0,25.0,19.8,47027,6211.0,11276.0,15567.0,0.081,1109671.0,carrier_airport
+WN,Southwest Airlines,VPS,Valparaiso,Small,7477,45.0,34.0,11.0,62.9,37089,6269.0,11247.0,15162.0,0.15,1106817.0,carrier_airport
+OO,SkyWest Airlines,MSN,Madison,Small,9553,47.0,28.0,19.0,25.9,19488,5942.0,11182.0,15878.0,0.117,1100421.0,carrier_airport
+DL,Delta Air Lines,MKE,Milwaukee,Medium,18151,70.0,38.0,32.0,10.0,55155,6042.0,11142.0,15565.0,0.061,1096484.0,carrier_airport
+WN,Southwest Airlines,IAD,Washington,Medium,7401,50.0,37.0,13.0,55.8,31539,6274.0,11079.0,14845.0,0.15,1090284.0,carrier_airport
+UA,United Airlines,PHL,Philadelphia,Large,15648,91.0,46.0,45.0,16.0,49673,6027.0,11013.0,15299.0,0.07,1083789.0,carrier_airport
+YX,Republic Airways,ORF,Norfolk,Medium,14518,52.0,26.0,26.0,29.1,47980,6010.0,10996.0,15210.0,0.076,1082116.0,carrier_airport
+OO,SkyWest Airlines,COS,Colorado Springs,Small,15129,110.0,28.0,82.0,24.6,32962,5955.0,10943.0,15230.0,0.072,1076901.0,carrier_airport
+F9,Frontier Airlines,ORD,Chicago,Large,7141,97.0,46.0,51.0,26.7,76695,5824.0,10940.0,15459.0,0.153,1076605.0,carrier_airport
+OO,SkyWest Airlines,SAF,Santa Fe,Non-hub,10239,48.0,24.0,24.0,40.5,35008,5908.0,10934.0,15363.0,0.107,1076015.0,carrier_airport
+OH,PSA Airlines,PNS,Pensacola,Small,9621,92.0,28.0,64.0,39.3,48303,6027.0,10902.0,14937.0,0.113,1072866.0,carrier_airport
+B6,JetBlue Airways,PHX,Phoenix,Large,4783,70.0,47.0,23.0,31.4,67982,5720.0,10827.0,15374.0,0.226,1065485.0,carrier_airport
+OO,SkyWest Airlines,MEM,Memphis,Medium,9536,53.0,32.0,21.0,45.4,27863,5873.0,10747.0,14904.0,0.113,1057612.0,carrier_airport
+WN,Southwest Airlines,JAN,Jackson,Small,8135,45.0,31.0,14.0,51.2,39653,5843.0,10743.0,14804.0,0.132,1057219.0,carrier_airport
+WN,Southwest Airlines,RIC,Richmond,Medium,7648,50.0,38.0,12.0,55.9,33692,6053.0,10735.0,14429.0,0.14,1056431.0,carrier_airport
+NK,Spirit Airlines,AUS,Austin,Large,7336,60.0,44.0,16.0,46.8,42581,5772.0,10731.0,15033.0,0.146,1056038.0,carrier_airport
+OO,SkyWest Airlines,SGU,Saint George,Small,15083,64.0,27.0,37.0,36.1,27632,5934.0,10720.0,14751.0,0.071,1054955.0,carrier_airport
+MQ,Envoy Air,CMH,Columbus,Medium,12639,386.0,30.0,356.0,29.3,36593,5895.0,10716.0,14618.0,0.085,1054562.0,carrier_airport
+YX,Republic Airways,CHS,Charleston,Medium,12150,51.0,28.0,23.0,30.4,42508,5919.0,10710.0,14724.0,0.088,1053971.0,carrier_airport
+AS,Alaska Airlines,DEN,Denver,Large,9484,62.0,42.0,20.0,23.2,56487,5877.0,10705.0,14786.0,0.113,1053479.0,carrier_airport
+AA,American Airlines,EGE,Vail,Non-hub,4787,41.0,33.0,8.0,75.8,68084,5689.0,10698.0,15127.0,0.223,1052790.0,carrier_airport
+AA,American Airlines,MSN,Madison,Small,7446,135.0,38.0,97.0,41.5,56171,5740.0,10689.0,15054.0,0.144,1051904.0,carrier_airport
+DL,Delta Air Lines,BDL,Windsor Locks,Medium,17347,75.0,47.0,28.0,24.2,56456,5796.0,10678.0,14923.0,0.062,1050822.0,carrier_airport
+OO,SkyWest Airlines,LGA,New York,Large,7922,51.0,33.0,18.0,38.2,13936,5685.0,10635.0,15038.0,0.134,1046590.0,carrier_airport
+WN,Southwest Airlines,PWM,Portland,Small,6471,50.0,37.0,13.0,59.1,35781,5973.0,10586.0,14194.0,0.164,1041768.0,carrier_airport
+AA,American Airlines,TUL,Tulsa,Small,8911,110.0,38.0,72.0,42.8,59017,5630.0,10565.0,14883.0,0.119,1039702.0,carrier_airport
+B6,JetBlue Airways,AUS,Austin,Large,5201,55.0,40.0,15.0,46.4,51390,5654.0,10559.0,14733.0,0.203,1039111.0,carrier_airport
+OO,SkyWest Airlines,MRY,Monterey,Small,12708,52.0,28.0,24.0,31.7,39568,5738.0,10531.0,14673.0,0.083,1036356.0,carrier_airport
+OH,PSA Airlines,ILM,Wilmington,Small,7896,33.0,23.0,10.0,66.5,47673,5716.0,10484.0,14531.0,0.133,1031730.0,carrier_airport
+OO,SkyWest Airlines,GJT,Grand Junction,Small,11639,45.0,24.0,21.0,36.1,28422,5636.0,10424.0,14584.0,0.09,1025826.0,carrier_airport
+OO,SkyWest Airlines,EUG,Eugene,Small,14900,57.0,32.0,25.0,37.9,20570,5804.0,10347.0,14105.0,0.069,1018248.0,carrier_airport
+AS,Alaska Airlines,IAD,Washington,Medium,7389,66.0,53.0,13.0,51.3,34989,5747.0,10318.0,13972.0,0.14,1015394.0,carrier_airport
+NK,Spirit Airlines,IND,Indianapolis,Medium,8961,65.0,41.0,24.0,32.0,44531,5542.0,10242.0,14337.0,0.114,1007915.0,carrier_airport
+OO,SkyWest Airlines,STL,St. Louis,Medium,8772,50.0,29.0,21.0,34.5,27069,5508.0,10233.0,14385.0,0.117,1007030.0,carrier_airport
+MQ,Envoy Air,TLH,Tallahassee,Small,8234,39.0,28.0,11.0,54.3,33552,5620.0,10218.0,14016.0,0.124,1005553.0,carrier_airport
+WN,Southwest Airlines,FAT,Fresno,Small,6549,45.0,35.0,10.0,50.7,36938,5656.0,10206.0,13828.0,0.156,1004372.0,carrier_airport
+NK,Spirit Airlines,CMH,Columbus,Medium,9139,65.0,42.0,23.0,33.2,39977,5525.0,10151.0,14109.0,0.111,998960.0,carrier_airport
+WN,Southwest Airlines,AMA,Amarillo,Small,8385,45.0,29.0,16.0,46.8,37344,5575.0,10079.0,13774.0,0.12,991874.0,carrier_airport
+B6,JetBlue Airways,BQN,Aguadilla,Non-hub,6071,67.0,31.0,36.0,17.7,80154,5349.0,10060.0,14247.0,0.166,990005.0,carrier_airport
+UA,United Airlines,CMH,Columbus,Medium,10239,116.0,52.0,64.0,39.1,43312,5416.0,10048.0,13944.0,0.098,988824.0,carrier_airport
+F9,Frontier Airlines,PBI,West Palm Beach,Medium,3585,50.0,45.0,5.0,60.1,56292,5336.0,10002.0,14173.0,0.279,984297.0,carrier_airport
+AA,American Airlines,FAT,Fresno,Small,8159,68.0,42.0,26.0,46.4,55343,5482.0,9997.0,13821.0,0.123,983805.0,carrier_airport
+AS,Alaska Airlines,DFW,Dallas-Fort Worth,Large,9861,67.0,34.0,33.0,8.4,57995,5441.0,9970.0,13723.0,0.101,981148.0,carrier_airport
+UA,United Airlines,CLT,Charlotte,Large,12604,111.0,38.0,73.0,8.4,57905,5379.0,9967.0,13937.0,0.079,980852.0,carrier_airport
+DL,Delta Air Lines,IAD,Washington,Medium,12810,110.0,44.0,66.0,25.6,46348,5452.0,9962.0,13791.0,0.078,980360.0,carrier_airport
+B6,JetBlue Airways,SAV,Savannah,Medium,5143,46.0,35.0,11.0,59.1,55580,5338.0,9945.0,14011.0,0.193,978687.0,carrier_airport
+B6,JetBlue Airways,RIC,Richmond,Medium,7778,79.0,37.0,42.0,35.8,62393,5307.0,9919.0,13962.0,0.128,976129.0,carrier_airport
+MQ,Envoy Air,BOS,Boston,Large,6185,43.0,29.0,14.0,50.5,42308,5422.0,9889.0,13720.0,0.16,973176.0,carrier_airport
+MQ,Envoy Air,JAX,Jacksonville,Medium,6290,37.0,29.0,8.0,61.2,34082,5441.0,9857.0,13537.0,0.157,970027.0,carrier_airport
+OH,PSA Airlines,CHS,Charleston,Medium,7586,34.0,24.0,10.0,60.5,46433,5448.0,9852.0,13520.0,0.13,969535.0,carrier_airport
+OO,SkyWest Airlines,BZN,Bozeman,Small,10040,45.0,30.0,15.0,41.4,21278,5430.0,9843.0,13559.0,0.098,968650.0,carrier_airport
+OH,PSA Airlines,CVG,Cincinnati,Medium,9872,91.0,29.0,62.0,38.8,44215,5391.0,9843.0,13578.0,0.1,968650.0,carrier_airport
+UA,United Airlines,JAX,Jacksonville,Medium,12900,134.0,45.0,89.0,20.9,45693,5346.0,9842.0,13676.0,0.076,968551.0,carrier_airport
+MQ,Envoy Air,BHM,Birmingham,Small,8392,85.0,28.0,57.0,45.6,36261,5423.0,9819.0,13421.0,0.117,966288.0,carrier_airport
+OO,SkyWest Airlines,FWA,Fort Wayne,Small,11690,137.0,29.0,108.0,26.1,27572,5242.0,9785.0,13741.0,0.084,962942.0,carrier_airport
+AS,Alaska Airlines,GEG,Spokane,Medium,10634,331.0,45.0,286.0,37.9,27298,5471.0,9785.0,13256.0,0.092,962942.0,carrier_airport
+AA,American Airlines,DSM,Des Moines,Small,8946,159.0,38.0,121.0,31.9,61597,5225.0,9770.0,13742.0,0.109,961466.0,carrier_airport
+AA,American Airlines,SDF,Louisville,Medium,7925,280.0,37.0,243.0,36.8,61314,5182.0,9708.0,13749.0,0.122,955364.0,carrier_airport
+OO,SkyWest Airlines,IDA,Idaho Falls,Small,14041,90.0,29.0,61.0,21.4,27120,5231.0,9653.0,13485.0,0.069,949952.0,carrier_airport
+MQ,Envoy Air,ICT,Wichita,Small,7196,32.0,26.0,6.0,66.3,28756,5382.0,9638.0,13074.0,0.134,948476.0,carrier_airport
+NK,Spirit Airlines,PHX,Phoenix,Large,5427,59.0,40.0,19.0,35.2,34391,5190.0,9624.0,13544.0,0.177,947098.0,carrier_airport
+F9,Frontier Airlines,BUF,Buffalo,Medium,4924,55.0,39.0,16.0,40.3,56602,5069.0,9543.0,13496.0,0.194,939127.0,carrier_airport
+OH,PSA Airlines,SDF,Louisville,Medium,6045,34.0,25.0,9.0,61.5,43276,5134.0,9528.0,13270.0,0.158,937650.0,carrier_airport
+DL,Delta Air Lines,SMF,Sacramento,Medium,16009,76.0,46.0,30.0,25.9,50774,5127.0,9495.0,13297.0,0.059,934403.0,carrier_airport
+OH,PSA Airlines,CAE,Columbia,Small,8532,90.0,27.0,63.0,43.8,42028,5152.0,9429.0,13057.0,0.111,927908.0,carrier_airport
+WN,Southwest Airlines,EUG,Eugene,Small,6334,45.0,36.0,9.0,58.4,27942,5357.0,9408.0,12518.0,0.149,925841.0,carrier_airport
+YV,Mesa Airlines,IAD,Washington,Medium,14151,80.0,37.0,43.0,18.4,21496,5070.0,9397.0,13084.0,0.066,924759.0,carrier_airport
+OO,SkyWest Airlines,JFK,New York,Large,7183,61.0,39.0,22.0,37.8,0,4979.0,9392.0,13324.0,0.131,924267.0,carrier_airport
+MQ,Envoy Air,HSV,Huntsville,Small,6063,33.0,30.0,3.0,61.1,28638,5212.0,9384.0,12783.0,0.155,923479.0,carrier_airport
+OO,SkyWest Airlines,MFR,Medford,Small,15708,96.0,32.0,64.0,32.8,14826,5161.0,9349.0,12909.0,0.06,920035.0,carrier_airport
+OO,SkyWest Airlines,RAP,Rapid City,Small,10152,57.0,28.0,29.0,25.3,32267,5012.0,9324.0,13009.0,0.092,917575.0,carrier_airport
+OH,PSA Airlines,AVL,Asheville,Small,7682,34.0,25.0,9.0,58.0,36027,5165.5,9302.25,12713.0,0.121,915434.0,carrier_airport
+QX,Horizon Air,PDX,Portland,Medium,15777,72.0,36.0,36.0,32.4,22925,5392.0,9282.0,12248.0,0.059,913442.0,carrier_airport
+OO,SkyWest Airlines,PIT,Pittsburgh,Medium,7575,46.0,30.0,16.0,28.4,12532,4991.0,9252.0,12881.0,0.122,910489.0,carrier_airport
+AS,Alaska Airlines,FAI,Fairbanks,Small,11539,62.0,32.0,30.0,8.8,37702,5104.0,9250.0,12625.0,0.08,910293.0,carrier_airport
+OH,PSA Airlines,MHT,Manchester NH,Small,7522,38.0,27.0,11.0,51.5,39001,5007.0,9211.0,12788.0,0.122,906455.0,carrier_airport
+OH,PSA Airlines,PVD,Providence,Small,7166,35.0,25.0,10.0,55.5,48689,4975.0,9197.0,12857.0,0.128,905077.0,carrier_airport
+AA,American Airlines,RNO,Reno,Medium,9902,105.0,41.0,64.0,42.8,47623,5065.0,9195.0,12627.0,0.093,904880.0,carrier_airport
+YX,Republic Airways,RIC,Richmond,Medium,10944,54.0,28.0,26.0,33.8,34821,5020.0,9178.0,12720.0,0.084,903207.0,carrier_airport
+UA,United Airlines,BZN,Bozeman,Small,9362,67.0,45.0,22.0,17.6,40666,4904.0,9168.0,12945.0,0.098,902223.0,carrier_airport
+B6,JetBlue Airways,PVD,Providence,Small,6999,65.0,42.0,23.0,43.3,54520,4901.0,9120.0,12842.0,0.13,897499.0,carrier_airport
+DL,Delta Air Lines,MEM,Memphis,Medium,17683,96.0,35.0,61.0,8.5,47194,4986.0,9116.0,12649.0,0.052,897106.0,carrier_airport
+AS,Alaska Airlines,BOS,Boston,Large,10739,75.0,31.0,44.0,7.9,59759,4910.0,9106.0,12726.0,0.085,896121.0,carrier_airport
+YX,Republic Airways,SDF,Louisville,Medium,21755,431.0,34.0,397.0,25.3,24669,5054.0,9080.0,12386.0,0.042,893563.0,carrier_airport
+DL,Delta Air Lines,SRQ,Sarasota,Small,13715,71.0,30.0,41.0,7.4,61593,4886.0,9035.0,12594.0,0.066,889134.0,carrier_airport
+YX,Republic Airways,JAX,Jacksonville,Medium,11322,54.0,32.0,22.0,35.4,28145,4959.0,9020.0,12381.0,0.08,887658.0,carrier_airport
+MQ,Envoy Air,MAF,Midland,Small,7430,32.0,26.0,6.0,63.7,32950,4926.0,9014.0,12442.0,0.121,887068.0,carrier_airport
+MQ,Envoy Air,STL,St. Louis,Medium,6566,38.0,28.0,10.0,56.0,38185,4939.0,8989.0,12459.0,0.137,884607.0,carrier_airport
+F9,Frontier Airlines,BDL,Windsor Locks,Medium,3836,60.0,36.0,24.0,27.6,61573,4749.0,8984.0,12755.0,0.234,884115.0,carrier_airport
+OH,PSA Airlines,CLE,Cleveland,Medium,6758,36.0,26.0,10.0,55.9,50104,4812.0,8982.0,12610.0,0.133,883919.0,carrier_airport
+F9,Frontier Airlines,SEA,Seattle,Large,4728,55.0,41.0,14.0,57.0,47611,4801.0,8960.0,12511.0,0.19,881754.0,carrier_airport
+AA,American Airlines,PVD,Providence,Small,7838,76.0,39.0,37.0,43.0,47083,4822.0,8934.0,12509.0,0.114,879195.0,carrier_airport
+OO,SkyWest Airlines,LIT,Little Rock,Small,6648,43.0,28.0,15.0,48.2,28568,4826.0,8887.0,12369.0,0.134,874570.0,carrier_airport
+WN,Southwest Airlines,KOA,Kona,Small,13482,75.0,36.0,39.0,24.2,34467,4922.0,8838.0,12029.0,0.066,869748.0,carrier_airport
+OO,SkyWest Airlines,MAF,Midland,Small,9228,64.0,28.0,36.0,35.7,22566,4678.0,8786.0,12370.0,0.095,864630.0,carrier_airport
+OO,SkyWest Airlines,ATW,Appleton,Small,9791,412.0,32.0,380.0,31.9,15136,4607.0,8732.0,12407.0,0.089,859316.0,carrier_airport
+DL,Delta Air Lines,DAL,Dallas,Large,8782,60.0,46.0,14.0,50.0,34625,4804.0,8723.0,11946.0,0.099,858430.0,carrier_airport
+F9,Frontier Airlines,PDX,Portland,Medium,4966,55.0,40.0,15.0,45.3,46303,4645.0,8665.0,12144.0,0.174,852723.0,carrier_airport
+AS,Alaska Airlines,MCO,Orlando,Large,11053,75.0,31.0,44.0,8.7,62474,4688.0,8659.0,12089.0,0.078,852132.0,carrier_airport
+AA,American Airlines,JAC,Jacksn Hole,Small,4480,44.0,34.0,10.0,60.1,58755,4637.0,8643.0,12183.0,0.193,850558.0,carrier_airport
+AS,Alaska Airlines,AUS,Austin,Large,11270,65.0,33.0,32.0,8.4,45578,4777.0,8622.0,11746.0,0.077,848491.0,carrier_airport
+UA,United Airlines,MCI,Kansas City,Medium,13160,125.0,36.0,89.0,7.7,46118,4658.0,8612.0,12065.0,0.065,847507.0,carrier_airport
+OO,SkyWest Airlines,GRB,Green Bay,Small,9213,93.0,27.0,66.0,27.5,17163,4569.0,8611.0,12151.0,0.093,847409.0,carrier_airport
+OO,SkyWest Airlines,HPN,White Plains,Small,6680,50.0,31.0,19.0,45.9,12543,4639.0,8607.0,12055.0,0.129,847015.0,carrier_airport
+F9,Frontier Airlines,SNA,Santa Ana,Medium,4999,50.0,37.0,13.0,73.9,40927,4648.0,8573.0,11941.0,0.171,843669.0,carrier_airport
+MQ,Envoy Air,PNS,Pensacola,Small,5994,38.0,28.0,10.0,54.6,27421,4787.0,8571.0,11648.0,0.143,843472.0,carrier_airport
+B6,JetBlue Airways,DTW,Detroit,Large,5492,55.0,35.0,20.0,45.8,46601,4589.0,8568.0,12094.0,0.156,843177.0,carrier_airport
+OH,PSA Airlines,BDL,Windsor Locks,Medium,5642,37.0,25.0,12.0,55.6,43241,4596.0,8505.0,11860.0,0.151,836977.0,carrier_airport
+OH,PSA Airlines,CMH,Columbus,Medium,4950,32.0,25.0,7.0,71.8,37269,4642.0,8482.0,11724.0,0.171,834714.0,carrier_airport
+AA,American Airlines,ILM,Wilmington,Small,6485,62.0,36.0,26.0,45.2,42643,4569.0,8469.0,11904.0,0.131,833434.0,carrier_airport
+AA,American Airlines,BUF,Buffalo,Medium,7768,124.0,42.0,82.0,36.1,45621,4591.0,8413.0,11657.0,0.108,827923.0,carrier_airport
+B6,JetBlue Airways,SRQ,Sarasota,Small,3694,51.0,36.0,15.0,48.8,45020,4444.0,8304.0,11725.0,0.225,817197.0,carrier_airport
+B6,JetBlue Airways,SAN,San Diego,Large,8310,71.0,30.0,41.0,9.8,47767,4462.0,8251.0,11572.0,0.099,811981.0,carrier_airport
+OO,SkyWest Airlines,ONT,Ontario,Medium,12187,49.0,30.0,19.0,30.7,15233,4459.0,8237.0,11533.0,0.068,810603.0,carrier_airport
+DL,Delta Air Lines,ANC,Anchorage,Medium,11936,80.0,41.0,39.0,11.1,45602,4484.0,8236.0,11337.0,0.069,810505.0,carrier_airport
+OH,PSA Airlines,ECP,Panama City,Small,4858,32.0,24.0,8.0,69.2,37190,4498.0,8229.0,11362.0,0.169,809816.0,carrier_airport
+OO,SkyWest Airlines,TVC,Traverse City,Small,5056,45.0,28.0,17.0,43.2,20117,4350.0,8184.0,11606.0,0.162,805387.0,carrier_airport
+OH,PSA Airlines,ALB,Albany,Small,5378,36.0,23.0,13.0,53.7,43665,4420.0,8184.0,11444.0,0.152,805387.0,carrier_airport
+AA,American Airlines,GRR,Grand Rapids,Medium,7857,345.0,40.0,305.0,32.2,48230,4390.0,8157.0,11501.0,0.104,802730.0,carrier_airport
+AS,Alaska Airlines,DCA,Washington,Large,7817,67.0,51.0,16.0,48.7,29951,4487.0,8130.0,11085.0,0.104,800073.0,carrier_airport
+WN,Southwest Airlines,ICT,Wichita,Small,6960,55.0,33.0,22.0,45.0,24800,4573.0,8126.0,10976.0,0.117,799680.0,carrier_airport
+9E,Endeavor Air,EWR,Newark,Large,5814,50.0,35.0,15.0,47.0,55666,4286.0,8075.0,11484.0,0.139,794661.0,carrier_airport
+DL,Delta Air Lines,HNL,Honolulu,Medium,14145,106.0,47.0,59.0,9.0,58043,4306.0,8010.0,11181.0,0.057,788264.0,carrier_airport
+OH,PSA Airlines,GSO,Greensboro,Small,8683,42.0,26.0,16.0,47.4,35516,4419.0,8005.0,11011.0,0.092,787772.0,carrier_airport
+AA,American Airlines,MFE,Mcallen,Small,6507,110.0,37.0,73.0,26.7,55551,4210.0,7989.0,11311.0,0.123,786197.0,carrier_airport
+OO,SkyWest Airlines,SDF,Louisville,Medium,8384,65.0,31.0,34.0,33.9,12464,4280.0,7983.0,11245.0,0.095,785607.0,carrier_airport
+DL,Delta Air Lines,BHM,Birmingham,Small,12654,70.0,46.0,24.0,17.0,30528,4326.0,7966.0,11084.0,0.063,783934.0,carrier_airport
+OO,SkyWest Airlines,BIS,Bismarck,Small,9723,65.0,32.0,33.0,37.1,17288,4295.0,7909.0,11059.0,0.081,778325.0,carrier_airport
+WN,Southwest Airlines,DSM,Des Moines,Small,6693,95.0,38.0,57.0,45.3,25174,4464.0,7906.0,10597.0,0.118,778029.0,carrier_airport
+DL,Delta Air Lines,IND,Indianapolis,Medium,18951,89.0,20.0,69.0,8.1,55519,4376.0,7885.0,10834.0,0.042,775963.0,carrier_airport
+MQ,Envoy Air,GRK,Killeen,Non-hub,6082,35.0,25.0,10.0,56.8,29590,4336.0,7859.0,10821.0,0.129,773404.0,carrier_airport
+UA,United Airlines,STL,St. Louis,Medium,8146,64.0,45.0,19.0,37.2,40861,4208.0,7775.0,10893.0,0.095,765138.0,carrier_airport
+OO,SkyWest Airlines,CMH,Columbus,Medium,6992,51.0,31.0,20.0,34.9,7774,4164.0,7773.0,10915.0,0.111,764941.0,carrier_airport
+OO,SkyWest Airlines,MDW,Chicago,Large,5797,45.0,28.0,17.0,41.4,0,4176.0,7769.0,10941.0,0.134,764547.0,carrier_airport
+NK,Spirit Airlines,MCI,Kansas City,Medium,6624,60.0,40.0,20.0,26.1,32822,4196.0,7718.0,10764.0,0.117,759528.0,carrier_airport
+AS,Alaska Airlines,OGG,Kahului,Medium,11916,60.0,17.0,43.0,10.6,65118,4264.0,7705.0,10535.0,0.065,758249.0,carrier_airport
+AS,Alaska Airlines,SLC,Salt Lake City,Large,5046,55.0,43.0,12.0,67.0,28630,4279.0,7692.0,10459.0,0.152,756970.0,carrier_airport
+DL,Delta Air Lines,SJU,San Juan,Medium,14495,77.0,35.0,42.0,5.8,48424,4233.80000000001,7665.400000000012,10499.800000000014,0.053,754352.0,carrier_airport
+AA,American Airlines,PSP,Palm Springs,Small,7364,61.0,40.0,21.0,27.0,41532,4175.0,7659.0,10681.0,0.104,753722.0,carrier_airport
+OO,SkyWest Airlines,ACV,Arcata CA,Non-hub,8103,61.0,31.0,30.0,27.4,32254,4150.0,7658.0,10741.0,0.095,753624.0,carrier_airport
+DL,Delta Air Lines,CLE,Cleveland,Medium,13384,115.0,42.0,73.0,13.9,34630,4213.0,7633.0,10507.0,0.057,751164.0,carrier_airport
+DL,Delta Air Lines,VPS,Valparaiso,Small,10251,65.0,40.0,25.0,20.7,31117,4177.0,7631.0,10572.0,0.074,750967.0,carrier_airport
+OO,SkyWest Airlines,CID,Cedar Rapids,Small,7377,50.0,28.0,22.0,30.5,24073,4054.0,7610.0,10756.0,0.103,748900.0,carrier_airport
+DL,Delta Air Lines,EYW,Key West,Small,6382,60.0,45.0,15.0,28.9,35295,4135.0,7605.0,10503.0,0.119,748408.0,carrier_airport
+AA,American Airlines,TYS,Knoxville,Small,4746,54.0,38.0,16.0,48.4,47852,4100.0,7577.0,10630.0,0.16,745653.0,carrier_airport
+NK,Spirit Airlines,MSP,Minneapolis,Large,5938,60.0,42.0,18.0,38.3,26350,4092.0,7568.0,10546.0,0.127,744767.0,carrier_airport
+OH,PSA Airlines,IAD,Washington,Medium,5725,33.0,25.0,8.0,61.9,32861,4104.0,7563.0,10517.0,0.132,744275.0,carrier_airport
+MQ,Envoy Air,MSY,New Orleans,Medium,5063,36.0,27.0,9.0,58.8,28698,4138.0,7548.0,10435.0,0.149,742799.0,carrier_airport
+MQ,Envoy Air,IAH,Houston,Large,4466,32.0,27.0,5.0,71.6,27731,4220.0,7547.0,10277.0,0.169,742700.0,carrier_airport
+YX,Republic Airways,HHH,Hilton Head Island,Non-hub,6316,45.0,25.0,20.0,36.1,28073,4102.0,7539.0,10418.0,0.119,741913.0,carrier_airport
+WN,Southwest Airlines,LIH,Lihue,Small,12100,75.0,36.0,39.0,20.8,33033,4139.0,7527.0,10302.0,0.062,740732.0,carrier_airport
+9E,Endeavor Air,DCA,Washington,Large,5897,48.0,32.0,16.0,42.8,40410,4063.0,7518.0,10452.0,0.127,739846.0,carrier_airport
+MQ,Envoy Air,TPA,Tampa,Large,4226,34.0,27.0,7.0,66.1,33317,4112.0,7488.0,10314.0,0.177,736894.0,carrier_airport
+YX,Republic Airways,MEM,Memphis,Medium,10664,95.0,30.0,65.0,34.3,26358,4152.0,7473.0,10097.0,0.07,735418.0,carrier_airport
+WN,Southwest Airlines,GSP,Greenville,Small,5853,50.0,35.0,15.0,47.8,20633,4260.0,7470.0,10010.0,0.128,735123.0,carrier_airport
+OH,PSA Airlines,BTV,Burlington,Small,7259,46.0,26.0,20.0,46.1,35470,4129.0,7467.0,10312.0,0.103,734827.0,carrier_airport
+OO,SkyWest Airlines,IND,Indianapolis,Medium,5386,46.0,29.0,17.0,30.7,16418,3990.0,7456.0,10476.0,0.138,733745.0,carrier_airport
+MQ,Envoy Air,AVL,Asheville,Small,3841,32.0,29.0,3.0,64.7,22325,4192.0,7445.0,9952.0,0.194,732662.0,carrier_airport
+UA,United Airlines,SRQ,Sarasota,Small,6243,66.0,44.0,22.0,32.4,36673,3985.0,7440.0,10458.0,0.119,732170.0,carrier_airport
+NK,Spirit Airlines,SMF,Sacramento,Medium,5191,55.0,41.0,14.0,54.6,18114,3985.0,7378.0,10250.0,0.142,726069.0,carrier_airport
+B6,JetBlue Airways,IAH,Houston,Large,3076,55.0,41.0,14.0,62.9,35149,3910.0,7358.0,10331.0,0.239,724101.0,carrier_airport
+UA,United Airlines,PIT,Pittsburgh,Medium,12079,116.0,48.0,68.0,19.6,31632,3996.0,7318.0,10112.0,0.061,720164.0,carrier_airport
+NK,Spirit Airlines,DEN,Denver,Large,5319,65.0,45.0,20.0,40.7,26855,3966.100000000013,7300.500000000033,10084.000000000044,0.137,718442.0,carrier_airport
+DL,Delta Air Lines,GRR,Grand Rapids,Medium,12810,70.0,41.0,29.0,19.3,35098,3952.0,7289.0,10195.0,0.057,717310.0,carrier_airport
+UA,United Airlines,IND,Indianapolis,Medium,9845,119.0,47.0,72.0,18.7,32026,3955.0,7275.0,10162.0,0.074,715933.0,carrier_airport
+AA,American Airlines,MYR,Myrtle Beach,Small,5406,52.0,34.0,18.0,37.0,41099,3919.0,7272.0,10210.0,0.135,715638.0,carrier_airport
+YV,Mesa Airlines,MAF,Midland,Small,4847,40.0,26.0,14.0,50.8,38640,3826.0,7253.0,10355.0,0.15,713768.0,carrier_airport
+MQ,Envoy Air,OKC,Oklahoma City,Medium,6102,37.0,27.0,10.0,54.6,28890,3986.0,7252.0,9994.0,0.119,713669.0,carrier_airport
+OH,PSA Airlines,BTR,Baton Rouge,Small,6053,90.0,28.0,62.0,41.4,36297,3970.0,7246.0,10016.0,0.12,713079.0,carrier_airport
+MQ,Envoy Air,MCI,Kansas City,Medium,6013,41.0,27.0,14.0,50.1,25406,4012.0,7241.0,9862.0,0.12,712587.0,carrier_airport
+DL,Delta Air Lines,MYR,Myrtle Beach,Small,8724,55.0,38.0,17.0,20.3,33324,3924.0,7238.0,10098.0,0.083,712292.0,carrier_airport
+OO,SkyWest Airlines,DSM,Des Moines,Small,6808,50.0,26.0,24.0,23.2,27932,3926.0,7234.0,10098.0,0.106,711898.0,carrier_airport
+AS,Alaska Airlines,SJC,San Jose,Medium,11197,122.0,43.0,79.0,29.9,25966,4014.0,7227.0,9857.0,0.065,711209.0,carrier_airport
+DL,Delta Air Lines,GEG,Spokane,Medium,12787,70.0,23.0,47.0,8.3,45950,3907.0,7198.0,10001.0,0.056,708355.0,carrier_airport
+YX,Republic Airways,PWM,Portland,Small,11281,72.0,29.0,43.0,27.9,28551,3961.0,7193.0,9931.0,0.064,707863.0,carrier_airport
+OH,PSA Airlines,CRW,Charleston,Non-hub,6737,90.0,27.0,63.0,42.6,29674,3899.0,7186.0,9957.0,0.107,707174.0,carrier_airport
+YX,Republic Airways,MCI,Kansas City,Medium,10236,83.0,29.0,54.0,23.8,21218,3928.0,7185.0,9904.0,0.07,707076.0,carrier_airport
+OO,SkyWest Airlines,MCI,Kansas City,Medium,6986,53.0,29.0,24.0,26.9,24326,3827.0,7100.0,9958.0,0.102,698711.0,carrier_airport
+OH,PSA Airlines,LEX,Lexington KY,Small,6442,45.0,25.0,20.0,47.5,32397,3857.0,7084.0,9879.0,0.11,697136.0,carrier_airport
+OO,SkyWest Airlines,SHV,Shreveport,Small,6239,55.0,26.0,29.0,37.3,17823,3783.0,7083.0,9997.0,0.114,697038.0,carrier_airport
+UA,United Airlines,JAC,Jacksn Hole,Small,7244,78.0,39.0,39.0,13.0,36490,3788.0,7082.0,9965.0,0.098,696940.0,carrier_airport
+MQ,Envoy Air,MEM,Memphis,Medium,5968,46.0,28.0,18.0,47.5,23237,3895.0,7047.0,9603.0,0.118,693495.0,carrier_airport
+DL,Delta Air Lines,CMH,Columbus,Medium,13857,125.0,46.0,79.0,14.3,32637,3849.0,7021.0,9688.0,0.051,690937.0,carrier_airport
+UA,United Airlines,BWI,Baltimore,Large,14006,116.0,46.0,70.0,13.3,29679,3884.0,7017.0,9586.0,0.05,690543.0,carrier_airport
+QX,Horizon Air,BOI,Boise,Medium,9576,66.0,33.0,33.0,37.7,27354,3964.0,7013.0,9448.0,0.073,690149.0,carrier_airport
+MQ,Envoy Air,HOU,Houston,Medium,4227,32.0,25.0,7.0,71.9,24552,3819.0,7008.0,9642.0,0.166,689657.0,carrier_airport
+MQ,Envoy Air,AMA,Amarillo,Small,6135,32.0,26.0,6.0,67.9,26008,3851.0,6991.0,9621.0,0.114,687984.0,carrier_airport
+OO,SkyWest Airlines,EGE,Vail,Non-hub,6314,54.0,28.0,26.0,24.4,22879,3758.0,6981.0,9787.0,0.111,687000.0,carrier_airport
+MQ,Envoy Air,GSP,Greenville,Small,6106,90.0,29.0,61.0,41.7,21345,3904.0,6980.0,9481.0,0.114,686902.0,carrier_airport
+OO,SkyWest Airlines,XNA,Bentonville,Small,7477,45.0,27.0,18.0,36.5,20496,3805.0,6979.0,9613.0,0.093,686803.0,carrier_airport
+AA,American Airlines,SJC,San Jose,Medium,7328,73.0,39.0,34.0,40.1,32100,3882.0,6977.0,9571.0,0.095,686607.0,carrier_airport
+DL,Delta Air Lines,HOU,Houston,Medium,7147,60.0,44.0,16.0,48.0,29175,3792.0,6969.0,9625.0,0.098,685819.0,carrier_airport
+YX,Republic Airways,BUF,Buffalo,Medium,10265,75.0,29.0,46.0,27.2,25513,3816.0,6964.0,9634.0,0.068,685327.0,carrier_airport
+YV,Mesa Airlines,HOU,Houston,Medium,3573,34.0,26.0,8.0,70.8,40555,3715.0,6943.0,9849.0,0.194,683261.0,carrier_airport
+UA,United Airlines,CHS,Charleston,Medium,9427,68.0,37.0,31.0,11.7,36014,3787.0,6942.0,9630.0,0.074,683162.0,carrier_airport
+B6,JetBlue Airways,ORD,Chicago,Large,4740,48.0,32.0,16.0,47.0,43501,3685.0,6937.0,9861.0,0.146,682670.0,carrier_airport
+9E,Endeavor Air,CLT,Charlotte,Large,7907,56.0,40.0,16.0,49.7,34863,3784.0,6929.0,9570.0,0.088,681883.0,carrier_airport
+AS,Alaska Airlines,BUR,Burbank,Medium,8190,81.0,44.0,37.0,44.6,26022,3802.0,6869.0,9363.0,0.084,675978.0,carrier_airport
+DL,Delta Air Lines,PIT,Pittsburgh,Medium,13096,82.0,37.0,45.0,9.9,37450,3776.4999999999854,6851.89999999998,9407.59999999997,0.052,674295.0,carrier_airport
+YX,Republic Airways,STL,St. Louis,Medium,9895,51.0,27.0,24.0,34.1,24503,3757.0,6833.0,9422.0,0.069,672436.0,carrier_airport
+OO,SkyWest Airlines,SGF,Springfield,Small,5689,52.0,30.0,22.0,39.0,19405,3675.0,6772.0,9450.0,0.119,666433.0,carrier_airport
+9E,Endeavor Air,CLE,Cleveland,Medium,9339,57.0,36.0,21.0,41.8,32635,3679.0,6767.0,9463.0,0.072,665940.0,carrier_airport
+F9,Frontier Airlines,BNA,Nashville,Large,3934,55.0,38.0,17.0,42.7,39830,3624.0,6749.0,9494.0,0.172,664169.0,carrier_airport
+B6,JetBlue Airways,ACK,Nantucket,Non-hub,3888,45.0,26.0,19.0,37.6,44507,3548.0,6717.0,9604.0,0.173,661020.0,carrier_airport
+OO,SkyWest Airlines,XWA,Williston,Non-hub,7430,54.0,28.0,26.0,32.8,16394,3625.0,6710.0,9377.0,0.09,660331.0,carrier_airport
+MQ,Envoy Air,LRD,Laredo,Non-hub,5121,30.0,23.0,7.0,69.2,25042,3711.0,6705.0,9167.0,0.131,659839.0,carrier_airport
+MQ,Envoy Air,JAN,Jackson,Small,4640,33.0,29.0,4.0,61.0,22121,3741.0,6703.0,9164.0,0.144,659642.0,carrier_airport
+YX,Republic Airways,SAV,Savannah,Medium,7050,51.0,30.0,21.0,35.9,23071,3692.0,6693.0,9181.0,0.095,658658.0,carrier_airport
+OH,PSA Airlines,SHV,Shreveport,Small,5275,52.0,29.0,23.0,47.4,31002,3650.0,6683.0,9239.0,0.127,657674.0,carrier_airport
+AA,American Airlines,PWM,Portland,Small,5877,105.0,39.0,66.0,42.0,38393,3611.0,6667.0,9322.0,0.113,656099.0,carrier_airport
+OO,SkyWest Airlines,HSV,Huntsville,Small,6854,115.0,31.0,84.0,27.1,23498,3626.0,6664.0,9251.0,0.097,655804.0,carrier_airport
+F9,Frontier Airlines,SAT,San Antonio,Medium,3356,51.0,40.0,11.0,52.1,34135,3593.0,6653.0,9272.0,0.198,654722.0,carrier_airport
+OH,PSA Airlines,LIT,Little Rock,Small,3499,33.0,27.0,6.0,67.3,28337,3625.0,6616.0,9063.0,0.189,651081.0,carrier_airport
+OH,PSA Airlines,JAX,Jacksonville,Medium,4886,38.0,29.0,9.0,56.8,31959,3629.0,6615.0,9140.0,0.135,650982.0,carrier_airport
+OH,PSA Airlines,JAN,Jackson,Small,5910,91.0,30.0,61.0,44.7,25917,3694.0,6576.0,8969.0,0.111,647144.0,carrier_airport
+NK,Spirit Airlines,BUR,Burbank,Medium,4295,55.0,42.0,13.0,73.5,17983,3558.0,6562.0,9113.0,0.153,645766.0,carrier_airport
+AS,Alaska Airlines,KOA,Kona,Small,9578,60.0,21.0,39.0,10.1,49251,3607.0,6558.0,8995.0,0.068,645373.0,carrier_airport
+DL,Delta Air Lines,GSO,Greensboro,Small,9942,66.0,41.0,25.0,38.8,21624,3536.0,6538.0,9054.0,0.066,643405.0,carrier_airport
+AA,American Airlines,BZN,Bozeman,Small,3985,52.0,42.0,10.0,62.4,34365,3584.0,6529.0,8950.0,0.164,642519.0,carrier_airport
+OH,PSA Airlines,SGF,Springfield,Small,3126,31.0,27.0,4.0,76.8,25552,3604.0,6528.0,8960.0,0.209,642420.0,carrier_airport
+B6,JetBlue Airways,SYR,Syracuse,Small,5090,309.0,37.0,272.0,33.7,35765,3502.0,6523.0,9213.0,0.128,641928.0,carrier_airport
+DL,Delta Air Lines,ECP,Panama City,Small,9737,70.0,36.0,34.0,20.9,28694,3545.0,6521.0,9089.0,0.067,641732.0,carrier_airport
+F9,Frontier Airlines,MSY,New Orleans,Medium,3163,52.0,37.0,15.0,48.2,42765,3460.0,6492.0,9241.0,0.205,638878.0,carrier_airport
+DL,Delta Air Lines,SJC,San Jose,Medium,10745,86.0,46.0,40.0,27.9,30218,3529.0,6468.0,8987.0,0.06,636516.0,carrier_airport
+AA,American Airlines,GSP,Greenville,Small,4393,138.0,40.0,98.0,44.6,37585,3464.0,6457.0,9104.0,0.147,635433.0,carrier_airport
+UA,United Airlines,RNO,Reno,Medium,7857,91.0,41.0,50.0,15.8,28746,3452.0,6446.0,9051.0,0.082,634351.0,carrier_airport
+QX,Horizon Air,GEG,Spokane,Medium,9224,60.0,32.0,28.0,36.0,20985,3638.0,6445.0,8684.0,0.07,634252.0,carrier_airport
+OO,SkyWest Airlines,CPR,Casper,Non-hub,7364,67.0,27.0,40.0,30.0,23525,3433.0,6441.0,9060.0,0.087,633859.0,carrier_airport
+B6,JetBlue Airways,ALB,Albany,Small,3230,55.0,43.0,12.0,52.6,33807,3451.0,6407.0,9021.0,0.198,630513.0,carrier_airport
+OO,SkyWest Airlines,JAC,Jacksn Hole,Small,6482,51.0,27.0,24.0,27.0,27783,3488.0,6370.0,8812.0,0.098,626872.0,carrier_airport
+OO,SkyWest Airlines,MOT,Minot,Non-hub,8407,106.0,34.0,72.0,37.4,10846,3422.0,6348.0,8912.0,0.076,624707.0,carrier_airport
+AA,American Airlines,ICT,Wichita,Small,3215,45.0,32.0,13.0,55.1,38637,3346.0,6322.0,9043.0,0.197,622148.0,carrier_airport
+MQ,Envoy Air,SDF,Louisville,Medium,5602,39.0,28.0,11.0,54.0,21185,3581.0,6319.0,8514.0,0.113,621853.0,carrier_airport
+NK,Spirit Airlines,SAT,San Antonio,Medium,4813,62.0,45.0,17.0,44.7,22331,3428.0,6308.0,8713.0,0.131,620770.0,carrier_airport
+F9,Frontier Airlines,AUS,Austin,Large,3589,55.0,40.0,15.0,41.9,37224,3379.0,6304.0,8881.0,0.176,620377.0,carrier_airport
+DL,Delta Air Lines,LIT,Little Rock,Small,8387,70.0,43.0,27.0,31.6,27369,3423.0,6295.0,8734.0,0.075,619491.0,carrier_airport
+OH,PSA Airlines,MEM,Memphis,Medium,4798,39.0,28.0,11.0,52.2,29227,3419.0,6278.0,8649.0,0.131,617818.0,carrier_airport
+DL,Delta Air Lines,AVL,Asheville,Small,7439,105.0,47.0,58.0,45.5,25216,3422.0,6261.0,8674.0,0.084,616145.0,carrier_airport
+F9,Frontier Airlines,IND,Indianapolis,Medium,3379,55.0,38.0,17.0,39.8,39299,3341.9999999999927,6259.199999999975,8836.29999999997,0.185,615968.0,carrier_airport
+9E,Endeavor Air,RIC,Richmond,Medium,8323,61.0,37.0,24.0,43.3,30988,3380.0,6250.0,8737.0,0.075,615063.0,carrier_airport
+YX,Republic Airways,MSP,Minneapolis,Large,6494,43.0,27.0,16.0,46.3,23526,3457.0,6249.0,8549.0,0.096,614964.0,carrier_airport
+OO,SkyWest Airlines,ELP,El Paso,Small,9078,52.0,27.0,25.0,35.4,19559,3449.0,6248.0,8688.0,0.069,614866.0,carrier_airport
+NK,Spirit Airlines,RIC,Richmond,Medium,3736,56.0,43.0,13.0,50.7,20594,3374.0,6236.0,8677.0,0.167,613685.0,carrier_airport
+MQ,Envoy Air,HHH,Hilton Head Island,Non-hub,3318,30.0,24.0,6.0,75.1,22779,3387.0,6219.0,8596.0,0.187,612012.0,carrier_airport
+OO,SkyWest Airlines,SBA,Santa Barbara,Small,9361,100.0,28.0,72.0,27.5,24116,3374.0,6219.0,8677.0,0.066,612012.0,carrier_airport
+OH,PSA Airlines,AGS,Bush Field,Small,5018,90.0,27.0,63.0,45.0,27184,3401.0,6200.0,8565.0,0.124,610142.0,carrier_airport
+OH,PSA Airlines,RDU,Raleigh-durham,Medium,3408,34.0,27.0,7.0,67.0,30572,3371.0,6175.0,8544.0,0.181,607682.0,carrier_airport
+OO,SkyWest Airlines,FLG,Flagstaff,Non-hub,7351,47.0,23.0,24.0,43.2,23107,3345.0,6170.0,8619.0,0.084,607190.0,carrier_airport
+F9,Frontier Airlines,MSP,Minneapolis,Large,3973,60.0,40.0,20.0,31.0,34266,3291.0,6168.0,8728.0,0.155,606993.0,carrier_airport
+NK,Spirit Airlines,STT,St. Thomas,Small,3470,55.0,39.0,16.0,45.2,24692,3327.0,6160.0,8584.0,0.178,606206.0,carrier_airport
+MQ,Envoy Air,ELP,El Paso,Small,5812,48.0,28.0,20.0,48.6,22828,3441.0,6157.0,8363.0,0.106,605910.0,carrier_airport
+B6,JetBlue Airways,PHL,Philadelphia,Large,5617,55.0,34.0,21.0,44.9,33111,3317.0,6138.0,8658.0,0.109,604041.0,carrier_airport
+DL,Delta Air Lines,GSP,Greenville,Small,10849,105.0,44.0,61.0,28.8,24457,3359.0,6129.0,8455.0,0.056,603155.0,carrier_airport
+OH,PSA Airlines,CHA,Chattanooga,Small,5184,53.0,28.0,25.0,47.4,24584,3341.0,6126.0,8449.0,0.118,602860.0,carrier_airport
+OO,SkyWest Airlines,FCA,Kalispell,Small,6825,46.0,31.0,15.0,49.3,12778,3401.0,6118.0,8346.0,0.09,602072.0,carrier_airport
+MQ,Envoy Air,LBB,Lubbock,Small,5050,32.0,27.0,5.0,65.5,20116,3358.0,6118.0,8379.0,0.121,602072.0,carrier_airport
+UA,United Airlines,OMA,Omaha,Medium,10365,390.0,32.0,358.0,7.9,33406,3289.0,6108.0,8649.0,0.059,601088.0,carrier_airport
+AS,Alaska Airlines,ONT,Ontario,Medium,6514,74.0,45.0,29.0,43.7,19796,3419.0,6098.0,8177.0,0.094,600104.0,carrier_airport
+F9,Frontier Airlines,EWR,Newark,Large,3050,60.0,42.0,18.0,40.8,32278,3235.0,6059.0,8581.0,0.199,596266.0,carrier_airport
+9E,Endeavor Air,ROC,Rochester,Small,8961,75.0,35.0,40.0,35.7,31020,3261.0,6037.0,8411.0,0.067,594101.0,carrier_airport
+DL,Delta Air Lines,BOI,Boise,Medium,11044,70.0,37.0,33.0,8.6,37325,3273.0,6035.0,8373.0,0.055,593904.0,carrier_airport
+AA,American Airlines,XNA,Bentonville,Small,3706,50.0,35.0,15.0,49.5,37811,3175.0,5978.0,8443.0,0.161,588295.0,carrier_airport
+YX,Republic Airways,GSO,Greensboro,Small,7617,85.0,29.0,56.0,31.7,24055,3270.0,5967.0,8195.0,0.078,587212.0,carrier_airport
+OO,SkyWest Airlines,BHM,Birmingham,Small,6572,102.0,31.0,71.0,26.0,14838,3252.0,5963.0,8220.0,0.091,586819.0,carrier_airport
+AA,American Airlines,GSO,Greensboro,Small,4470,111.0,35.0,76.0,26.9,38199,3198.0,5960.0,8396.0,0.133,586524.0,carrier_airport
+UA,United Airlines,ABQ,Albuquerque,Medium,7296,121.0,45.0,76.0,21.1,24368,3268.0,5952.0,8279.0,0.082,585736.0,carrier_airport
+9E,Endeavor Air,ORF,Norfolk,Medium,7016,57.0,38.0,19.0,43.7,30628,3257.0,5952.0,8292.0,0.085,585736.0,carrier_airport
+UA,United Airlines,DTW,Detroit,Large,8050,114.0,44.0,70.0,21.3,29122,3228.0,5939.0,8237.0,0.074,584457.0,carrier_airport
+OO,SkyWest Airlines,MSO,Missoula,Small,7108,45.0,29.0,16.0,39.2,12243,3312.0,5932.0,8069.0,0.083,583768.0,carrier_airport
+UA,United Airlines,PSP,Palm Springs,Small,5904,66.0,47.0,19.0,33.3,22691,3261.0,5917.0,8130.0,0.1,582292.0,carrier_airport
+OH,PSA Airlines,BUF,Buffalo,Medium,4124,40.0,26.0,14.0,51.3,34274,3198.0,5888.0,8241.0,0.143,579438.0,carrier_airport
+MQ,Envoy Air,ABI,Abilene,Non-hub,6859,87.0,24.0,63.0,43.0,23997,3287.0,5871.0,7953.0,0.086,577765.0,carrier_airport
+MQ,Envoy Air,TUL,Tulsa,Small,5713,41.0,27.0,14.0,51.3,19372,3210.0,5815.0,7966.0,0.102,572254.0,carrier_airport
+NK,Spirit Airlines,SDF,Louisville,Medium,4526,69.0,44.0,25.0,37.8,26311,3157.0,5805.0,8108.0,0.128,571270.0,carrier_airport
+UA,United Airlines,OGG,Kahului,Medium,11300,135.0,62.0,73.0,15.1,27289,3177.0,5804.0,7981.0,0.051,571172.0,carrier_airport
+MQ,Envoy Air,LEX,Lexington KY,Small,4994,40.0,28.0,12.0,51.3,19593,3200.0,5758.0,7865.0,0.115,566645.0,carrier_airport
+B6,JetBlue Airways,SEA,Seattle,Large,4172,73.0,25.0,48.0,12.8,55361,3032.0,5751.0,8216.0,0.138,565956.0,carrier_airport
+MQ,Envoy Air,ATL,Atlanta,Large,3670,41.0,30.0,11.0,57.2,21331,3151.0,5749.0,7924.0,0.157,565759.0,carrier_airport
+OO,SkyWest Airlines,SUN,Hailey,Non-hub,8724,51.0,30.0,21.0,22.0,14925,3127.0,5735.0,7916.0,0.066,564381.0,carrier_airport
+F9,Frontier Airlines,BOS,Boston,Large,3990,60.0,43.0,17.0,46.5,32400,3172.0,5725.0,7799.0,0.143,563397.0,carrier_airport
+DL,Delta Air Lines,MDW,Chicago,Large,5660,60.0,43.0,17.0,35.9,19239,3144.0,5723.0,7882.0,0.101,563200.0,carrier_airport
+AA,American Airlines,HNL,Honolulu,Medium,11872,229.0,82.0,147.0,19.7,25477,3107.0,5712.0,7902.0,0.048,562118.0,carrier_airport
+NK,Spirit Airlines,SNA,Santa Ana,Medium,6260,56.0,41.0,15.0,50.0,18992,3130.0,5702.0,7906.0,0.091,561134.0,carrier_airport
+OH,PSA Airlines,DAB,Daytona Beach,Non-hub,4740,39.0,26.0,13.0,51.7,24292,3088.0,5695.0,7872.0,0.12,560445.0,carrier_airport
+DL,Delta Air Lines,ROC,Rochester,Small,5071,61.0,48.0,13.0,52.0,23037,3103.0,5686.0,7872.0,0.112,559559.0,carrier_airport
+DL,Delta Air Lines,JAN,Jackson,Small,7590,55.0,41.0,14.0,52.4,17977,3066.0,5686.0,7969.0,0.075,559559.0,carrier_airport
+MQ,Envoy Air,RDU,Raleigh-durham,Medium,5579,61.0,32.0,29.0,42.9,18951,3196.0,5674.0,7669.0,0.102,558378.0,carrier_airport
+OH,PSA Airlines,TLH,Tallahassee,Small,5688,69.0,29.0,40.0,43.8,21920,3128.0,5624.0,7666.0,0.099,553458.0,carrier_airport
+AS,Alaska Airlines,PSP,Palm Springs,Small,6168,56.0,42.0,14.0,50.3,21530,3111.0,5581.0,7573.0,0.09,549226.0,carrier_airport
+DL,Delta Air Lines,SDF,Louisville,Medium,10588,75.0,44.0,31.0,26.1,25651,3075.0,5578.0,7649.0,0.053,548931.0,carrier_airport
+OO,SkyWest Airlines,LNK,Lincoln,Non-hub,5257,55.0,28.0,27.0,35.8,19066,2979.0,5572.0,7857.0,0.106,548341.0,carrier_airport
+OO,SkyWest Airlines,DLH,Duluth,Non-hub,5827,100.0,30.0,70.0,30.0,10785,2955.0,5572.0,7839.0,0.096,548341.0,carrier_airport
+MQ,Envoy Air,IND,Indianapolis,Medium,4843,55.0,29.0,26.0,46.2,19647,3075.0,5567.0,7581.0,0.115,547848.0,carrier_airport
+OO,SkyWest Airlines,LEX,Lexington KY,Small,5701,91.0,29.0,62.0,28.6,17593,2950.0,5537.0,7823.0,0.097,544896.0,carrier_airport
+OH,PSA Airlines,MLB,Melbourne,Non-hub,5089,47.0,28.0,19.0,47.8,26002,3026.7000000000153,5510.7500000000255,7586.70000000003,0.108,542313.0,carrier_airport
+UA,United Airlines,ANC,Anchorage,Medium,5589,71.0,41.0,30.0,7.6,32796,2938.0,5473.0,7714.0,0.098,538598.0,carrier_airport
+9E,Endeavor Air,CHS,Charleston,Medium,5731,54.0,39.0,15.0,49.7,21323,3097.0,5469.0,7394.0,0.095,538204.0,carrier_airport
+B6,JetBlue Airways,PIT,Pittsburgh,Medium,4799,48.0,32.0,16.0,46.0,27997,2914.0,5454.0,7714.0,0.114,536728.0,carrier_airport
+QX,Horizon Air,SFO,San Francisco,Large,4728,48.0,35.0,13.0,50.7,17943,3078.0,5451.0,7386.0,0.115,536433.0,carrier_airport
+MQ,Envoy Air,HRL,Harlingen,Small,4477,32.0,24.0,8.0,65.1,19572,2988.0,5437.0,7467.0,0.121,535055.0,carrier_airport
+OO,SkyWest Airlines,CVG,Cincinnati,Medium,3999,46.0,28.0,18.0,41.4,16395,2960.0,5432.0,7573.0,0.136,534563.0,carrier_airport
+MQ,Envoy Air,FAR,Fargo,Small,5336,190.0,30.0,160.0,40.7,15359,3061.0,5416.0,7304.0,0.101,532989.0,carrier_airport
+OH,PSA Airlines,PIT,Pittsburgh,Medium,3692,35.0,24.0,11.0,55.5,29571,2927.0,5402.0,7497.0,0.146,531611.0,carrier_airport
+UA,United Airlines,BOI,Boise,Medium,6063,66.0,44.0,22.0,18.6,21977,2907.0,5401.0,7510.0,0.089,531512.0,carrier_airport
+DL,Delta Air Lines,ORF,Norfolk,Medium,12142,80.0,26.0,54.0,6.4,40269,2948.0,5392.0,7443.0,0.044,530627.0,carrier_airport
+AS,Alaska Airlines,FLL,Fort Lauderdale,Large,4026,68.0,51.0,17.0,46.0,23130,2956.0,5384.0,7408.0,0.134,529839.0,carrier_airport
+AA,American Airlines,SYR,Syracuse,Small,5795,340.0,40.0,300.0,32.1,29105,2941.0,5352.0,7461.0,0.092,526690.0,carrier_airport
+NK,Spirit Airlines,PDX,Portland,Medium,4758,58.0,42.0,16.0,46.7,19659,2937.0,5344.0,7404.0,0.112,525903.0,carrier_airport
+AA,American Airlines,COS,Colorado Springs,Small,4434,58.0,44.0,14.0,50.4,33349,2905.0,5330.0,7433.0,0.12,524525.0,carrier_airport
+MQ,Envoy Air,CHS,Charleston,Medium,4300,48.0,28.0,20.0,44.2,18141,2971.0,5302.0,7211.0,0.123,521770.0,carrier_airport
+MQ,Envoy Air,MSP,Minneapolis,Large,3409,43.0,27.0,16.0,45.7,17387,2938.0,5291.0,7178.0,0.155,520687.0,carrier_airport
+MQ,Envoy Air,GSO,Greensboro,Small,6246,510.0,31.0,479.0,32.9,13686,3013.0,5289.0,7073.0,0.085,520490.0,carrier_airport
+DL,Delta Air Lines,BUF,Buffalo,Medium,9673,70.0,26.0,44.0,6.1,37060,2900.0,5282.0,7311.0,0.055,519802.0,carrier_airport
+DL,Delta Air Lines,GNV,Gainesville,Non-hub,5724,55.0,42.0,13.0,63.2,19535,2838.0,5271.0,7369.0,0.092,518719.0,carrier_airport
+MQ,Envoy Air,COU,Columbia,Non-hub,4633,90.0,28.0,62.0,46.5,17582,2899.0,5265.0,7203.0,0.114,518129.0,carrier_airport
+MQ,Envoy Air,GRR,Grand Rapids,Medium,4356,36.0,27.0,9.0,52.4,17471,2936.0,5256.0,7163.0,0.121,517243.0,carrier_airport
+AA,American Airlines,GEG,Spokane,Medium,5063,130.0,40.0,90.0,28.3,29635,2805.0,5254.0,7443.0,0.104,517046.0,carrier_airport
+DL,Delta Air Lines,MLB,Melbourne,Non-hub,6108,60.0,40.0,20.0,28.0,23162,2814.0,5227.0,7309.0,0.086,514389.0,carrier_airport
+9E,Endeavor Air,BUF,Buffalo,Medium,6927,55.0,34.0,21.0,39.3,28339,2799.0,5225.0,7298.0,0.075,514192.0,carrier_airport
+DL,Delta Air Lines,HSV,Huntsville,Small,7844,65.0,41.0,24.0,41.0,19808,2841.0,5225.0,7235.0,0.067,514192.0,carrier_airport
+UA,United Airlines,SBA,Santa Barbara,Small,5713,65.0,45.0,20.0,29.9,24192,2842.0,5191.0,7152.0,0.091,510846.0,carrier_airport
+MQ,Envoy Air,BTR,Baton Rouge,Small,4176,32.0,26.0,6.0,59.8,17029,2912.0,5182.0,7005.0,0.124,509961.0,carrier_airport
+NK,Spirit Airlines,PNS,Pensacola,Small,2952,55.0,39.0,16.0,32.9,23885,2760.0,5180.0,7331.0,0.175,509764.0,carrier_airport
+F9,Frontier Airlines,JAX,Jacksonville,Medium,2653,54.0,38.0,16.0,49.6,34012,2739.0,5176.0,7352.0,0.195,509370.0,carrier_airport
+OH,PSA Airlines,ROC,Rochester,Small,4537,46.0,26.0,20.0,45.9,25998,2838.0,5176.0,7184.0,0.114,509370.0,carrier_airport
+OO,SkyWest Airlines,LFT,Lafayette,Non-hub,3938,45.0,26.0,19.0,44.4,11699,2782.0,5156.0,7203.0,0.131,507402.0,carrier_airport
+DL,Delta Air Lines,OKC,Oklahoma City,Medium,7278,78.0,42.0,36.0,35.3,19324,2764.0,5141.0,7114.0,0.071,505926.0,carrier_airport
+YX,Republic Airways,MSY,New Orleans,Medium,5224,49.0,26.0,23.0,36.2,17960,2871.0,5128.0,6969.0,0.098,504646.0,carrier_airport
+F9,Frontier Airlines,GRR,Grand Rapids,Medium,2823,55.0,39.0,16.0,42.8,32475,2760.0,5127.0,7221.0,0.182,504548.0,carrier_airport
+QX,Horizon Air,LAX,Los Angeles,Large,5135,57.0,35.0,22.0,41.6,15375,2897.0,5121.0,6859.0,0.1,503958.0,carrier_airport
+B6,JetBlue Airways,STT,St. Thomas,Small,2905,52.0,32.0,20.0,39.9,36255,2723.0,5117.0,7226.0,0.176,503564.0,carrier_airport
+OO,SkyWest Airlines,CRW,Charleston,Non-hub,4482,96.0,31.0,65.0,36.8,15612,2751.0,5109.0,7193.0,0.114,502777.0,carrier_airport
+AS,Alaska Airlines,SIT,Sitka,Non-hub,5772,61.0,33.0,28.0,3.4,24301,2764.0,5097.0,7008.0,0.088,501596.0,carrier_airport
+DL,Delta Air Lines,PVD,Providence,Small,5942,120.0,50.0,70.0,36.8,21595,2841.0,5093.0,6990.0,0.086,501202.0,carrier_airport
+B6,JetBlue Airways,ORH,Worcester,Non-hub,3247,55.0,37.0,18.0,40.6,31511,2735.0,5085.0,7158.0,0.157,500415.0,carrier_airport
+OH,PSA Airlines,MKE,Milwaukee,Medium,4453,37.0,27.0,10.0,54.3,23743,2770.0,5054.0,6924.0,0.113,497364.0,carrier_airport
+OH,PSA Airlines,LFT,Lafayette,Non-hub,3460,55.0,29.0,26.0,47.6,27342,2730.0,5021.0,7001.0,0.145,494117.0,carrier_airport
+MQ,Envoy Air,SHV,Shreveport,Small,3770,30.0,25.0,5.0,72.4,18674,2789.0,5014.0,6832.0,0.133,493428.0,carrier_airport
+NK,Spirit Airlines,SJC,San Jose,Medium,4057,55.0,42.0,13.0,54.9,12887,2713.0,5011.0,6987.0,0.124,493133.0,carrier_airport
+OO,SkyWest Airlines,OAK,Oakland,Medium,7796,51.0,32.0,19.0,40.9,5906,2797.0,5010.0,6869.0,0.064,493034.0,carrier_airport
+OO,SkyWest Airlines,MBS,Saginaw,Non-hub,4919,100.0,28.0,72.0,28.0,9426,2632.0,5006.0,7130.0,0.102,492640.0,carrier_airport
+NK,Spirit Airlines,RDU,Raleigh-durham,Medium,2495,59.0,42.0,17.0,47.0,26337,2653.0,4997.0,7036.0,0.2,491755.0,carrier_airport
+MQ,Envoy Air,MSN,Madison,Small,4035,39.0,24.0,15.0,48.6,18532,2758.0,4993.0,6862.0,0.124,491361.0,carrier_airport
+MQ,Envoy Air,TVC,Traverse City,Small,3312,38.0,27.0,11.0,52.6,15338,2756.0,4975.0,6718.0,0.15,489590.0,carrier_airport
+F9,Frontier Airlines,STL,St. Louis,Medium,3558,58.0,42.0,16.0,48.8,32007,2682.0,4971.0,6919.0,0.14,489196.0,carrier_airport
+9E,Endeavor Air,SAV,Savannah,Medium,6255,63.0,41.0,22.0,44.9,19306,2744.0,4963.0,6846.0,0.079,488409.0,carrier_airport
+AA,American Airlines,IAD,Washington,Medium,4898,113.0,41.0,72.0,35.4,23289,2740.0,4963.0,6838.0,0.101,488409.0,carrier_airport
+NK,Spirit Airlines,STL,St. Louis,Medium,2909,58.0,43.0,15.0,49.0,20058,2679.0,4942.0,6849.0,0.17,486342.0,carrier_airport
+DL,Delta Air Lines,LEX,Lexington KY,Small,6941,57.0,41.0,16.0,47.6,17511,2675.0,4903.0,6825.0,0.071,482504.0,carrier_airport
+YX,Republic Airways,ILM,Wilmington,Small,5691,45.0,26.0,19.0,42.9,19908,2725.0,4900.0,6667.0,0.086,482209.0,carrier_airport
+NK,Spirit Airlines,SLC,Salt Lake City,Large,3357,60.0,40.0,20.0,28.2,15786,2636.0,4877.0,6788.0,0.145,479946.0,carrier_airport
+OH,PSA Airlines,MSN,Madison,Small,4187,35.0,26.0,9.0,53.9,24237,2677.0,4872.0,6700.0,0.116,479454.0,carrier_airport
+AA,American Airlines,ALB,Albany,Small,4294,280.0,40.0,240.0,38.6,24078,2670.0,4864.0,6679.0,0.113,478666.0,carrier_airport
+9E,Endeavor Air,SYR,Syracuse,Small,7600,64.0,36.0,28.0,38.1,24539,2631.0,4852.0,6739.0,0.064,477485.0,carrier_airport
+B6,JetBlue Airways,SAT,San Antonio,Medium,2008,50.0,41.0,9.0,80.8,20219,2598.0,4834.0,6742.0,0.241,475714.0,carrier_airport
+YX,Republic Airways,SYR,Syracuse,Small,6885,85.0,29.0,56.0,29.9,17510,2667.0,4833.0,6599.0,0.07,475616.0,carrier_airport
+AA,American Airlines,BUR,Burbank,Medium,4633,57.0,37.0,20.0,34.1,27083,2619.0,4830.0,6748.0,0.104,475320.0,carrier_airport
+NK,Spirit Airlines,BDL,Windsor Locks,Medium,4250,60.0,42.0,18.0,43.6,23916,2628.0,4820.0,6742.0,0.113,474336.0,carrier_airport
+MQ,Envoy Air,TYS,Knoxville,Small,4060,102.0,28.0,74.0,43.9,13362,2694.0,4812.0,6499.0,0.119,473549.0,carrier_airport
+AA,American Airlines,BHM,Birmingham,Small,2953,116.0,35.0,81.0,36.6,32129,2575.0,4808.0,6825.0,0.163,473155.0,carrier_airport
+OH,PSA Airlines,PIA,Peoria,Small,3876,301.0,28.0,273.0,44.3,17425,2693.0,4803.0,6512.0,0.124,472663.0,carrier_airport
+OH,PSA Airlines,DTW,Detroit,Large,5387,47.0,26.0,21.0,42.3,28186,2610.0,4786.0,6640.0,0.089,470990.0,carrier_airport
+OO,SkyWest Airlines,GTF,Great Falls,Non-hub,9016,100.0,31.0,69.0,31.5,10881,2677.0,4762.0,6503.0,0.053,468628.0,carrier_airport
+MQ,Envoy Air,MLU,Monroe,Non-hub,3932,31.0,25.0,6.0,64.7,16183,2620.0,4759.0,6535.0,0.121,468333.0,carrier_airport
+OH,PSA Airlines,VPS,Valparaiso,Small,3389,37.0,26.0,11.0,54.1,19972,2603.0,4751.0,6493.0,0.14,467546.0,carrier_airport
+OO,SkyWest Airlines,TYS,Knoxville,Small,6471,103.0,29.0,74.0,21.2,21472,2563.0,4748.0,6626.0,0.073,467251.0,carrier_airport
+F9,Frontier Airlines,DCA,Washington,Large,4891,61.0,45.0,16.0,44.0,20021,2588.0,4743.0,6565.0,0.097,466759.0,carrier_airport
+AS,Alaska Airlines,SMF,Sacramento,Medium,6198,115.0,45.0,70.0,37.8,17868,2692.0,4737.0,6390.0,0.076,466168.0,carrier_airport
+WN,Southwest Airlines,HDN,Hayden,Non-hub,2565,35.0,29.0,6.0,67.6,22597,2608.0,4734.0,6517.0,0.185,465873.0,carrier_airport
+9E,Endeavor Air,CHA,Chattanooga,Small,5411,50.0,36.0,14.0,53.4,19778,2584.0,4731.0,6506.0,0.087,465578.0,carrier_airport
+OO,SkyWest Airlines,RDD,Redding,Non-hub,6166,61.0,28.0,33.0,25.3,23386,2569.0,4726.0,6640.0,0.077,465086.0,carrier_airport
+WN,Southwest Airlines,SYR,Syracuse,Small,3068,50.0,36.0,14.0,59.5,15387,2606.0,4724.0,6429.0,0.154,464889.0,carrier_airport
+AA,American Airlines,SBA,Santa Barbara,Small,3571,100.0,37.0,63.0,41.8,26267,2561.400000000016,4715.0000000000255,6559.0000000000255,0.132,464003.0,carrier_airport
+DL,Delta Air Lines,ALB,Albany,Small,5403,120.0,45.0,75.0,17.9,18751,2568.0,4703.0,6517.0,0.087,462822.0,carrier_airport
+MQ,Envoy Air,RAP,Rapid City,Small,3579,32.0,28.0,4.0,61.6,14170,2680.0,4676.0,6303.0,0.131,460165.0,carrier_airport
+OH,PSA Airlines,SYR,Syracuse,Small,3077,38.0,25.0,13.0,51.6,21549,2529.0,4672.0,6504.0,0.152,459772.0,carrier_airport
+MQ,Envoy Air,CHA,Chattanooga,Small,4132,90.0,31.0,59.0,46.1,15673,2611.0,4661.0,6270.0,0.113,458689.0,carrier_airport
+YX,Republic Airways,MIA,Miami,Large,6050,83.0,36.0,47.0,21.8,23121,2479.0,4648.0,6573.0,0.077,457410.0,carrier_airport
+B6,JetBlue Airways,ROC,Rochester,Small,3508,107.0,31.0,76.0,35.8,24817,2477.0,4647.0,6544.0,0.132,457311.0,carrier_airport
+YV,Mesa Airlines,LGA,New York,Large,2936,50.0,31.0,19.0,42.3,19841,2457.0,4629.0,6567.0,0.158,455540.0,carrier_airport
+UA,United Airlines,ONT,Ontario,Medium,6227,358.0,49.0,309.0,30.0,16215,2558.0,4612.0,6357.0,0.074,453867.0,carrier_airport
+YX,Republic Airways,BDL,Windsor Locks,Medium,5299,52.0,27.0,25.0,37.8,18263,2529.0,4612.0,6358.0,0.087,453867.0,carrier_airport
+AA,American Airlines,AVL,Asheville,Small,2387,46.0,37.0,9.0,56.1,28668,2466.0,4609.75,6490.0,0.193,453645.0,carrier_airport
+NK,Spirit Airlines,SEA,Seattle,Large,3476,60.0,46.0,14.0,54.1,15327,2555.0,4605.0,6283.0,0.132,453178.0,carrier_airport
+DL,Delta Air Lines,PNS,Pensacola,Small,11673,73.0,19.0,54.0,8.3,30261,2504.0,4591.0,6387.0,0.039,451800.0,carrier_airport
+AS,Alaska Airlines,LIH,Lihue,Small,5592,60.0,13.0,47.0,14.1,32123,2499.0,4576.0,6306.0,0.082,450324.0,carrier_airport
+AS,Alaska Airlines,BET,Bethel,Non-hub,3252,55.0,43.0,12.0,65.9,21223,2518.0,4571.0,6263.0,0.141,449832.0,carrier_airport
+MQ,Envoy Air,CID,Cedar Rapids,Small,4945,88.0,29.0,59.0,44.6,14598,2576.0,4555.0,6135.0,0.092,448258.0,carrier_airport
+UA,United Airlines,ORF,Norfolk,Medium,8621,422.0,53.0,369.0,19.1,24031,2440.0,4540.0,6325.0,0.053,446781.0,carrier_airport
+UA,United Airlines,BDL,Windsor Locks,Medium,9100,362.0,47.0,315.0,20.1,23759,2454.0,4528.0,6326.0,0.05,445600.0,carrier_airport
+YX,Republic Airways,MKE,Milwaukee,Medium,6013,52.0,31.0,21.0,39.9,16626,2487.0,4521.0,6245.0,0.075,444912.0,carrier_airport
+DL,Delta Air Lines,MSN,Madison,Small,7951,118.0,42.0,76.0,36.7,16215,2454.0,4517.0,6269.0,0.057,444518.0,carrier_airport
+DL,Delta Air Lines,RIC,Richmond,Medium,12098,127.0,15.0,112.0,9.2,26323,2510.0,4515.0,6214.0,0.037,444321.0,carrier_airport
+9E,Endeavor Air,IND,Indianapolis,Medium,6914,64.0,36.0,28.0,42.4,17713,2504.0,4514.0,6163.0,0.065,444223.0,carrier_airport
+OH,PSA Airlines,SBN,South Bend,Small,4458,90.0,28.0,62.0,45.4,14902,2538.0,4504.0,6057.0,0.101,443239.0,carrier_airport
+MQ,Envoy Air,SAV,Savannah,Medium,4066,56.0,28.0,28.0,45.0,14893,2492.0,4503.0,6184.0,0.111,443140.0,carrier_airport
+F9,Frontier Airlines,JFK,New York,Large,3839,73.0,52.0,21.0,45.7,24082,2466.0,4493.0,6175.0,0.117,442156.0,carrier_airport
+UA,United Airlines,SJC,San Jose,Medium,6986,119.0,39.0,80.0,11.9,18887,2451.0,4492.0,6234.0,0.064,442058.0,carrier_airport
+B6,JetBlue Airways,DFW,Dallas-Fort Worth,Large,2378,55.0,42.0,13.0,57.4,20544,2420.0,4482.0,6288.0,0.188,441074.0,carrier_airport
+AA,American Airlines,LIT,Little Rock,Small,2708,46.0,35.0,11.0,56.3,25517,2401.0,4475.0,6257.0,0.165,440385.0,carrier_airport
+F9,Frontier Airlines,MKE,Milwaukee,Medium,2629,53.0,38.0,15.0,49.8,29256,2379.0,4444.0,6284.0,0.169,437334.0,carrier_airport
+AA,American Airlines,BOI,Boise,Medium,4583,100.0,42.0,58.0,47.7,21040,2447.0,4432.0,6084.0,0.097,436153.0,carrier_airport
+OH,PSA Airlines,PWM,Portland,Small,3468,38.0,26.0,12.0,51.6,19132,2410.0,4425.0,6124.0,0.128,435464.0,carrier_airport
+WN,Southwest Airlines,MTJ,Montrose CO,Non-hub,2527,40.0,32.0,8.0,75.5,16310,2469.0,4419.0,6016.0,0.175,434874.0,carrier_airport
+DL,Delta Air Lines,TUL,Tulsa,Small,5716,56.0,44.0,12.0,54.3,17362,2421.0,4393.0,6050.0,0.077,432315.0,carrier_airport
+OO,SkyWest Airlines,AMA,Amarillo,Small,4777,84.0,26.0,58.0,36.4,18170,2368.0,4392.0,6189.0,0.092,432217.0,carrier_airport
+9E,Endeavor Air,DSM,Des Moines,Small,8030,114.0,40.0,74.0,36.8,17465,2443.0,4388.0,6043.0,0.055,431823.0,carrier_airport
+OH,PSA Airlines,CAK,Akron,Non-hub,6482,480.0,30.0,450.0,25.8,21926,2425.0,4371.0,6017.0,0.067,430150.0,carrier_airport
+WN,Southwest Airlines,CRP,Corpus Christi,Small,4931,55.0,32.0,23.0,37.6,17396,2383.0,4371.0,5966.0,0.089,430150.0,carrier_airport
+OO,SkyWest Airlines,RIC,Richmond,Medium,3274,92.0,30.0,62.0,30.3,7270,2349.0,4370.0,6148.0,0.133,430052.0,carrier_airport
+YV,Mesa Airlines,LBB,Lubbock,Small,2632,38.0,26.0,12.0,61.3,25717,2308.0,4336.0,6121.0,0.165,426706.0,carrier_airport
+9E,Endeavor Air,ILM,Wilmington,Small,4756,48.0,34.0,14.0,51.3,19795,2366.0,4328.0,6049.0,0.091,425918.0,carrier_airport
+AA,American Airlines,STX,St. Croix Island,Non-hub,3313,58.0,41.0,17.0,43.8,22022,2375.0,4326.0,5983.0,0.131,425722.0,carrier_airport
+AS,Alaska Airlines,ATL,Atlanta,Large,5529,65.0,24.0,42.0,10.7,26645,2365.5,4322.5,5959.5,0.078,425377.0,carrier_airport
+OO,SkyWest Airlines,MLI,Moline,Small,5394,105.0,26.0,79.0,21.4,16824,2306.0,4312.0,6042.0,0.08,424344.0,carrier_airport
+MQ,Envoy Air,CMI,Champaign,Non-hub,6112,106.0,26.0,80.0,34.5,18521,2382.0,4299.0,5861.0,0.07,423065.0,carrier_airport
+AS,Alaska Airlines,IAH,Houston,Large,3931,105.0,49.0,56.0,16.9,16703,2308.0,4291.0,5944.0,0.109,422277.0,carrier_airport
+YX,Republic Airways,GRR,Grand Rapids,Medium,6987,96.0,30.0,66.0,30.0,16816,2356.0,4287.0,5904.0,0.061,421884.0,carrier_airport
+OO,SkyWest Airlines,LBB,Lubbock,Small,5411,409.0,26.0,383.0,30.3,15523,2287.0,4286.0,6015.0,0.079,421785.0,carrier_airport
+OO,SkyWest Airlines,BTR,Baton Rouge,Small,3225,41.0,25.0,16.0,46.2,19094,2277.0,4262.0,6058.0,0.132,419423.0,carrier_airport
+MQ,Envoy Air,ABQ,Albuquerque,Medium,3691,48.0,27.0,21.0,43.7,15910,2338.0,4251.0,5838.0,0.115,418341.0,carrier_airport
+MQ,Envoy Air,MOB,Mobile,Non-hub,3089,33.0,27.0,6.0,58.3,13797,2382.0,4234.0,5710.0,0.137,416668.0,carrier_airport
+MQ,Envoy Air,CLE,Cleveland,Medium,3205,45.0,28.0,17.0,47.1,14484,2360.0,4230.0,5794.0,0.132,416274.0,carrier_airport
+DL,Delta Air Lines,CAE,Columbia,Small,6944,110.0,44.0,66.0,41.6,13848,2320.0,4221.0,5783.0,0.061,415389.0,carrier_airport
+DL,Delta Air Lines,TYS,Knoxville,Small,5714,65.0,39.0,26.0,15.3,21064,2310.0,4211.0,5857.0,0.074,414405.0,carrier_airport
+OO,SkyWest Airlines,BIL,Billings,Small,6836,54.0,29.0,25.0,25.2,9496,2292.0,4204.0,5808.0,0.061,413716.0,carrier_airport
+OO,SkyWest Airlines,BFL,Bakersfield,Non-hub,6990,301.0,27.0,274.0,21.9,13886,2297.0,4198.0,5861.0,0.06,413125.0,carrier_airport
+OO,SkyWest Airlines,CHA,Chattanooga,Small,3429,47.0,29.0,18.0,44.1,12900,2268.0,4189.0,5802.0,0.122,412239.0,carrier_airport
+OO,SkyWest Airlines,SAT,San Antonio,Medium,5607,69.0,29.0,40.0,27.8,13322,2277.0,4181.0,5863.0,0.075,411452.0,carrier_airport
+UA,United Airlines,STT,St. Thomas,Small,3927,58.0,41.0,17.0,19.3,15430,2291.0,4146.0,5697.0,0.106,408008.0,carrier_airport
+OH,PSA Airlines,BGR,Bangor,Small,4342,94.0,27.0,67.0,33.2,23457,2277.0,4146.0,5787.0,0.095,408008.0,carrier_airport
+YV,Mesa Airlines,SDF,Louisville,Medium,3757,379.0,28.0,351.0,36.4,22912,2214.0,4144.0,5871.0,0.11,407811.0,carrier_airport
+MQ,Envoy Air,BRO,Brownsville,Non-hub,4143,36.0,26.0,10.0,52.9,15520,2270.0,4142.0,5664.0,0.1,407614.0,carrier_airport
+AA,American Airlines,ANC,Anchorage,Medium,2226,75.0,55.0,20.0,37.2,24448,2236.0,4114.0,5764.0,0.185,404859.0,carrier_airport
+B6,JetBlue Airways,MVY,Vineyard Haven MA,Non-hub,2263,45.0,29.0,16.0,31.7,30719,2149.0,4106.0,5901.0,0.181,404071.0,carrier_airport
+OO,SkyWest Airlines,SYR,Syracuse,Small,3080,47.0,28.0,19.0,37.4,5657,2175.0,4086.0,5750.0,0.133,402103.0,carrier_airport
+OH,PSA Airlines,GPT,Gulfport,Non-hub,4426,91.0,27.0,64.0,44.4,16002,2249.0,4069.0,5566.0,0.092,400430.0,carrier_airport
+UA,United Airlines,DSM,Des Moines,Small,7058,443.0,48.0,395.0,31.5,16299,2222.0,4062.0,5598.0,0.058,399741.0,carrier_airport
+OH,PSA Airlines,ABE,Allentown,Small,4628,90.0,26.0,64.0,36.8,19770,2242.0,4044.0,5473.0,0.087,397970.0,carrier_airport
+UA,United Airlines,EUG,Eugene,Small,5584,122.0,51.0,71.0,35.1,20011,2212.0,4044.0,5578.0,0.072,397970.0,carrier_airport
+QX,Horizon Air,MFR,Medford,Small,4972,41.0,28.0,13.0,52.7,11633,2301.0,4036.0,5402.0,0.081,397183.0,carrier_airport
+DL,Delta Air Lines,OMA,Omaha,Medium,7824,120.0,38.0,82.0,12.6,15365,2198.0,4007.0,5529.0,0.051,394329.0,carrier_airport
+UA,United Airlines,FCA,Kalispell,Small,4111,66.0,44.0,22.0,20.0,18945,2191.0,3996.0,5486.0,0.097,393246.0,carrier_airport
+WN,Southwest Airlines,ITO,Hilo,Small,7816,70.0,38.0,32.0,26.1,14639,2264.0,3995.0,5441.0,0.051,393148.0,carrier_airport
+MQ,Envoy Air,FSM,Fort Smith,Non-hub,3855,31.0,23.0,8.0,62.1,14222,2239.0,3988.0,5420.0,0.103,392459.0,carrier_airport
+OO,SkyWest Airlines,YUM,Yuma,Non-hub,5943,91.0,24.0,67.0,33.7,12047,2197.0,3986.0,5532.0,0.067,392262.0,carrier_airport
+OO,SkyWest Airlines,PLN,Pellston,Non-hub,3708,42.0,22.0,20.0,16.2,3260,2087.0,3975.0,5693.0,0.107,391180.0,carrier_airport
+MQ,Envoy Air,DSM,Des Moines,Small,4570,84.0,28.0,56.0,37.6,12816,2188.0,3972.0,5441.0,0.087,390885.0,carrier_airport
+MQ,Envoy Air,ROC,Rochester,Small,3030,35.0,27.0,8.0,58.8,11895,2194.0,3965.0,5341.0,0.131,390196.0,carrier_airport
+OO,SkyWest Airlines,ALB,Albany,Small,3851,53.0,31.0,22.0,29.2,2982,2094.0,3956.0,5540.0,0.103,389310.0,carrier_airport
+HA,Hawaiian Airlines,LAX,Los Angeles,Large,8749,480.0,44.0,436.0,10.8,21682,2262.0,3953.0,5253.0,0.045,389015.0,carrier_airport
+OO,SkyWest Airlines,MTJ,Montrose CO,Non-hub,3785,52.0,28.0,24.0,23.2,16260,2155.0,3937.0,5426.0,0.104,387440.0,carrier_airport
+OO,SkyWest Airlines,JAN,Jackson,Small,2262,32.0,26.0,6.0,67.9,8765,2139.0,3935.0,5462.0,0.174,387243.0,carrier_airport
+9E,Endeavor Air,BNA,Nashville,Large,4243,65.0,36.0,29.0,40.6,24212,2096.0,3935.0,5521.0,0.093,387243.0,carrier_airport
+QX,Horizon Air,ANC,Anchorage,Medium,4314,71.0,34.0,37.0,36.4,14221,2165.0,3933.0,5389.0,0.091,387047.0,carrier_airport
+AA,American Airlines,CID,Cedar Rapids,Small,3236,357.0,38.0,319.0,32.4,26363,2116.0,3923.0,5510.0,0.121,386062.0,carrier_airport
+DL,Delta Air Lines,JAC,Jacksn Hole,Small,5398,70.0,36.0,34.0,6.4,23821,2115.0,3921.0,5474.0,0.073,385866.0,carrier_airport
+AA,American Airlines,MTJ,Montrose CO,Non-hub,2190,50.0,36.0,14.0,67.2,22797,2111.0,3917.0,5481.0,0.179,385472.0,carrier_airport
+WN,Southwest Airlines,BLI,Bellingham,Non-hub,2631,45.0,39.0,6.0,56.3,11909,2213.0,3916.0,5262.0,0.149,385374.0,carrier_airport
+YX,Republic Airways,BTV,Burlington,Small,5813,59.0,29.0,30.0,34.4,17453,2181.0,3910.0,5407.0,0.067,384783.0,carrier_airport
+OH,PSA Airlines,MSY,New Orleans,Medium,2470,38.0,27.0,11.0,54.6,18776,2132.0,3908.0,5433.0,0.158,384586.0,carrier_airport
+OO,SkyWest Airlines,AEX,Alexandria,Non-hub,3088,33.0,25.0,8.0,59.0,6854,2113.0,3906.0,5480.0,0.126,384389.0,carrier_airport
+AS,Alaska Airlines,MSP,Minneapolis,Large,4323,116.0,48.0,68.0,40.8,14132,2205.0,3861.0,5182.0,0.089,379961.0,carrier_airport
+MQ,Envoy Air,LFT,Lafayette,Non-hub,2909,31.0,27.0,4.0,64.0,13315,2137.0,3856.0,5265.0,0.133,379469.0,carrier_airport
+9E,Endeavor Air,BTV,Burlington,Small,5576,105.0,39.0,66.0,39.1,20267,2093.0,3835.0,5336.0,0.069,377402.0,carrier_airport
+AS,Alaska Airlines,BOI,Boise,Medium,4827,116.0,45.0,71.0,31.1,13958,2136.0,3831.0,5225.0,0.079,377009.0,carrier_airport
+DL,Delta Air Lines,TLH,Tallahassee,Small,6379,66.0,41.0,25.0,38.8,14281,2093.0,3829.0,5296.0,0.06,376812.0,carrier_airport
+B6,JetBlue Airways,MSP,Minneapolis,Large,2016,47.0,37.0,10.0,61.2,20769,2041.3500000000022,3816.0,5396.650000000005,0.189,375533.0,carrier_airport
+MQ,Envoy Air,GJT,Grand Junction,Small,3679,40.0,28.0,12.0,51.3,10849,2152.0,3815.0,5102.0,0.104,375434.0,carrier_airport
+NK,Spirit Airlines,ORF,Norfolk,Medium,2045,55.0,46.0,9.0,63.1,13783,2038.0,3814.0,5385.0,0.187,375336.0,carrier_airport
+UA,United Airlines,GEG,Spokane,Medium,4232,91.0,43.0,48.0,22.2,15724,2080.0,3804.0,5276.0,0.09,374352.0,carrier_airport
+MQ,Envoy Air,PIT,Pittsburgh,Medium,2564,39.0,28.0,11.0,57.1,12639,2095.0,3797.0,5200.0,0.148,373663.0,carrier_airport
+MQ,Envoy Air,FSD,Sioux Falls,Small,2951,40.0,29.0,11.0,51.9,11854,2145.0,3781.0,5169.0,0.128,372088.0,carrier_airport
+OH,PSA Airlines,GRR,Grand Rapids,Medium,3101,43.0,27.0,16.0,48.4,19619,2062.0,3774.0,5233.0,0.122,371399.0,carrier_airport
+F9,Frontier Airlines,ELP,El Paso,Small,2111,50.0,38.0,12.0,59.5,21945,2040.0,3773.0,5300.0,0.179,371301.0,carrier_airport
+B6,JetBlue Airways,CLE,Cleveland,Medium,3725,57.0,35.0,22.0,41.0,19862,2017.0,3769.0,5272.0,0.101,370907.0,carrier_airport
+UA,United Airlines,CVG,Cincinnati,Medium,7973,421.0,50.0,371.0,19.7,19183,2042.0,3768.0,5274.0,0.047,370809.0,carrier_airport
+OH,PSA Airlines,STL,St. Louis,Medium,3332,60.0,28.0,32.0,41.0,18083,2023.0,3742.0,5204.0,0.112,368250.0,carrier_airport
+9E,Endeavor Air,PWM,Portland,Small,4792,73.0,40.0,33.0,41.5,19315,2016.0,3731.0,5173.0,0.078,367168.0,carrier_airport
+MQ,Envoy Air,DTW,Detroit,Large,3065,45.0,27.0,18.0,46.0,13422,2059.0,3727.0,5132.0,0.122,366774.0,carrier_airport
+OH,PSA Airlines,GNV,Gainesville,Non-hub,3443,43.0,27.0,16.0,49.8,15237,2047.0,3725.0,5159.0,0.108,366577.0,carrier_airport
+OO,SkyWest Airlines,GFK,Grand Forks,Non-hub,4236,50.0,30.0,20.0,24.7,0,2005.0,3707.0,5178.0,0.088,364806.0,carrier_airport
+YX,Republic Airways,GSP,Greenville,Small,6293,90.0,30.0,60.0,23.2,13780,2045.0,3699.0,5081.0,0.059,364019.0,carrier_airport
+OH,PSA Airlines,SRQ,Sarasota,Small,2146,33.0,24.0,9.0,75.6,17080,2024.0,3695.0,5131.0,0.172,363625.0,carrier_airport
+YX,Republic Airways,PVD,Providence,Small,5577,58.0,27.0,31.0,34.0,15101,2024.0,3657.0,5028.0,0.066,359885.0,carrier_airport
+OO,SkyWest Airlines,IMT,Iron Mountain,Non-hub,3270,41.0,24.0,17.0,26.9,0,1924.0,3657.0,5211.0,0.112,359885.0,carrier_airport
+9E,Endeavor Air,PIT,Pittsburgh,Medium,4648,49.0,32.0,17.0,40.5,18936,1973.0,3648.0,5061.0,0.078,359000.0,carrier_airport
+YV,Mesa Airlines,FSD,Sioux Falls,Small,2117,66.0,29.0,37.0,45.6,16926,1935.0,3640.0,5148.0,0.172,358212.0,carrier_airport
+MQ,Envoy Air,EVV,Evansville,Non-hub,4016,90.0,26.0,64.0,43.5,12125,2034.0,3633.0,4952.0,0.09,357524.0,carrier_airport
+F9,Frontier Airlines,SMF,Sacramento,Medium,2654,50.0,39.0,11.0,55.5,18704,1971.0,3632.0,5045.0,0.137,357425.0,carrier_airport
+MQ,Envoy Air,FWA,Fort Wayne,Small,2918,38.0,29.0,9.0,53.1,10122,2049.0,3630.0,4853.0,0.124,357228.0,carrier_airport
+NK,Spirit Airlines,LBE,Latrobe,Non-hub,2898,55.0,38.0,17.0,32.1,12769,1933.0,3630.0,5075.0,0.125,357228.0,carrier_airport
+MQ,Envoy Air,GPT,Gulfport,Non-hub,3068,56.0,26.0,30.0,47.9,13577,2007.0,3629.0,4904.0,0.118,357130.0,carrier_airport
+UA,United Airlines,MSO,Missoula,Small,3919,66.0,50.0,16.0,43.8,14460,2003.0,3629.0,5017.0,0.093,357130.0,carrier_airport
+OO,SkyWest Airlines,COU,Columbia,Non-hub,2511,90.0,26.0,64.0,47.7,15711,1945.0,3628.0,5144.0,0.144,357031.0,carrier_airport
+OO,SkyWest Airlines,RST,Rochester,Non-hub,3419,49.0,26.0,23.0,34.5,4572,1926.0,3617.0,5137.0,0.106,355949.0,carrier_airport
+OH,PSA Airlines,OAJ,Jacksonville NC,Non-hub,3731,90.0,28.0,62.0,46.8,14875,2023.0,3615.0,4906.0,0.097,355752.0,carrier_airport
+MQ,Envoy Air,OMA,Omaha,Medium,3425,49.0,28.0,21.0,41.3,12147,1998.0,3595.0,4916.0,0.105,353784.0,carrier_airport
+UA,United Airlines,KOA,Kona,Small,8361,106.0,51.0,55.0,6.6,19286,1942.0,3580.0,5024.0,0.043,352308.0,carrier_airport
+OH,PSA Airlines,TUL,Tulsa,Small,2715,35.0,24.0,11.0,57.3,22406,1963.0,3578.0,5000.0,0.132,352111.0,carrier_airport
+OO,SkyWest Airlines,DEC,Decatur,Non-hub,3393,46.0,19.0,27.0,8.0,30895,1860.0,3559.0,5147.0,0.105,350241.0,carrier_airport
+9E,Endeavor Air,CHO,Charlottesville VA,Non-hub,5023,61.0,35.0,26.0,40.5,17003,1943.0,3551.0,4921.0,0.071,349454.0,carrier_airport
+OH,PSA Airlines,MGM,MONTGOMERY,Non-hub,2212,43.0,24.0,19.0,46.0,18381,1910.0,3546.0,4992.0,0.16,348962.0,carrier_airport
+QX,Horizon Air,SAN,San Diego,Large,3308,50.0,36.0,14.0,52.3,8327,2055.0,3537.0,4665.0,0.107,348076.0,carrier_airport
+AS,Alaska Airlines,OAK,Oakland,Medium,3102,102.0,44.0,58.0,36.8,11066,1956.0,3532.0,4771.0,0.114,347584.0,carrier_airport
+DL,Delta Air Lines,DSM,Des Moines,Small,4356,55.0,41.0,14.0,53.3,14332,1944.0,3520.0,4851.0,0.081,346403.0,carrier_airport
+OO,SkyWest Airlines,ROW,Roswell,Non-hub,4207,338.0,27.0,311.0,33.7,12120,1869.0,3517.0,4981.0,0.084,346108.0,carrier_airport
+9E,Endeavor Air,TYS,Knoxville,Small,8301,336.0,37.0,299.0,30.7,15831,1919.0,3514.0,4845.0,0.042,345813.0,carrier_airport
+YX,Republic Airways,ROC,Rochester,Small,5391,67.0,30.0,37.0,30.4,13825,1935.0,3511.0,4818.0,0.065,345518.0,carrier_airport
+B6,JetBlue Airways,PSE,Ponce,Non-hub,2547,72.0,20.0,52.0,4.8,29390,1827.3999999999978,3500.100000000002,5030.800000000003,0.137,344445.0,carrier_airport
+DL,Delta Air Lines,TUS,Tucson,Medium,5623,70.0,45.0,25.0,24.0,15692,1901.0,3496.0,4830.0,0.062,344041.0,carrier_airport
+DL,Delta Air Lines,DAB,Daytona Beach,Non-hub,6817,70.0,14.0,56.0,11.4,24741,1916.0,3479.0,4853.0,0.051,342368.0,carrier_airport
+OO,SkyWest Airlines,HDN,Hayden,Non-hub,3850,55.0,31.0,24.0,30.1,11321,1869.0,3471.0,4873.0,0.09,341581.0,carrier_airport
+DL,Delta Air Lines,BZN,Bozeman,Small,8508,94.0,19.0,75.0,8.9,28521,1861.0,3468.0,4857.0,0.041,341286.0,carrier_airport
+OO,SkyWest Airlines,MDT,Harrisburg,Small,2734,51.0,30.0,21.0,26.4,7925,1874.0,3467.0,4855.0,0.127,341187.0,carrier_airport
+QX,Horizon Air,FAI,Fairbanks,Small,2749,41.0,32.0,9.0,61.4,16405,1890.0,3451.0,4794.0,0.126,339613.0,carrier_airport
+AS,Alaska Airlines,PSG,Petersburg,Non-hub,3292,47.0,29.0,18.0,0.0,22188,1853.0,3450.0,4865.0,0.105,339515.0,carrier_airport
+OH,PSA Airlines,RIC,Richmond,Medium,2320,32.0,26.0,6.0,66.7,14708,1858.0,3431.0,4744.0,0.148,337645.0,carrier_airport
+OO,SkyWest Airlines,LCH,Lake Charles,Non-hub,2947,31.0,22.0,9.0,59.6,8385,1805.0,3426.0,4886.0,0.116,337153.0,carrier_airport
+MQ,Envoy Air,GNV,Gainesville,Non-hub,2871,39.0,30.0,9.0,53.3,10924,1931.0,3425.0,4654.0,0.119,337054.0,carrier_airport
+OO,SkyWest Airlines,PIA,Peoria,Small,3065,96.0,26.0,70.0,32.1,16575,1830.0,3409.0,4822.0,0.111,335480.0,carrier_airport
+AA,American Airlines,OGG,Kahului,Medium,7841,240.0,74.0,166.0,3.6,20565,1870.0,3406.0,4731.0,0.043,335184.0,carrier_airport
+AS,Alaska Airlines,SAT,San Antonio,Medium,2355,63.0,45.0,18.0,21.4,11894,1884.9999999999982,3387.9999999999955,4576.399999999995,0.144,333413.0,carrier_airport
+DL,Delta Air Lines,FAI,Fairbanks,Small,3128,70.0,42.0,28.0,11.2,14262,1859.0,3373.0,4630.0,0.108,331937.0,carrier_airport
+OH,PSA Airlines,MSP,Minneapolis,Large,2331,38.0,28.0,10.0,56.2,18068,1857.0,3363.0,4654.0,0.144,330953.0,carrier_airport
+MQ,Envoy Air,HPN,White Plains,Small,3002,391.0,31.0,360.0,40.1,10745,1894.0,3357.0,4578.0,0.112,330362.0,carrier_airport
+YX,Republic Airways,OMA,Omaha,Medium,5793,57.0,29.0,28.0,21.1,9091,1815.0,3356.0,4661.0,0.058,330264.0,carrier_airport
+9E,Endeavor Air,MGM,MONTGOMERY,Non-hub,3968,46.0,34.0,12.0,54.8,15589,1875.0,3338.0,4579.0,0.084,328493.0,carrier_airport
+MQ,Envoy Air,MHK,Manhattan,Non-hub,3493,38.0,25.0,13.0,51.5,9786,1868.0,3337.0,4489.0,0.096,328394.0,carrier_airport
+OO,SkyWest Airlines,PRC,Prescott,Non-hub,3350,96.0,26.0,70.0,28.5,19453,1765.0,3335.0,4715.0,0.1,328197.0,carrier_airport
+OO,SkyWest Airlines,ROC,Rochester,Small,2693,51.0,30.0,21.0,36.7,7006,1779.0,3334.0,4699.0,0.124,328099.0,carrier_airport
+UA,United Airlines,HDN,Hayden,Non-hub,2456,62.0,39.0,23.0,13.4,16724,1788.0,3332.0,4642.0,0.136,327902.0,carrier_airport
+DL,Delta Air Lines,STT,St. Thomas,Small,4745,72.0,10.0,62.0,14.0,20650,1869.0,3322.0,4486.0,0.07,326918.0,carrier_airport
+AS,Alaska Airlines,DAL,Dallas,Large,2630,65.0,44.0,21.0,11.9,12936,1809.0,3309.0,4550.0,0.126,325639.0,carrier_airport
+YX,Republic Airways,AVL,Asheville,Small,3509,50.0,28.0,22.0,41.2,11418,1821.0,3297.0,4504.0,0.094,324458.0,carrier_airport
+HA,Hawaiian Airlines,LAS,Las Vegas,Large,6405,120.0,51.0,69.0,12.7,25686,1828.0,3292.0,4471.0,0.051,323966.0,carrier_airport
+AA,American Airlines,ROC,Rochester,Small,3023,110.0,39.0,71.0,35.4,18370,1767.0,3274.0,4551.0,0.108,322194.0,carrier_airport
+DL,Delta Air Lines,ONT,Ontario,Medium,8711,130.0,28.0,102.0,7.0,19856,1782.0,3268.0,4542.0,0.038,321604.0,carrier_airport
+MQ,Envoy Air,ILM,Wilmington,Small,3134,61.0,30.0,31.0,41.4,11087,1820.0,3252.0,4414.0,0.104,320029.0,carrier_airport
+9E,Endeavor Air,AGS,Bush Field,Small,5194,65.0,40.0,25.0,48.9,15875,1767.0,3237.0,4533.0,0.062,318553.0,carrier_airport
+UA,United Airlines,BUR,Burbank,Medium,3656,63.0,42.0,21.0,22.9,15125,1757.0,3236.0,4538.0,0.089,318455.0,carrier_airport
+AS,Alaska Airlines,WRG,Wrangell,Non-hub,2855,47.0,27.0,20.0,0.0,17712,1758.0,3231.0,4500.0,0.113,317963.0,carrier_airport
+UA,United Airlines,TUS,Tucson,Medium,4005,66.0,47.0,19.0,27.6,14134,1747.0,3216.0,4482.0,0.08,316487.0,carrier_airport
+DL,Delta Air Lines,OGG,Kahului,Medium,5600,115.0,49.0,66.0,8.6,25718,1723.0,3210.0,4513.0,0.057,315896.0,carrier_airport
+YX,Republic Airways,BWI,Baltimore,Large,4635,57.0,28.0,29.0,29.9,13208,1742.0,3206.0,4441.0,0.069,315502.0,carrier_airport
+9E,Endeavor Air,GSO,Greensboro,Small,4657,59.0,37.0,22.0,42.2,14376,1748.0,3204.0,4441.0,0.069,315306.0,carrier_airport
+MQ,Envoy Air,ATW,Appleton,Small,3731,341.0,26.0,315.0,31.5,13524,1748.0,3192.0,4429.0,0.086,314125.0,carrier_airport
+DL,Delta Air Lines,CHA,Chattanooga,Small,4840,119.0,47.0,72.0,36.9,14076,1742.0,3188.0,4404.0,0.066,313731.0,carrier_airport
+9E,Endeavor Air,XNA,Bentonville,Small,4976,51.0,34.0,17.0,41.4,14939,1766.0,3187.0,4372.0,0.064,313633.0,carrier_airport
+MQ,Envoy Air,BUF,Buffalo,Medium,2772,43.0,28.0,15.0,49.9,11174,1766.0,3174.0,4295.0,0.115,312353.0,carrier_airport
+AS,Alaska Airlines,RNO,Reno,Medium,2815,60.0,43.0,17.0,47.6,13533,1746.0,3149.0,4293.0,0.112,309893.0,carrier_airport
+QX,Horizon Air,RDM,Redmond-Bend,Small,4489,100.0,33.0,67.0,41.4,9579,1793.0,3129.0,4166.0,0.07,307925.0,carrier_airport
+YV,Mesa Airlines,ELP,El Paso,Small,3872,409.0,31.0,378.0,20.7,14996,1686.0,3129.0,4402.0,0.081,307925.0,carrier_airport
+YX,Republic Airways,BGR,Bangor,Small,4097,73.0,28.0,45.0,27.9,10222,1724.0,3122.0,4252.0,0.076,307236.0,carrier_airport
+AS,Alaska Airlines,STL,St. Louis,Medium,3112,70.0,49.0,21.0,45.5,8390,1797.0,3120.0,4103.0,0.1,307039.0,carrier_airport
+DL,Delta Air Lines,ICT,Wichita,Small,4124,58.0,45.0,13.0,50.3,8832,1724.0,3112.0,4276.0,0.075,306252.0,carrier_airport
+UA,United Airlines,MTJ,Montrose CO,Non-hub,2712,61.0,41.0,20.0,9.1,13976,1662.0,3110.0,4371.0,0.115,306055.0,carrier_airport
+NK,Spirit Airlines,MEM,Memphis,Medium,2830,61.0,44.0,17.0,38.8,12709,1659.0,3092.0,4354.0,0.109,304284.0,carrier_airport
+OO,SkyWest Airlines,MFE,Mcallen,Small,2789,50.0,27.0,23.0,41.7,6446,1635.0,3066.0,4340.0,0.11,301725.0,carrier_airport
+OO,SkyWest Airlines,COD,Cody,Non-hub,2695,67.0,28.0,39.0,44.6,10241,1685.0,3062.0,4257.0,0.114,301331.0,carrier_airport
+UA,United Airlines,SAV,Savannah,Medium,4134,66.0,13.0,53.0,13.7,14448,1688.0,3039.0,4145.0,0.074,299068.0,carrier_airport
+MQ,Envoy Air,SYR,Syracuse,Small,2646,48.0,28.0,20.0,48.8,8799,1717.0,3035.0,4102.0,0.115,298674.0,carrier_airport
+B6,JetBlue Airways,CLT,Charlotte,Large,2086,45.0,33.0,12.0,61.7,16119,1633.0,3032.0,4226.0,0.145,298379.0,carrier_airport
+NK,Spirit Airlines,MKE,Milwaukee,Medium,3546,77.0,42.0,35.0,29.1,11223,1648.0,3018.0,4200.0,0.085,297001.0,carrier_airport
+YX,Republic Airways,SRQ,Sarasota,Small,2326,42.0,26.0,16.0,39.9,11983,1659.0,3014.0,4139.0,0.13,296608.0,carrier_airport
+UA,United Airlines,EGE,Vail,Non-hub,2089,64.0,44.0,20.0,26.1,14130,1599.0,3011.0,4226.0,0.144,296313.0,carrier_airport
+9E,Endeavor Air,STL,St. Louis,Medium,4560,59.0,36.0,23.0,41.5,14904,1612.0,3003.0,4210.0,0.066,295525.0,carrier_airport
+OH,PSA Airlines,FAY,Fayetteville,Non-hub,3165,45.0,27.0,18.0,47.9,9553,1686.0,2986.0,4013.0,0.094,293852.0,carrier_airport
+OO,SkyWest Airlines,GSP,Greenville,Small,3946,101.0,32.0,69.0,23.6,7613,1627.0,2980.0,4130.0,0.076,293262.0,carrier_airport
+UA,United Airlines,GRR,Grand Rapids,Medium,6200,436.0,37.0,399.0,8.6,14130,1628.0,2976.0,4111.0,0.048,292868.0,carrier_airport
+AA,American Airlines,EUG,Eugene,Small,2499,100.0,37.0,63.0,36.4,18212,1603.0,2974.0,4164.0,0.119,292671.0,carrier_airport
+AS,Alaska Airlines,TUS,Tucson,Medium,2199,57.0,47.0,10.0,63.3,9431,1677.0,2965.0,3955.0,0.135,291786.0,carrier_airport
+NK,Spirit Airlines,CHS,Charleston,Medium,2491,60.0,36.0,24.0,26.1,11956,1581.0,2964.0,4193.0,0.119,291687.0,carrier_airport
+AS,Alaska Airlines,BZN,Bozeman,Small,2730,59.0,40.0,19.0,22.5,12578,1640.0,2949.0,3981.0,0.108,290211.0,carrier_airport
+QX,Horizon Air,PAE,Everett,Non-hub,3924,112.0,36.0,76.0,30.8,7651,1679.0,2941.0,3921.0,0.075,289424.0,carrier_airport
+OO,SkyWest Airlines,TYR,Tyler,Non-hub,2307,37.0,25.0,12.0,52.4,5299,1575.0,2920.0,4115.0,0.127,287357.0,carrier_airport
+OH,PSA Airlines,MCI,Kansas City,Medium,2813,91.0,29.0,62.0,36.2,15268,1579.0,2911.0,4070.0,0.103,286472.0,carrier_airport
+OO,SkyWest Airlines,MCW,Mason City,Non-hub,2593,41.0,20.0,21.0,20.7,23097,1527.0,2908.0,4121.0,0.112,286176.0,carrier_airport
+AS,Alaska Airlines,YAK,Yakutat,Non-hub,3208,50.0,26.0,24.0,0.0,16975,1556.0,2887.0,4025.0,0.09,284110.0,carrier_airport
+UA,United Airlines,COS,Colorado Springs,Small,3607,82.0,39.0,43.0,14.5,14586,1569.0,2883.0,4042.0,0.08,283716.0,carrier_airport
+OO,SkyWest Airlines,SJT,San Angelo,Non-hub,2504,34.0,23.0,11.0,55.7,7981,1538.0,2883.0,4088.0,0.115,283716.0,carrier_airport
+9E,Endeavor Air,MKE,Milwaukee,Medium,3850,65.0,35.0,30.0,38.4,14646,1543.0,2872.0,4027.0,0.075,282634.0,carrier_airport
+OO,SkyWest Airlines,CLT,Charlotte,Large,3240,72.0,30.0,42.0,20.5,4662,1574.0,2860.0,3947.0,0.088,281453.0,carrier_airport
+NK,Spirit Airlines,RNO,Reno,Medium,2403,55.0,43.0,12.0,60.0,7799,1552.9000000000015,2856.4500000000007,4042.2000000000007,0.119,281103.0,carrier_airport
+OO,SkyWest Airlines,FOD,Fort Dodge,Non-hub,2483,39.0,17.0,22.0,13.6,15945,1503.0,2846.0,4014.0,0.115,280075.0,carrier_airport
+DL,Delta Air Lines,BTR,Baton Rouge,Small,3345,70.0,46.0,24.0,48.6,8567,1564.0,2845.0,3921.0,0.085,279976.0,carrier_airport
+OO,SkyWest Airlines,LWS,Lewiston,Non-hub,4311,53.0,32.0,21.0,43.0,4889,1595.0,2840.0,3877.0,0.066,279484.0,carrier_airport
+MQ,Envoy Air,ACT,Waco,Non-hub,3318,85.0,22.0,63.0,41.0,12478,1548.0,2839.0,3918.0,0.086,279386.0,carrier_airport
+OO,SkyWest Airlines,PVD,Providence,Small,3386,110.0,31.0,79.0,23.2,6986,1503.0,2835.0,3958.0,0.084,278992.0,carrier_airport
+AS,Alaska Airlines,TPA,Tampa,Large,4427,75.0,17.0,58.0,9.9,23425,1553.0,2833.0,3940.0,0.064,278796.0,carrier_airport
+MQ,Envoy Air,PIA,Peoria,Small,3338,91.0,28.0,63.0,38.4,10776,1573.0,2830.0,3857.0,0.085,278500.0,carrier_airport
+OO,SkyWest Airlines,CHS,Charleston,Medium,2118,46.0,27.0,19.0,40.3,8844,1509.0,2820.0,3937.0,0.133,277516.0,carrier_airport
+OO,SkyWest Airlines,CAK,Akron,Non-hub,3028,98.0,26.0,72.0,18.3,18620,1496.0,2816.0,4004.0,0.093,277123.0,carrier_airport
+UA,United Airlines,LIH,Lihue,Small,6438,99.0,55.0,44.0,4.4,11114,1550.0,2808.0,3860.0,0.044,276335.0,carrier_airport
+OO,SkyWest Airlines,APN,Alpena,Non-hub,2702,47.0,23.0,24.0,17.2,0,1475.0,2799.0,3971.0,0.104,275450.0,carrier_airport
+MQ,Envoy Air,BWI,Baltimore,Large,2311,90.0,28.0,62.0,41.5,9541,1543.0,2797.0,3867.0,0.121,275253.0,carrier_airport
+OO,SkyWest Airlines,GRK,Killeen,Non-hub,2191,34.0,23.0,11.0,57.7,8995,1507.0,2796.0,3947.0,0.128,275154.0,carrier_airport
+DL,Delta Air Lines,SYR,Syracuse,Small,5721,120.0,14.0,106.0,9.9,17815,1516.0,2782.0,3830.0,0.049,273777.0,carrier_airport
+9E,Endeavor Air,BOS,Boston,Large,3276,62.0,43.0,19.0,43.1,15623,1473.0,2780.0,3918.0,0.085,273580.0,carrier_airport
+OO,SkyWest Airlines,ACT,Waco,Non-hub,2322,41.0,23.0,18.0,47.6,6232,1495.0,2779.0,3906.0,0.12,273481.0,carrier_airport
+MQ,Envoy Air,BIL,Billings,Small,3445,96.0,29.0,67.0,32.2,11396,1568.0,2768.0,3712.0,0.08,272399.0,carrier_airport
+OO,SkyWest Airlines,HLN,Helena,Non-hub,6143,413.0,33.0,380.0,33.5,7237,1529.0,2762.0,3839.0,0.045,271808.0,carrier_airport
+YX,Republic Airways,MVY,Vineyard Haven MA,Non-hub,2176,45.0,29.0,16.0,46.6,10827,1513.0,2760.0,3812.0,0.127,271612.0,carrier_airport
+MQ,Envoy Air,MLI,Moline,Small,3618,100.0,26.0,74.0,36.7,10862,1548.0,2757.0,3755.0,0.076,271316.0,carrier_airport
+MQ,Envoy Air,SJT,San Angelo,Non-hub,3181,31.0,21.0,10.0,64.8,9509,1529.0,2754.0,3761.0,0.087,271021.0,carrier_airport
+QX,Horizon Air,EUG,Eugene,Small,3390,43.0,29.0,14.0,54.2,8178,1561.0,2752.0,3761.0,0.081,270824.0,carrier_airport
+OO,SkyWest Airlines,LGB,Long Beach,Small,5012,61.0,36.0,25.0,44.0,697,1569.9500000000025,2737.5000000000055,3680.0500000000056,0.055,269397.0,carrier_airport
+UA,United Airlines,MFR,Medford,Small,4045,401.0,52.0,349.0,32.9,9756,1552.0,2733.0,3651.0,0.068,268955.0,carrier_airport
+OO,SkyWest Airlines,AVL,Asheville,Small,2669,81.0,28.0,53.0,28.3,12632,1479.0,2730.0,3813.0,0.102,268659.0,carrier_airport
+AS,Alaska Airlines,CDV,Cordova,Non-hub,2646,50.0,28.0,22.0,0.0,14334,1499.0,2724.0,3779.0,0.103,268069.0,carrier_airport
+9E,Endeavor Air,ALB,Albany,Small,3888,55.0,32.0,23.0,33.4,13215,1469.0,2718.0,3769.0,0.07,267478.0,carrier_airport
+DL,Delta Air Lines,DAY,Dayton,Small,4584,71.0,41.0,30.0,41.8,9585,1510.0,2712.0,3727.0,0.059,266888.0,carrier_airport
+OO,SkyWest Airlines,ELM,Elmira,Non-hub,2796,412.0,31.0,381.0,30.4,0,1434.0,2709.0,3845.0,0.097,266593.0,carrier_airport
+OH,PSA Airlines,MDT,Harrisburg,Small,3106,90.0,28.0,62.0,42.0,10175,1507.0,2706.0,3686.0,0.087,266297.0,carrier_airport
+OO,SkyWest Airlines,DAY,Dayton,Small,3645,117.0,27.0,90.0,20.5,15246,1443.0,2688.0,3782.0,0.074,264526.0,carrier_airport
+MQ,Envoy Air,MFE,Mcallen,Small,2350,38.0,27.0,11.0,51.8,11885,1503.0,2667.0,3654.0,0.113,262459.0,carrier_airport
+UA,United Airlines,MSN,Madison,Small,5947,474.0,39.0,435.0,11.5,12655,1430.0,2666.0,3728.0,0.045,262361.0,carrier_airport
+9E,Endeavor Air,TRI,BRISTOL,Non-hub,4453,51.0,33.0,18.0,45.3,12787,1458.7499999999982,2660.8499999999985,3666.4999999999964,0.06,261854.0,carrier_airport
+UA,United Airlines,RDM,Redmond-Bend,Small,3711,129.0,58.0,71.0,28.9,10684,1496.0,2652.0,3577.0,0.071,260983.0,carrier_airport
+9E,Endeavor Air,HPN,White Plains,Small,2615,45.0,35.0,10.0,63.1,9732,1486.0,2645.0,3587.0,0.101,260294.0,carrier_airport
+OO,SkyWest Airlines,LBF,North Platte,Non-hub,2848,59.0,17.0,42.0,9.7,13636,1430.0,2644.0,3708.0,0.093,260196.0,carrier_airport
+QX,Horizon Air,RNO,Reno,Medium,2363,42.0,31.0,11.0,69.7,8347,1512.0,2643.0,3538.0,0.112,260098.0,carrier_airport
+AA,American Airlines,BGR,Bangor,Small,2013,51.0,38.0,13.0,53.5,16095,1426.0,2632.0,3682.0,0.131,259015.0,carrier_airport
+YV,Mesa Airlines,CLT,Charlotte,Large,2621,59.0,35.0,24.0,42.4,8475,1409.0,2632.0,3718.0,0.1,259015.0,carrier_airport
+YX,Republic Airways,MYR,Myrtle Beach,Small,2878,50.0,27.0,23.0,28.7,12431,1447.0,2629.0,3616.0,0.091,258720.0,carrier_airport
+OH,PSA Airlines,IND,Indianapolis,Medium,2343,33.0,27.0,6.0,69.2,11435,1466.0,2625.0,3585.0,0.112,258326.0,carrier_airport
+9E,Endeavor Air,MOB,Mobile,Non-hub,3582,45.0,29.0,16.0,39.6,10258,1420.0,2621.0,3650.0,0.073,257933.0,carrier_airport
+OO,SkyWest Airlines,JMS,Jamestown,Non-hub,3023,37.0,18.0,19.0,28.5,17186,1396.0,2614.0,3684.0,0.086,257244.0,carrier_airport
+OO,SkyWest Airlines,AGS,Bush Field,Small,2071,100.0,37.0,63.0,42.4,0,1373.0,2604.0,3734.0,0.126,256260.0,carrier_airport
+9E,Endeavor Air,GRR,Grand Rapids,Medium,3572,51.0,36.0,15.0,48.0,10528,1384.0,2591.0,3612.0,0.073,254980.0,carrier_airport
+OH,PSA Airlines,EWN,New Bern,Non-hub,2417,54.0,25.0,29.0,45.8,10016,1417.0,2589.0,3616.0,0.107,254783.0,carrier_airport
+OO,SkyWest Airlines,LBL,Liberal,Non-hub,2639,44.0,17.0,27.0,16.9,13740,1378.0,2579.0,3633.0,0.098,253799.0,carrier_airport
+9E,Endeavor Air,LEX,Lexington KY,Small,3369,49.0,30.0,19.0,26.0,10915,1395.0,2560.0,3541.0,0.076,251930.0,carrier_airport
+AS,Alaska Airlines,BNA,Nashville,Large,4452,80.0,33.0,47.0,6.7,13941,1409.0,2559.0,3491.0,0.057,251831.0,carrier_airport
+OO,SkyWest Airlines,SUX,Sioux City,Non-hub,3138,97.0,28.0,69.0,32.3,11269,1389.0,2549.0,3551.0,0.081,250847.0,carrier_airport
+MQ,Envoy Air,GRB,Green Bay,Small,2545,90.0,26.0,64.0,36.8,11537,1403.0,2547.0,3500.0,0.1,250650.0,carrier_airport
+QX,Horizon Air,SMF,Sacramento,Medium,2239,41.0,30.0,11.0,63.7,9012,1419.0,2534.0,3417.0,0.113,249371.0,carrier_airport
+QX,Horizon Air,PSC,Pasco,Small,3261,46.0,30.0,16.0,50.0,8995,1407.0,2518.0,3393.0,0.077,247796.0,carrier_airport
+OO,SkyWest Airlines,SLN,Salina,Non-hub,2604,50.0,22.0,28.0,39.2,13677,1347.0,2506.0,3539.0,0.096,246615.0,carrier_airport
+OO,SkyWest Airlines,BLI,Bellingham,Non-hub,2664,101.0,36.0,65.0,37.3,7552,1442.0,2503.0,3313.0,0.094,246320.0,carrier_airport
+AA,American Airlines,AVP,Scranton,Non-hub,2352,108.0,38.0,70.0,34.8,15241,1349.0,2502.0,3488.0,0.106,246222.0,carrier_airport
+AS,Alaska Airlines,ABQ,Albuquerque,Medium,2024,61.0,47.0,14.0,50.3,8782,1361.0,2494.0,3441.0,0.123,245435.0,carrier_airport
+OO,SkyWest Airlines,DDC,Dodge City,Non-hub,2419,43.0,18.0,25.0,20.0,14196,1306.0,2491.0,3547.0,0.103,245139.0,carrier_airport
+OO,SkyWest Airlines,PIB,Hattiesburg/Laurel,Non-hub,2718,56.0,21.0,35.0,29.7,14039,1291.0,2486.0,3571.0,0.091,244647.0,carrier_airport
+OH,PSA Airlines,DSM,Des Moines,Small,2832,64.0,27.0,37.0,45.3,10499,1390.0,2478.0,3348.0,0.088,243860.0,carrier_airport
+OO,SkyWest Airlines,DCA,Washington,Large,2354,56.0,31.0,25.0,28.5,8371,1328.0,2476.0,3434.0,0.105,243663.0,carrier_airport
+OO,SkyWest Airlines,HYS,Hays,Non-hub,2745,78.0,18.0,60.0,11.2,17206,1309.0,2471.0,3506.0,0.09,243171.0,carrier_airport
+OO,SkyWest Airlines,RHI,Rhinelander,Non-hub,3303,97.0,27.0,70.0,33.9,2064,1315.0,2470.0,3526.0,0.075,243073.0,carrier_airport
+OH,PSA Airlines,AVP,Scranton,Non-hub,2270,37.0,26.0,11.0,52.1,7850,1361.0,2453.0,3329.0,0.108,241400.0,carrier_airport
+MQ,Envoy Air,CLL,College Station,Non-hub,2857,36.0,23.0,13.0,54.6,8511,1341.0,2445.0,3354.0,0.086,240612.0,carrier_airport
+OO,SkyWest Airlines,GUC,Gunnison,Non-hub,3248,63.0,29.0,34.0,11.0,8119,1309.0,2441.0,3450.0,0.075,240219.0,carrier_airport
+9E,Endeavor Air,ROA,Roanoke VA,Non-hub,3183,48.0,36.0,12.0,55.4,10008,1377.0,2436.0,3364.0,0.077,239727.0,carrier_airport
+DL,Delta Air Lines,ELP,El Paso,Small,3352,401.0,57.0,344.0,40.3,7561,1376.0,2433.0,3276.0,0.073,239432.0,carrier_airport
+OO,SkyWest Airlines,DVL,Devils Lake,Non-hub,2777,38.0,20.0,18.0,21.1,17698,1300.0,2430.0,3417.0,0.088,239136.0,carrier_airport
+QX,Horizon Air,MSO,Missoula,Small,2418,45.0,33.0,12.0,50.8,7121,1360.0,2429.0,3290.0,0.1,239038.0,carrier_airport
+YX,Republic Airways,XNA,Bentonville,Small,3282,93.0,31.0,62.0,38.5,9531,1334.0,2424.0,3309.0,0.074,238546.0,carrier_airport
+MQ,Envoy Air,DAY,Dayton,Small,2515,48.0,27.0,21.0,48.6,7628,1367.0,2419.0,3234.0,0.096,238054.0,carrier_airport
+DL,Delta Air Lines,HPN,White Plains,Small,3101,399.0,49.0,350.0,37.4,8055,1344.0,2419.0,3246.0,0.078,238054.0,carrier_airport
+OH,PSA Airlines,CID,Cedar Rapids,Small,2570,44.0,29.0,15.0,50.0,10842,1359.0,2411.0,3236.0,0.094,237267.0,carrier_airport
+DL,Delta Air Lines,MDT,Harrisburg,Small,3237,105.0,47.0,58.0,45.7,6480,1344.0,2390.0,3274.0,0.074,235200.0,carrier_airport
+OO,SkyWest Airlines,JST,Johnstown,Non-hub,2983,56.0,23.0,33.0,30.7,22554,1262.0,2388.0,3403.0,0.08,235003.0,carrier_airport
+OO,SkyWest Airlines,MEI,Meridian,Non-hub,2215,45.0,20.0,25.0,19.7,16471,1254.0,2384.0,3420.0,0.108,234609.0,carrier_airport
+UA,United Airlines,BTV,Burlington,Small,4084,353.0,49.0,304.0,16.0,10626,1286.0,2372.0,3275.0,0.058,233429.0,carrier_airport
+9E,Endeavor Air,AVL,Asheville,Small,2601,50.0,38.0,12.0,61.0,13160,1273.0,2357.0,3289.0,0.091,231952.0,carrier_airport
+AA,American Airlines,MDT,Harrisburg,Small,3482,422.0,43.0,379.0,20.1,15840,1301.0,2354.0,3248.0,0.068,231657.0,carrier_airport
+YX,Republic Airways,IAH,Houston,Large,2625,63.0,26.0,37.0,34.7,9171,1257.0,2339.0,3258.0,0.089,230181.0,carrier_airport
+YX,Republic Airways,CAE,Columbia,Small,2050,50.0,29.0,21.0,42.5,8153,1270.0,2338.0,3197.0,0.114,230083.0,carrier_airport
+OO,SkyWest Airlines,CIU,Sault Ste Marie,Non-hub,3360,95.0,30.0,65.0,29.8,1088,1265.0,2335.0,3249.0,0.069,229787.0,carrier_airport
+UA,United Airlines,BIL,Billings,Small,3474,551.0,41.0,510.0,7.3,11067,1240.0,2334.0,3311.0,0.067,229689.0,carrier_airport
+DL,Delta Air Lines,ILM,Wilmington,Small,2884,61.0,47.0,14.0,50.2,6238,1287.0,2323.0,3224.0,0.081,228606.0,carrier_airport
+MQ,Envoy Air,GCK,Garden City,Non-hub,2304,341.0,28.0,313.0,47.4,7815,1308.0,2306.0,3139.0,0.1,226933.0,carrier_airport
+OO,SkyWest Airlines,CMX,Hancock,Non-hub,2897,413.0,25.0,388.0,16.4,15778,1218.0,2292.0,3277.0,0.079,225556.0,carrier_airport
+YX,Republic Airways,DSM,Des Moines,Small,3595,97.0,27.0,70.0,24.5,7908,1258.0,2292.0,3173.0,0.064,225556.0,carrier_airport
+YX,Republic Airways,OKC,Oklahoma City,Medium,3188,376.0,27.0,349.0,25.1,6834,1248.0,2276.0,3143.0,0.071,223981.0,carrier_airport
+MQ,Envoy Air,TYR,Tyler,Non-hub,2333,31.0,22.0,9.0,55.9,9103,1289.0,2271.0,3086.0,0.097,223489.0,carrier_airport
+OO,SkyWest Airlines,SCE,State College Pennsylvania,Non-hub,2103,45.0,26.0,19.0,27.4,8926,1237.0,2264.0,3168.0,0.108,222800.0,carrier_airport
+9E,Endeavor Air,GSP,Greenville,Small,3503,77.0,39.0,38.0,33.9,11794,1248.0,2260.0,3156.0,0.065,222407.0,carrier_airport
+OO,SkyWest Airlines,GRI,Grand Island,Non-hub,2234,93.0,29.0,64.0,41.9,1718,1224.0,2259.0,3158.0,0.101,222308.0,carrier_airport
+9E,Endeavor Air,MCI,Kansas City,Medium,2540,49.0,36.0,13.0,52.2,10383,1232.0,2242.0,3103.0,0.088,220635.0,carrier_airport
+OO,SkyWest Airlines,FNT,Flint,Non-hub,2265,446.0,25.0,421.0,22.6,9658,1180.0,2232.0,3160.0,0.099,219651.0,carrier_airport
+9E,Endeavor Air,VLD,Valdosta,Non-hub,3200,51.0,35.0,16.0,49.5,14877,1217.0,2230.0,3120.0,0.07,219454.0,carrier_airport
+OO,SkyWest Airlines,BFF,Scottsbluff,Non-hub,2619,67.0,22.0,45.0,15.8,8972,1192.0,2230.0,3168.0,0.085,219454.0,carrier_airport
+9E,Endeavor Air,BGR,Bangor,Small,4048,110.0,36.0,74.0,34.9,13909,1196.0,2227.0,3127.0,0.055,219159.0,carrier_airport
+OO,SkyWest Airlines,ESC,Escanaba,Non-hub,3036,77.0,26.0,51.0,31.4,0,1179.0,2219.0,3136.0,0.073,218372.0,carrier_airport
+9E,Endeavor Air,MDW,Chicago,Large,2603,47.0,33.0,14.0,51.1,11200,1206.0,2217.0,3064.0,0.085,218175.0,carrier_airport
+OO,SkyWest Airlines,INL,International Falls,Non-hub,2559,42.0,22.0,20.0,14.7,0,1170.0,2215.0,3137.0,0.087,217978.0,carrier_airport
+9E,Endeavor Air,MSN,Madison,Small,3538,61.0,32.0,29.0,31.6,8603,1197.0,2210.0,3044.0,0.062,217486.0,carrier_airport
+AS,Alaska Airlines,IND,Indianapolis,Medium,2248,60.0,33.0,27.0,6.4,13147,1185.3499999999976,2180.749999999998,3031.5999999999985,0.097,214608.0,carrier_airport
+OO,SkyWest Airlines,AZO,Kalamazoo,Non-hub,2119,84.0,31.0,53.0,34.1,179,1149.0,2176.0,3109.0,0.103,214140.0,carrier_airport
+DL,Delta Air Lines,GPT,Gulfport,Non-hub,3631,105.0,41.0,64.0,42.8,7756,1192.0,2164.0,2982.0,0.06,212959.0,carrier_airport
+OO,SkyWest Airlines,MHK,Manhattan,Non-hub,2019,90.0,24.0,66.0,47.1,8523,1149.0,2140.0,3022.0,0.106,210597.0,carrier_airport
+OO,SkyWest Airlines,BRD,Brainerd,Non-hub,2894,43.0,21.0,22.0,17.1,0,1144.0,2137.0,3054.0,0.074,210302.0,carrier_airport
+MQ,Envoy Air,MRY,Monterey,Small,2041,90.0,30.0,60.0,42.6,6599,1185.0,2120.0,2853.0,0.104,208629.0,carrier_airport
+OO,SkyWest Airlines,HRL,Harlingen,Small,2108,75.0,25.0,50.0,29.8,8062,1143.0,2113.0,2991.0,0.1,207940.0,carrier_airport
+AA,American Airlines,BFL,Bakersfield,Non-hub,2396,316.0,37.0,279.0,29.6,14812,1132.0,2111.0,2991.0,0.088,207744.0,carrier_airport
+UA,United Airlines,MEM,Memphis,Medium,5231,526.0,56.0,470.0,17.5,7909,1136.0,2100.0,2961.0,0.04,206661.0,carrier_airport
+MQ,Envoy Air,ORF,Norfolk,Medium,2257,111.0,28.0,83.0,36.7,6823,1196.0,2098.0,2839.0,0.093,206464.0,carrier_airport
+HA,Hawaiian Airlines,SEA,Seattle,Large,3411,613.0,96.0,517.0,9.0,4756,1159.0,2097.0,2811.0,0.061,206366.0,carrier_airport
+DL,Delta Air Lines,ABQ,Albuquerque,Medium,6058,132.0,15.0,117.0,11.5,8923,1172.0,2069.0,2772.0,0.034,203610.0,carrier_airport
+AS,Alaska Airlines,PAE,Everett,Non-hub,2851,80.0,47.0,33.0,44.5,8854,1156.0,2063.0,2809.0,0.072,203020.0,carrier_airport
+9E,Endeavor Air,SHV,Shreveport,Small,3633,100.0,36.0,64.0,37.3,9555,1133.0,2062.0,2810.0,0.057,202921.0,carrier_airport
+AS,Alaska Airlines,ADQ,Kodiak,Non-hub,2810,56.0,35.0,21.0,5.4,10007,1107.0,2054.0,2871.0,0.073,202134.0,carrier_airport
+YX,Republic Airways,MSN,Madison,Small,4263,106.0,31.0,75.0,28.1,8103,1121.0,2053.0,2881.0,0.048,202036.0,carrier_airport
+AS,Alaska Airlines,BWI,Baltimore,Large,2417,65.0,9.0,56.0,24.2,10194,1130.0,2017.0,2716.0,0.083,198493.0,carrier_airport
+9E,Endeavor Air,CSG,Columbus,Non-hub,3091,100.0,34.0,66.0,39.9,10649,1105.0,2009.0,2712.0,0.065,197706.0,carrier_airport
+DL,Delta Air Lines,RNO,Reno,Medium,4071,85.0,14.0,71.0,13.2,11607,1076.0,2007.0,2838.0,0.049,197509.0,carrier_airport
+QX,Horizon Air,SNA,Santa Ana,Medium,2009,43.0,31.0,12.0,62.2,6792,1107.0,1970.0,2674.0,0.098,193868.0,carrier_airport
+OO,SkyWest Airlines,LAW,Lawton,Non-hub,2140,44.0,24.0,20.0,43.6,3441,1048.0,1954.0,2750.0,0.091,192293.0,carrier_airport
+QX,Horizon Air,BLI,Bellingham,Non-hub,2561,47.0,31.0,16.0,49.5,5887,1073.0,1935.0,2637.0,0.076,190423.0,carrier_airport
+OO,SkyWest Airlines,VCT,Victoria,Non-hub,2799,396.0,26.0,370.0,17.9,16064,1004.0,1928.0,2784.0,0.069,189734.0,carrier_airport
+9E,Endeavor Air,CID,Cedar Rapids,Small,2963,81.0,34.0,47.0,34.4,8526,1053.0,1926.0,2677.0,0.065,189538.0,carrier_airport
+OO,SkyWest Airlines,GCC,Gillette,Non-hub,3117,420.0,27.0,393.0,21.1,7896,1057.0,1924.0,2674.0,0.062,189341.0,carrier_airport
+UA,United Airlines,RAP,Rapid City,Small,2582,67.0,47.0,20.0,28.9,7923,1061.0,1920.0,2645.0,0.074,188947.0,carrier_airport
+9E,Endeavor Air,TVC,Traverse City,Small,2677,47.0,31.0,16.0,39.3,10263,1043.0,1916.0,2667.0,0.072,188554.0,carrier_airport
+MQ,Envoy Air,SPS,Wichita Falls,Non-hub,2112,29.0,20.0,9.0,66.0,6576,1104.0,1915.0,2550.0,0.091,188455.0,carrier_airport
+OO,SkyWest Airlines,ABR,Aberdeen,Non-hub,3106,407.0,29.0,378.0,34.4,0,1017.0,1912.0,2714.0,0.062,188160.0,carrier_airport
+OO,SkyWest Airlines,HIB,Hibbing,Non-hub,2661,52.0,22.0,30.0,18.3,0,1011.0,1899.0,2626.0,0.071,186881.0,carrier_airport
+9E,Endeavor Air,BHM,Birmingham,Small,2990,96.0,41.0,55.0,37.4,6460,1020.0,1885.0,2596.0,0.063,185503.0,carrier_airport
+9E,Endeavor Air,CWA,Wassau,Non-hub,3195,463.0,33.0,430.0,37.5,11142,1042.0,1882.0,2612.0,0.059,185208.0,carrier_airport
+UA,United Airlines,PWM,Portland,Small,3773,331.0,22.0,309.0,9.0,13413,1007.0,1880.0,2640.0,0.05,185011.0,carrier_airport
+OO,SkyWest Airlines,LAR,Laramie,Non-hub,2611,75.0,25.0,50.0,10.9,10769,986.0,1879.0,2695.0,0.072,184912.0,carrier_airport
+MQ,Envoy Air,BMI,Bloomington,Non-hub,3505,163.0,28.0,135.0,28.0,7318,1052.0,1875.0,2559.0,0.053,184519.0,carrier_airport
+YX,Republic Airways,ALB,Albany,Small,3016,72.0,29.0,43.0,31.8,7015,1038.0,1874.0,2557.0,0.062,184420.0,carrier_airport
+MQ,Envoy Air,LCH,Lake Charles,Non-hub,2103,33.0,23.0,10.0,52.4,7402,1013.0,1855.0,2580.0,0.088,182551.0,carrier_airport
+9E,Endeavor Air,ATW,Appleton,Small,3163,108.0,35.0,73.0,31.8,8552,1023.0,1845.0,2528.0,0.058,181566.0,carrier_airport
+AS,Alaska Airlines,RDU,Raleigh-durham,Medium,2264,67.0,12.0,55.0,14.3,8752,1007.0,1832.0,2442.0,0.081,180287.0,carrier_airport
+AS,Alaska Airlines,PHL,Philadelphia,Large,2791,75.0,14.0,61.0,14.1,12789,1024.0,1832.0,2487.0,0.066,180287.0,carrier_airport
+QX,Horizon Air,SJC,San Jose,Medium,2531,47.0,31.0,16.0,49.8,6139,1012.0,1828.0,2497.0,0.072,179893.0,carrier_airport
+9E,Endeavor Air,GTR,Columbus Mississippi,Non-hub,3336,49.0,32.0,17.0,42.5,7789,978.0,1812.0,2528.0,0.054,178319.0,carrier_airport
+YX,Republic Airways,LEX,Lexington KY,Small,3659,114.0,33.0,81.0,29.8,4725,980.0,1808.0,2544.0,0.049,177925.0,carrier_airport
+9E,Endeavor Air,EVV,Evansville,Non-hub,3019,49.0,33.0,16.0,46.8,7725,986.0,1802.0,2522.0,0.06,177335.0,carrier_airport
+9E,Endeavor Air,AEX,Alexandria,Non-hub,3116,60.0,35.0,25.0,41.6,6248,986.0,1776.0,2444.0,0.057,174776.0,carrier_airport
+9E,Endeavor Air,PVD,Providence,Small,2508,96.0,38.0,58.0,37.3,10359,953.0,1765.0,2498.0,0.07,173694.0,carrier_airport
+9E,Endeavor Air,MLI,Moline,Small,2866,116.0,33.0,83.0,36.8,7317,940.0,1759.0,2458.0,0.061,173103.0,carrier_airport
+YV,Mesa Airlines,ATL,Atlanta,Large,2602,78.0,36.0,42.0,21.3,4891,935.0,1755.0,2483.0,0.067,172710.0,carrier_airport
+UA,United Airlines,BUF,Buffalo,Medium,4193,392.0,59.0,333.0,15.0,9455,960.0,1747.0,2418.0,0.042,171922.0,carrier_airport
+AS,Alaska Airlines,MCI,Kansas City,Medium,3188,115.0,44.0,71.0,22.9,8888,988.0,1734.0,2317.0,0.054,170643.0,carrier_airport
+OO,SkyWest Airlines,JLN,Joplin,Non-hub,2789,432.0,29.0,403.0,11.2,9638,908.0,1728.0,2476.0,0.062,170052.0,carrier_airport
+9E,Endeavor Air,ABE,Allentown,Small,3748,107.0,41.0,66.0,37.3,6765,984.0,1721.0,2326.0,0.046,169364.0,carrier_airport
+UA,United Airlines,ALB,Albany,Small,2937,495.0,50.0,445.0,22.5,6627,927.0,1713.0,2382.0,0.058,168576.0,carrier_airport
+MQ,Envoy Air,CWA,Wassau,Non-hub,2028,113.0,26.0,87.0,33.8,7279,934.0,1709.0,2355.0,0.084,168183.0,carrier_airport
+9E,Endeavor Air,CAE,Columbia,Small,2866,103.0,37.0,66.0,33.8,9347,927.0,1689.0,2326.0,0.059,166214.0,carrier_airport
+OO,SkyWest Airlines,MQT,Gwinn,Non-hub,2125,100.0,32.0,68.0,15.6,0,876.0,1678.0,2418.0,0.079,165132.0,carrier_airport
+AS,Alaska Airlines,MSY,New Orleans,Medium,2708,75.0,20.0,55.0,9.0,12707,901.0,1663.0,2295.0,0.061,163656.0,carrier_airport
+OO,SkyWest Airlines,BJI,Bemidji,Non-hub,2987,436.0,29.0,407.0,26.0,0,894.0,1663.0,2370.0,0.056,163656.0,carrier_airport
+AS,Alaska Airlines,DTW,Detroit,Large,2245,60.0,27.0,33.0,6.1,9485,917.0,1660.0,2232.0,0.074,163361.0,carrier_airport
+9E,Endeavor Air,LFT,Lafayette,Non-hub,2740,61.0,35.0,26.0,39.1,6710,890.0,1641.0,2262.0,0.06,161491.0,carrier_airport
+DL,Delta Air Lines,FCA,Kalispell,Small,3543,293.0,45.0,248.0,14.6,8368,882.0,1611.0,2221.0,0.045,158539.0,carrier_airport
+UA,United Airlines,FAT,Fresno,Small,2212,481.0,50.0,431.0,29.3,7510,909.0,1602.0,2169.0,0.072,157653.0,carrier_airport
+UA,United Airlines,ROC,Rochester,Small,3528,402.0,59.0,343.0,15.1,8517,864.0,1583.0,2208.0,0.045,155783.0,carrier_airport
+UA,United Airlines,PNS,Pensacola,Small,2758,495.0,13.0,482.0,12.7,10548,849.0,1578.0,2212.0,0.057,155291.0,carrier_airport
+UA,United Airlines,SDF,Louisville,Medium,2542,539.0,43.0,496.0,14.0,8811,856.0,1576.0,2173.0,0.062,155094.0,carrier_airport
+AA,American Airlines,LIH,Lihue,Small,3668,326.0,80.0,246.0,24.2,6705,890.0,1567.0,2073.0,0.043,154208.0,carrier_airport
+OO,SkyWest Airlines,SHR,Sheridan,Non-hub,3230,394.0,34.0,360.0,19.4,7657,845.0,1562.0,2185.0,0.048,153716.0,carrier_airport
+9E,Endeavor Air,AZO,Kalamazoo,Non-hub,2472,101.0,33.0,68.0,39.9,9772,845.0,1555.0,2168.0,0.063,153028.0,carrier_airport
+9E,Endeavor Air,BWI,Baltimore,Large,2239,72.0,32.0,40.0,24.3,8922,822.0,1543.0,2155.0,0.069,151847.0,carrier_airport
+MQ,Envoy Air,LSE,La Crosse,Non-hub,2337,94.0,27.0,67.0,29.5,6380,861.0,1543.0,2112.0,0.066,151847.0,carrier_airport
+UA,United Airlines,MKE,Milwaukee,Medium,2299,120.0,48.0,72.0,14.8,7127,841.5500000000002,1542.6499999999987,2141.7999999999993,0.067,151812.0,carrier_airport
+9E,Endeavor Air,MLU,Monroe,Non-hub,2650,100.0,32.0,68.0,43.0,6369,841.0,1536.0,2153.0,0.058,151158.0,carrier_airport
+YX,Republic Airways,TUL,Tulsa,Small,2226,436.0,23.0,413.0,27.5,5145,852.0,1523.0,2062.0,0.068,149878.0,carrier_airport
+9E,Endeavor Air,DHN,Dothan,Non-hub,2518,68.0,34.0,34.0,35.8,6839,795.0,1515.0,2146.0,0.06,149091.0,carrier_airport
+DL,Delta Air Lines,KOA,Kona,Small,3430,154.0,54.0,100.0,9.2,10187,818.0,1510.0,2060.0,0.044,148599.0,carrier_airport
+9E,Endeavor Air,BTR,Baton Rouge,Small,2386,51.0,38.0,13.0,52.0,6601,848.0,1501.0,2065.0,0.063,147713.0,carrier_airport
+YV,Mesa Airlines,MCI,Kansas City,Medium,2796,405.0,33.0,372.0,22.6,6775,827.0,1496.0,2096.0,0.054,147221.0,carrier_airport
+9E,Endeavor Air,MEM,Memphis,Medium,2743,101.0,38.0,63.0,37.5,5674,816.0,1486.0,2035.0,0.054,146237.0,carrier_airport
+9E,Endeavor Air,GRB,Green Bay,Small,3622,79.0,30.0,49.0,15.3,5497,810.0,1482.0,2042.0,0.041,145844.0,carrier_airport
+DL,Delta Air Lines,PSP,Palm Springs,Small,2857,70.0,21.0,49.0,9.1,8002,815.2999999999975,1471.399999999997,2026.3999999999978,0.052,144800.0,carrier_airport
+DL,Delta Air Lines,LIH,Lihue,Small,3161,160.0,29.0,131.0,15.3,8089,809.0,1469.0,2000.0,0.046,144564.0,carrier_airport
+9E,Endeavor Air,MYR,Myrtle Beach,Small,2179,50.0,34.0,16.0,34.5,7673,774.0,1454.0,2054.0,0.067,143088.0,carrier_airport
+OO,SkyWest Airlines,RIW,Riverton WY,Non-hub,2575,427.0,30.0,397.0,24.4,7985,788.0,1436.0,1991.0,0.056,141317.0,carrier_airport
+OO,SkyWest Airlines,CYS,Cheyenne,Non-hub,2454,481.0,30.0,451.0,16.5,5829,749.0,1416.0,2008.0,0.058,139349.0,carrier_airport
+DL,Delta Air Lines,PWM,Portland,Small,4329,328.0,23.0,305.0,7.4,8387,786.0,1414.0,1955.0,0.033,139152.0,carrier_airport
+9E,Endeavor Air,CRW,Charleston,Non-hub,2162,58.0,36.0,22.0,43.0,6620,789.0,1412.0,1911.0,0.065,138955.0,carrier_airport
+OO,SkyWest Airlines,RKS,Rock Springs,Non-hub,2498,427.0,32.0,395.0,15.1,5076,752.0,1402.0,1969.0,0.056,137971.0,carrier_airport
+9E,Endeavor Air,OAJ,Jacksonville NC,Non-hub,2233,50.0,34.0,16.0,47.7,6551,756.0,1382.0,1921.0,0.062,136003.0,carrier_airport
+DL,Delta Air Lines,XNA,Bentonville,Small,2207,61.0,43.0,18.0,46.2,5452,748.0,1353.0,1872.0,0.061,133149.0,carrier_airport
+9E,Endeavor Air,HSV,Huntsville,Small,2040,52.0,38.0,14.0,52.3,5018,722.0,1328.0,1861.0,0.065,130688.0,carrier_airport
+OO,SkyWest Airlines,TWF,Twin Falls,Non-hub,3168,114.0,29.0,85.0,26.9,563,711.0,1321.0,1835.0,0.042,130000.0,carrier_airport
+OO,SkyWest Airlines,GSO,Greensboro,Small,2026,530.0,37.0,493.0,23.0,3305,709.0,1300.0,1792.0,0.064,127933.0,carrier_airport
+DL,Delta Air Lines,FSD,Sioux Falls,Small,2981,342.0,233.0,109.0,2.4,2377,680.0,1294.0,1858.0,0.043,127343.0,carrier_airport
+AA,American Airlines,KOA,Kona,Small,4096,276.0,47.0,229.0,7.4,7427,696.0,1282.0,1731.0,0.031,126162.0,carrier_airport
+9E,Endeavor Air,BQK,Brunswick,Non-hub,2080,48.0,29.0,19.0,25.8,6637,683.0,1282.0,1802.0,0.062,126162.0,carrier_airport
+9E,Endeavor Air,DAY,Dayton,Small,3043,90.0,38.0,52.0,40.5,5573,702.0,1270.0,1711.0,0.042,124981.0,carrier_airport
+9E,Endeavor Air,LAN,Lansing,Non-hub,2478,74.0,34.0,40.0,37.7,6022,684.0,1244.0,1714.0,0.05,122422.0,carrier_airport
+UA,United Airlines,RIC,Richmond,Medium,4294,540.0,82.0,458.0,5.6,3725,682.0,1231.0,1684.0,0.029,121143.0,carrier_airport
+9E,Endeavor Air,ABY,Albany,Non-hub,2504,55.0,33.0,22.0,31.7,5113,659.0,1217.0,1712.0,0.049,119765.0,carrier_airport
+UA,United Airlines,CID,Cedar Rapids,Small,3216,500.0,26.0,474.0,10.9,4937,656.0,1193.0,1657.0,0.037,117403.0,carrier_airport
+OO,SkyWest Airlines,CDC,Cedar City,Non-hub,2698,42.0,21.0,21.0,11.9,0,633.0,1179.0,1653.0,0.044,116025.0,carrier_airport
+UA,United Airlines,SYR,Syracuse,Small,3950,474.0,59.0,415.0,10.2,6427,667.0000000000009,1172.3000000000002,1578.000000000001,0.03,115366.0,carrier_airport
+DL,Delta Air Lines,OAK,Oakland,Medium,2542,281.0,49.0,232.0,35.6,10109,614.0,1157.0,1625.0,0.046,113860.0,carrier_airport
+OO,SkyWest Airlines,BTM,Butte,Non-hub,2837,68.0,26.0,42.0,20.3,427,618.0,1142.0,1589.0,0.04,112384.0,carrier_airport
+DL,Delta Air Lines,MSO,Missoula,Small,2803,327.0,52.0,275.0,17.9,5958,609.0,1124.0,1557.0,0.04,110613.0,carrier_airport
+9E,Endeavor Air,MDT,Harrisburg,Small,2116,77.0,36.0,41.0,41.4,4894,625.7000000000007,1121.1500000000005,1516.6000000000008,0.053,110332.0,carrier_airport
+9E,Endeavor Air,BMI,Bloomington,Non-hub,2130,100.0,35.0,65.0,34.6,5623,578.0,1063.0,1468.0,0.05,104610.0,carrier_airport
+HA,Hawaiian Airlines,OAK,Oakland,Medium,3228,630.0,470.0,160.0,3.7,134,540.0,998.0,1398.0,0.031,98213.0,carrier_airport
+UA,United Airlines,TVC,Traverse City,Small,2128,469.0,21.0,448.0,8.2,7611,518.6000000000004,958.2000000000007,1347.800000000001,0.045,94296.0,carrier_airport
+AS,Alaska Airlines,OME,Nome,Non-hub,2384,107.0,36.0,71.0,24.5,9957,522.0,945.0,1286.0,0.04,92997.0,carrier_airport
+9E,Endeavor Air,MBS,Saginaw,Non-hub,2244,105.0,36.0,69.0,29.0,3742,497.0,904.0,1230.0,0.04,88963.0,carrier_airport
+DL,Delta Air Lines,FAR,Fargo,Small,2681,371.0,248.0,123.0,4.3,4167,479.0,876.0,1245.0,0.033,86207.0,carrier_airport
+OO,SkyWest Airlines,PIH,Pocatello,Non-hub,2623,109.0,29.0,80.0,12.9,0,458.0,844.0,1197.0,0.032,83058.0,carrier_airport
+HA,Hawaiian Airlines,PDX,Portland,Medium,2653,690.0,84.0,606.0,7.6,3801,459.8000000000002,815.8000000000002,1097.6000000000008,0.031,80283.0,carrier_airport
+HA,Hawaiian Airlines,SMF,Sacramento,Medium,3326,695.0,528.0,167.0,4.4,137,432.8000000000002,807.1500000000005,1113.0500000000002,0.024,79432.0,carrier_airport
+HA,Hawaiian Airlines,LGB,Long Beach,Small,2072,700.0,607.0,93.0,6.1,56,413.0,740.0,975.0,0.036,72823.0,carrier_airport
+HA,Hawaiian Airlines,SFO,San Francisco,Large,2694,690.0,83.0,607.0,7.8,2168,422.0999999999999,730.6000000000004,955.2000000000003,0.027,71898.0,carrier_airport
+DL,Delta Air Lines,BIL,Billings,Small,3311,354.0,67.0,287.0,8.7,3028,401.39999999999964,721.7000000000007,975.2000000000007,0.022,71022.0,carrier_airport
+UA,United Airlines,MFE,Mcallen,Small,2329,485.0,56.0,429.0,16.4,3270,386.0,712.0,1003.0,0.031,70068.0,carrier_airport
+HA,Hawaiian Airlines,SJC,San Jose,Medium,2217,670.0,503.0,167.0,3.5,722,386.0,711.0,960.0,0.032,69970.0,carrier_airport
+UA,United Airlines,TUL,Tulsa,Small,2136,533.0,70.0,463.0,7.3,1875,263.0,494.0,687.0,0.023,48615.0,carrier_airport
+HA,Hawaiian Airlines,SAN,San Diego,Large,2709,695.0,131.0,564.0,5.6,1940,284.0,491.0,646.0,0.018,48319.0,carrier_airport
+UA,United Airlines,FSD,Sioux Falls,Small,2226,572.0,64.0,508.0,9.8,3016,255.0,475.0,683.0,0.021,46745.0,carrier_airport

@@ -1,0 +1,10 @@
+# Data is downloaded, never committed — see pipeline/download.py
+data/raw/
+data/parquet/
+data/warehouse/
+
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

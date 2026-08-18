@@ -1,0 +1,53 @@
+cascade_length,carrier_type,cascades,avg_downstream_minutes,avg_amplification
+0,Low-cost,415350,0.0,1.0
+0,Network,1156125,0.0,1.0
+0,Regional,819419,0.0,1.0
+0,Ultra low-cost,221652,0.0,1.0
+1,Low-cost,182851,47.4,2.885
+1,Ultra low-cost,53901,58.6,2.716
+1,Regional,147746,52.0,2.749
+1,Network,337105,53.1,2.831
+2,Regional,52226,118.1,4.962
+2,Low-cost,84423,97.9,4.787
+2,Ultra low-cost,21283,120.6,4.396
+2,Network,115408,107.2,4.951
+3,Low-cost,39397,154.2,6.423
+3,Network,35122,170.8,6.064
+3,Regional,17860,187.8,7.331
+3,Ultra low-cost,9912,196.2,6.165
+4,Network,9618,229.4,8.704
+4,Low-cost,16069,206.9,7.756
+4,Regional,7084,261.1,9.506
+4,Ultra low-cost,3533,265.7,7.344
+5,Network,2409,295.8,10.301
+5,Ultra low-cost,1173,340.3,8.603
+5,Low-cost,5691,264.0,9.299
+5,Regional,2281,348.4,9.969
+6,Regional,437,401.0,15.336
+6,Ultra low-cost,254,428.3,19.108
+6,Low-cost,1424,314.3,10.167
+6,Network,607,360.8,17.359
+7,Low-cost,318,394.5,14.577
+7,Regional,105,470.3,9.871
+7,Ultra low-cost,105,507.0,15.618
+7,Network,190,405.8,14.838
+8,Ultra low-cost,37,614.4,11.108
+8,Regional,7,719.6,12.12
+8,Low-cost,61,503.6,16.494
+8,Network,69,431.1,15.023
+9,Regional,3,521.3,9.587
+9,Low-cost,18,542.7,20.289
+9,Ultra low-cost,19,763.2,14.784
+9,Network,33,511.7,15.897
+10,Ultra low-cost,6,856.8,10.732
+10,Network,8,639.0,37.586
+10,Low-cost,10,654.4,18.514
+10,Regional,1,1439.0,19.45
+11,Regional,1,1702.0,82.05
+11,Ultra low-cost,2,635.5,26.665
+11,Low-cost,3,710.0,10.833
+11,Network,4,441.8,13.61
+12,Low-cost,2,573.5,16.41
+13,Ultra low-cost,1,670.0,9.27
+15,Network,1,2000.0,30.85
+16,Ultra low-cost,1,872.0,30.07
