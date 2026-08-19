@@ -99,6 +99,7 @@ python -m pytest                     # 28 data quality tests
 python -m analysis.findings --write  # regenerate docs/03-findings.md
 python -m analysis.export_bi         # CSV extracts for Power BI / Tableau
 python -m analysis.build_dashboard_data && python -m analysis.build_dashboard
+streamlit run app/explorer.py       # interactive explorer
 ```
 
 The dashboard builds to a single self-contained `dashboards/index.html` — no server,
@@ -114,6 +115,7 @@ number in the write-up can drift from the data behind it.
 ## How it is built
 
 ```
+app/          Streamlit explorer — live filtering, rotation inspector
 pipeline/     download → typed parquet → DuckDB warehouse
 sql/
   01_staging/     BTS feed with clock fields resolved to UTC; airport reference
@@ -137,6 +139,25 @@ layer is plain SQL run in dependency order by a 60-line runner, laid out in dbt'
 conventions so it can be ported if it ever needs to be.
 
 ---
+
+## The rotation inspector
+
+The part of the explorer worth opening first. Pick an airframe and a date and it
+draws the day that aircraft actually flew against the day it was scheduled to fly —
+outlined bars for the schedule, solid bars for the reality, so the drift accumulates
+visibly down the chart. Legs that inherited delay are drawn in orange, legs that
+broke on their own in blue, which makes the moment a cascade starts easy to see.
+
+The picker is pre-loaded with the worst cascade days in the current filter, ranked by
+inherited minutes, so it opens on a day where something actually happened rather than
+on an average Tuesday.
+
+It also surfaces something the aggregate charts hide: on a typical bad day several
+legs are *not* marked as continuing the rotation, because the previous leg landed
+elsewhere or the scheduled turn is negative — the aircraft booked out before its
+inbound was due in. Those are tail-chain breaks: aircraft swaps, ferry and
+maintenance legs absent from the passenger feed, schedules changed after the fact.
+The model excludes them rather than inventing a turn that never happened.
 
 ## Three decisions worth explaining in an interview
 

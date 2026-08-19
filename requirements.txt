@@ -3,3 +3,5 @@ pyarrow>=17
 pandas>=2.2
 requests>=2.31
 pytest>=8.0
+streamlit>=1.40
+plotly>=5.20

@@ -1,0 +1,15 @@
+# The charts use a validated categorical palette that was stepped against a
+# light surface. Pinning the theme keeps the app matching the published
+# dashboard and the docs, rather than reading as a third look.
+[theme]
+base = "light"
+primaryColor = "#2a78d6"
+backgroundColor = "#fcfcfb"
+secondaryBackgroundColor = "#f2f1ed"
+textColor = "#0b0b0b"
+
+[server]
+headless = true
+# Bind to loopback only. The default binds every interface, which puts a
+# read-only view of the warehouse on whatever network the laptop is joined to.
+address = "127.0.0.1"
