@@ -38,8 +38,9 @@ carrier-controllable delay in the morning bank, which is worth roughly **$459M a
 year** in direct operating cost at a 20% reduction — [with a pilot design and
 sizing to test it first](docs/04-recommendations.md).
 
-Full write-up: **[docs/03-findings.md](docs/03-findings.md)** · Interactive
-dashboard: **[dashboards/index.html](dashboards/index.html)**
+**[Open the live dashboard →](https://vikhyatkoppalgithub.github.io/Flight-Delay-Analytics/dashboards/)**
+
+Full write-up: **[docs/03-findings.md](docs/03-findings.md)**
 
 ---
 
