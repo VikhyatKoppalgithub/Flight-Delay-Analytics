@@ -1,0 +1,52 @@
+# Publish the dashboard to GitHub Pages.
+#
+# dashboards/ is served as the site root, so dashboards/index.html becomes the
+# landing page. The dashboard is a single self-contained file -- no build step,
+# no network calls, no external assets -- so there is nothing to compile here;
+# the job just uploads the folder.
+#
+# ONE-TIME SETUP: in the repository, Settings -> Pages -> Build and deployment
+# -> Source: "GitHub Actions". Until that is set, this workflow will fail at the
+# deploy step with "Pages site not found" -- that is the switch, not a bug.
+
+name: Deploy dashboard to Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dashboards/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it: a half-applied Pages
+# deploy leaves the site serving the previous version with no clear signal.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fail early if the dashboard is missing
+        run: test -f dashboards/index.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboards
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
